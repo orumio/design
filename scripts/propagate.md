@@ -12,10 +12,13 @@ deploy owners; follow the product's CLAUDE.md where it differs from this list.
 3. **Gate, per product.** `orumio-shape-check` (inside its `test`), then its own lint / typecheck /
    test / build, then the before / after computed-radius table on the screens it can reach locally
    (SHAPE.md §8a). Every change in the table must be explained by `CHANGELOG.md`.
-4. **Deploy order.** hub first (`orumio-launch-kit`, `pnpm hub:deploy`), then each product. A product
+4. **launch-kit.** Bump its `@orumio/design` devDependency too (`pnpm up -r @orumio/design` in
+   `orumio-launch-kit/`): the kit's version is the floor its SHAPE row compares each product against
+   (older → WARN), and `pnpm tokens` regenerates the hub's `--lk-radius-*` from the new ladder.
+5. **Deploy order.** hub first (`orumio-launch-kit`, `pnpm hub:deploy`), then each product. A product
    whose listing is in review is merged, not deployed, until the review ends — its screenshots must
    match what reviewers open.
-5. `orumio-shape-check --outdated` in any product prints a WARN until it is on the newest v1 tag.
+6. `orumio-shape-check --outdated` in any product prints a WARN until it is on the newest v1 tag.
 
 Rollback: set the product's dependency back to the previous tag (or revert its adoption commit) and
 redeploy that product alone.
