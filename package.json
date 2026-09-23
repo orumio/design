@@ -1,0 +1,35 @@
+{
+  "name": "@orumio/design",
+  "version": "0.0.0",
+  "description": "Orumio's shared shape: the corner-radius ladder, the roles, and continuous curvature, for HeroUI products and plain sites.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/orumio/design.git" },
+  "type": "module",
+  "engines": { "node": ">=22.12" },
+  "exports": {
+    "./shape/*.css": { "style": "./shape/*.css", "default": "./shape/*.css" },
+    "./tailwind-merge": "./tailwind-merge.mjs",
+    "./roles": "./src/roles.mjs",
+    "./package.json": "./package.json"
+  },
+  "bin": { "orumio-shape-check": "./bin/check.mjs" },
+  "files": ["shape/", "src/", "bin/", "tailwind-merge.mjs", "SHAPE.md", "CHANGELOG.md"],
+  "scripts": {
+    "gen": "node scripts/gen.mjs",
+    "gen:check": "node scripts/gen.mjs --check",
+    "census": "node scripts/census.mjs",
+    "specimen": "node scripts/specimen.mjs",
+    "test": "node --test"
+  },
+  "peerDependencies": {
+    "@heroui/styles": ">=3.2.4 <=3.2.5",
+    "@heroui-pro/react": ">=1.0.0-beta.8 <=1.0.0-beta.9"
+  },
+  "peerDependenciesMeta": {
+    "@heroui/styles": { "optional": true },
+    "@heroui-pro/react": { "optional": true }
+  },
+  "devDependencies": {
+    "postcss": "8.5.6"
+  }
+}

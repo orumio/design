@@ -1,0 +1,4 @@
+node_modules/
+census/
+specimen-out/
+*.local.json

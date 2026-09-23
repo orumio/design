@@ -1,0 +1,16 @@
+/* @orumio/design — the profile for a site without HeroUI (a landing page, the hub). Import it once,
+   after Tailwind:
+
+     @import "tailwindcss";
+     @import "@orumio/design/shape/site.css";
+
+   `rounded-full` is NOT reset to a circle here: on a site a `rounded-full` element is a pill, and a
+   pill takes the curvature like every other rectangle (the 2026-09-01 ruling, SHAPE.md §Profiles).
+   A photograph of a person is a circle: `rounded-circle`. */
+@import "./tokens.css";
+@import "./curvature.css";
+
+@utility rounded-circle {
+  border-radius: calc(infinity * 1px);
+  corner-shape: round;
+}

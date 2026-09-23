@@ -1,0 +1,7686 @@
+{
+ "generated": "by scripts/census.mjs — do not edit; re-run the census (SHAPE.md §HeroUI updates)",
+ "versions": {
+  "@heroui/styles": [
+   "3.2.4",
+   "3.2.5"
+  ],
+  "@heroui-pro/react": [
+   "1.0.0-beta.8",
+   "1.0.0-beta.9"
+  ]
+ },
+ "rows": [
+  {
+   "pkg": "@heroui/styles",
+   "component": "close-button",
+   "ctx": "@layer components",
+   "path": [
+    ".close-button"
+   ],
+   "selector": ".close-button",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "accordion",
+   "ctx": "@layer components",
+   "path": [
+    ".accordion__item::after"
+   ],
+   "selector": ".accordion__item::after",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xs",
+   "value": "var(--radius-xs)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "accordion",
+   "ctx": "@layer components",
+   "path": [
+    ".accordion--surface"
+   ],
+   "selector": ".accordion--surface",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "accordion",
+   "ctx": "@layer components",
+   "path": [
+    ".accordion--surface .accordion__item:first-child [data-slot=\"accordion-trigger\"]"
+   ],
+   "selector": ".accordion--surface .accordion__item:first-child [data-slot=\"accordion-trigger\"]",
+   "prop": "border-start-start-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "accordion",
+   "ctx": "@layer components",
+   "path": [
+    ".accordion--surface .accordion__item:first-child [data-slot=\"accordion-trigger\"]"
+   ],
+   "selector": ".accordion--surface .accordion__item:first-child [data-slot=\"accordion-trigger\"]",
+   "prop": "border-start-end-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "accordion",
+   "ctx": "@layer components",
+   "path": [
+    ".accordion--surface .accordion__item:last-child:not(:has([data-slot=\"accordion-trigger\"][aria-expanded=\"true\"])) [data-slot=\"accordion-trigger\"]"
+   ],
+   "selector": ".accordion--surface .accordion__item:last-child:not(:has([data-slot=\"accordion-trigger\"][aria-expanded=\"true\"])) [data-slot=\"accordion-trigger\"]",
+   "prop": "border-end-start-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "accordion",
+   "ctx": "@layer components",
+   "path": [
+    ".accordion--surface .accordion__item:last-child:not(:has([data-slot=\"accordion-trigger\"][aria-expanded=\"true\"])) [data-slot=\"accordion-trigger\"]"
+   ],
+   "selector": ".accordion--surface .accordion__item:last-child:not(:has([data-slot=\"accordion-trigger\"][aria-expanded=\"true\"])) [data-slot=\"accordion-trigger\"]",
+   "prop": "border-end-end-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "link",
+   "ctx": "@layer components",
+   "path": [
+    ".link"
+   ],
+   "selector": ".link",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "pagination",
+   "ctx": "@layer components",
+   "path": [
+    ".pagination__link"
+   ],
+   "selector": ".pagination__link",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "tabs",
+   "ctx": "@layer components",
+   "path": [
+    ".tabs__list-container"
+   ],
+   "selector": ".tabs__list-container",
+   "prop": "border-radius",
+   "kind": "base",
+   "value": "calc(var(--radius) * 2.5)",
+   "autoStep": "3xl",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "tabs",
+   "ctx": "@layer components",
+   "path": [
+    ".tabs__list-container",
+    "> .tabs__list-container__scroll-prev, > .tabs__list-container__scroll-next"
+   ],
+   "selector": ".tabs__list-container > .tabs__list-container__scroll-prev, .tabs__list-container > .tabs__list-container__scroll-next",
+   "prop": "border-radius",
+   "kind": "circle",
+   "value": "calc(infinity * 1px)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "tabs",
+   "ctx": "@layer components",
+   "path": [
+    ".tabs__tab"
+   ],
+   "selector": ".tabs__tab",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "tabs",
+   "ctx": "@layer components",
+   "path": [
+    ".tabs__separator"
+   ],
+   "selector": ".tabs__separator",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "tabs",
+   "ctx": "@layer components",
+   "path": [
+    ".tabs__indicator"
+   ],
+   "selector": ".tabs__indicator",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "tabs",
+   "ctx": "@layer components",
+   "path": [
+    ".tabs--secondary > .tabs__list-container"
+   ],
+   "selector": ".tabs--secondary > .tabs__list-container",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "tabs",
+   "ctx": "@layer components",
+   "path": [
+    ".tabs--secondary > .tabs__list-container",
+    ".tabs__tab"
+   ],
+   "selector": ".tabs--secondary > .tabs__list-container .tabs__tab",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "tabs",
+   "ctx": "@layer components",
+   "path": [
+    ".tabs--secondary > .tabs__list-container",
+    ".tabs__indicator"
+   ],
+   "selector": ".tabs--secondary > .tabs__list-container .tabs__indicator",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button",
+   "ctx": "@layer components",
+   "path": [
+    ".button"
+   ],
+   "selector": ".button",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".button-group .button"
+   ],
+   "selector": ".button-group .button",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".button-group--horizontal .button:first-child"
+   ],
+   "selector": ".button-group--horizontal .button:first-child",
+   "prop": "border-start-start-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".button-group--horizontal .button:first-child"
+   ],
+   "selector": ".button-group--horizontal .button:first-child",
+   "prop": "border-end-start-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".button-group--horizontal .button:last-child"
+   ],
+   "selector": ".button-group--horizontal .button:last-child",
+   "prop": "border-start-end-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".button-group--horizontal .button:last-child"
+   ],
+   "selector": ".button-group--horizontal .button:last-child",
+   "prop": "border-end-end-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".button-group--horizontal .button:first-child:last-child"
+   ],
+   "selector": ".button-group--horizontal .button:first-child:last-child",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".button-group--vertical .button:first-child"
+   ],
+   "selector": ".button-group--vertical .button:first-child",
+   "prop": "border-top-left-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".button-group--vertical .button:first-child"
+   ],
+   "selector": ".button-group--vertical .button:first-child",
+   "prop": "border-top-right-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".button-group--vertical .button:last-child"
+   ],
+   "selector": ".button-group--vertical .button:last-child",
+   "prop": "border-bottom-right-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".button-group--vertical .button:last-child"
+   ],
+   "selector": ".button-group--vertical .button:last-child",
+   "prop": "border-bottom-left-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".button-group--vertical .button:first-child:last-child"
+   ],
+   "selector": ".button-group--vertical .button:first-child:last-child",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".button-group__separator"
+   ],
+   "selector": ".button-group__separator",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button"
+   ],
+   "selector": ".toggle-button",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group .toggle-button"
+   ],
+   "selector": ".toggle-button-group .toggle-button",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group--horizontal .toggle-button:first-child"
+   ],
+   "selector": ".toggle-button-group--horizontal .toggle-button:first-child",
+   "prop": "border-start-start-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group--horizontal .toggle-button:first-child"
+   ],
+   "selector": ".toggle-button-group--horizontal .toggle-button:first-child",
+   "prop": "border-end-start-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group--horizontal .toggle-button:last-child"
+   ],
+   "selector": ".toggle-button-group--horizontal .toggle-button:last-child",
+   "prop": "border-start-end-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group--horizontal .toggle-button:last-child"
+   ],
+   "selector": ".toggle-button-group--horizontal .toggle-button:last-child",
+   "prop": "border-end-end-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group--horizontal .toggle-button:first-child:last-child"
+   ],
+   "selector": ".toggle-button-group--horizontal .toggle-button:first-child:last-child",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group--vertical .toggle-button:first-child"
+   ],
+   "selector": ".toggle-button-group--vertical .toggle-button:first-child",
+   "prop": "border-top-left-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group--vertical .toggle-button:first-child"
+   ],
+   "selector": ".toggle-button-group--vertical .toggle-button:first-child",
+   "prop": "border-top-right-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group--vertical .toggle-button:last-child"
+   ],
+   "selector": ".toggle-button-group--vertical .toggle-button:last-child",
+   "prop": "border-bottom-right-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group--vertical .toggle-button:last-child"
+   ],
+   "selector": ".toggle-button-group--vertical .toggle-button:last-child",
+   "prop": "border-bottom-left-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group--vertical .toggle-button:first-child:last-child"
+   ],
+   "selector": ".toggle-button-group--vertical .toggle-button:first-child:last-child",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group__separator"
+   ],
+   "selector": ".toggle-button-group__separator",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toggle-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".toggle-button-group--detached .toggle-button"
+   ],
+   "selector": ".toggle-button-group--detached .toggle-button",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toolbar",
+   "ctx": "@layer components",
+   "path": [
+    ".toolbar--attached"
+   ],
+   "selector": ".toolbar--attached",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "dropdown",
+   "ctx": "@layer components",
+   "path": [
+    ".dropdown__popover"
+   ],
+   "selector": ".dropdown__popover",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "list-box-item",
+   "ctx": "@layer components",
+   "path": [
+    ".list-box-item"
+   ],
+   "selector": ".list-box-item",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "menu-item",
+   "ctx": "@layer components",
+   "path": [
+    ".menu-item"
+   ],
+   "selector": ".menu-item",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "tag",
+   "ctx": "@layer components",
+   "path": [
+    ".tag"
+   ],
+   "selector": ".tag",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "tag",
+   "ctx": "@layer components",
+   "path": [
+    ".tag--lg"
+   ],
+   "selector": ".tag--lg",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-area",
+   "ctx": "@layer components",
+   "path": [
+    ".color-area"
+   ],
+   "selector": ".color-area",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-area",
+   "ctx": "@layer components",
+   "path": [
+    ".color-area--show-dots::after"
+   ],
+   "selector": ".color-area--show-dots::after",
+   "prop": "border-radius",
+   "kind": "inherit",
+   "value": "inherit",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-area",
+   "ctx": "@layer components",
+   "path": [
+    ".color-area__thumb"
+   ],
+   "selector": ".color-area__thumb",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-picker__trigger"
+   ],
+   "selector": ".color-picker__trigger",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-picker__popover"
+   ],
+   "selector": ".color-picker__popover",
+   "prop": "border-radius",
+   "kind": "other",
+   "value": "min(32px, calc(var(--radius) * 2.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".color-slider",
+    ".color-slider__track"
+   ],
+   "selector": ".color-slider .color-slider__track",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".color-slider",
+    ".color-slider__thumb"
+   ],
+   "selector": ".color-slider .color-slider__thumb",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".color-slider",
+    "&[data-orientation=\"horizontal\"]",
+    ".color-slider__track"
+   ],
+   "selector": ".color-slider[data-orientation=\"horizontal\"] .color-slider__track",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".color-slider",
+    "&[data-orientation=\"horizontal\"]",
+    ".color-slider__track",
+    "&::before"
+   ],
+   "selector": ".color-slider[data-orientation=\"horizontal\"] .color-slider__track::before",
+   "prop": "border-start-start-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".color-slider",
+    "&[data-orientation=\"horizontal\"]",
+    ".color-slider__track",
+    "&::before"
+   ],
+   "selector": ".color-slider[data-orientation=\"horizontal\"] .color-slider__track::before",
+   "prop": "border-end-start-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".color-slider",
+    "&[data-orientation=\"horizontal\"]",
+    ".color-slider__track",
+    "&::after"
+   ],
+   "selector": ".color-slider[data-orientation=\"horizontal\"] .color-slider__track::after",
+   "prop": "border-start-end-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".color-slider",
+    "&[data-orientation=\"horizontal\"]",
+    ".color-slider__track",
+    "&::after"
+   ],
+   "selector": ".color-slider[data-orientation=\"horizontal\"] .color-slider__track::after",
+   "prop": "border-end-end-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".color-slider",
+    "&[data-orientation=\"vertical\"]",
+    ".color-slider__track"
+   ],
+   "selector": ".color-slider[data-orientation=\"vertical\"] .color-slider__track",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".color-slider",
+    "&[data-orientation=\"vertical\"]",
+    ".color-slider__track",
+    "&::before"
+   ],
+   "selector": ".color-slider[data-orientation=\"vertical\"] .color-slider__track::before",
+   "prop": "border-end-start-radius",
+   "kind": "circle",
+   "value": "999px",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".color-slider",
+    "&[data-orientation=\"vertical\"]",
+    ".color-slider__track",
+    "&::before"
+   ],
+   "selector": ".color-slider[data-orientation=\"vertical\"] .color-slider__track::before",
+   "prop": "border-end-end-radius",
+   "kind": "circle",
+   "value": "999px",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".color-slider",
+    "&[data-orientation=\"vertical\"]",
+    ".color-slider__track",
+    "&::after"
+   ],
+   "selector": ".color-slider[data-orientation=\"vertical\"] .color-slider__track::after",
+   "prop": "border-start-start-radius",
+   "kind": "circle",
+   "value": "999px",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".color-slider",
+    "&[data-orientation=\"vertical\"]",
+    ".color-slider__track",
+    "&::after"
+   ],
+   "selector": ".color-slider[data-orientation=\"vertical\"] .color-slider__track::after",
+   "prop": "border-start-end-radius",
+   "kind": "circle",
+   "value": "999px",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch--circle"
+   ],
+   "selector": ".color-swatch--circle",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch--square"
+   ],
+   "selector": ".color-swatch--square",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch--xs",
+    "&.color-swatch--circle"
+   ],
+   "selector": ".color-swatch--xs.color-swatch--circle",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch--sm",
+    "&.color-swatch--circle"
+   ],
+   "selector": ".color-swatch--sm.color-swatch--circle",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch--lg",
+    "&.color-swatch--circle"
+   ],
+   "selector": ".color-swatch--lg.color-swatch--circle",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch--xl",
+    "&.color-swatch--circle"
+   ],
+   "selector": ".color-swatch--xl.color-swatch--circle",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker__item"
+   ],
+   "selector": ".color-swatch-picker__item",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker__swatch"
+   ],
+   "selector": ".color-swatch-picker__swatch",
+   "prop": "border-radius",
+   "kind": "inherit",
+   "value": "inherit",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--xs .color-swatch-picker__item"
+   ],
+   "selector": ".color-swatch-picker--xs .color-swatch-picker__item",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--sm .color-swatch-picker__item"
+   ],
+   "selector": ".color-swatch-picker--sm .color-swatch-picker__item",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--lg .color-swatch-picker__item"
+   ],
+   "selector": ".color-swatch-picker--lg .color-swatch-picker__item",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--xl .color-swatch-picker__item"
+   ],
+   "selector": ".color-swatch-picker--xl .color-swatch-picker__item",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square .color-swatch-picker__item"
+   ],
+   "selector": ".color-swatch-picker--square .color-swatch-picker__item",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square .color-swatch-picker__item",
+    ".color-swatch-picker__swatch"
+   ],
+   "selector": ".color-swatch-picker--square .color-swatch-picker__item .color-swatch-picker__swatch",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square .color-swatch-picker__item",
+    "&[data-selected=\"true\"]",
+    ".color-swatch-picker__swatch"
+   ],
+   "selector": ".color-swatch-picker--square .color-swatch-picker__item[data-selected=\"true\"] .color-swatch-picker__swatch",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square.color-swatch-picker--xs .color-swatch-picker__item"
+   ],
+   "selector": ".color-swatch-picker--square.color-swatch-picker--xs .color-swatch-picker__item",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square.color-swatch-picker--xs .color-swatch-picker__item",
+    ".color-swatch-picker__swatch"
+   ],
+   "selector": ".color-swatch-picker--square.color-swatch-picker--xs .color-swatch-picker__item .color-swatch-picker__swatch",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square.color-swatch-picker--xs .color-swatch-picker__item",
+    "&[data-selected=\"true\"]",
+    ".color-swatch-picker__swatch"
+   ],
+   "selector": ".color-swatch-picker--square.color-swatch-picker--xs .color-swatch-picker__item[data-selected=\"true\"] .color-swatch-picker__swatch",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square.color-swatch-picker--sm .color-swatch-picker__item"
+   ],
+   "selector": ".color-swatch-picker--square.color-swatch-picker--sm .color-swatch-picker__item",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square.color-swatch-picker--sm .color-swatch-picker__item",
+    ".color-swatch-picker__swatch"
+   ],
+   "selector": ".color-swatch-picker--square.color-swatch-picker--sm .color-swatch-picker__item .color-swatch-picker__swatch",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square.color-swatch-picker--sm .color-swatch-picker__item",
+    "&[data-selected=\"true\"]",
+    ".color-swatch-picker__swatch"
+   ],
+   "selector": ".color-swatch-picker--square.color-swatch-picker--sm .color-swatch-picker__item[data-selected=\"true\"] .color-swatch-picker__swatch",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square.color-swatch-picker--lg .color-swatch-picker__item"
+   ],
+   "selector": ".color-swatch-picker--square.color-swatch-picker--lg .color-swatch-picker__item",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square.color-swatch-picker--lg .color-swatch-picker__item",
+    ".color-swatch-picker__swatch"
+   ],
+   "selector": ".color-swatch-picker--square.color-swatch-picker--lg .color-swatch-picker__item .color-swatch-picker__swatch",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square.color-swatch-picker--lg .color-swatch-picker__item",
+    "&[data-selected=\"true\"]",
+    ".color-swatch-picker__swatch"
+   ],
+   "selector": ".color-swatch-picker--square.color-swatch-picker--lg .color-swatch-picker__item[data-selected=\"true\"] .color-swatch-picker__swatch",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square.color-swatch-picker--xl .color-swatch-picker__item"
+   ],
+   "selector": ".color-swatch-picker--square.color-swatch-picker--xl .color-swatch-picker__item",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square.color-swatch-picker--xl .color-swatch-picker__item",
+    ".color-swatch-picker__swatch"
+   ],
+   "selector": ".color-swatch-picker--square.color-swatch-picker--xl .color-swatch-picker__item .color-swatch-picker__swatch",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-swatch-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".color-swatch-picker--square.color-swatch-picker--xl .color-swatch-picker__item",
+    "&[data-selected=\"true\"]",
+    ".color-swatch-picker__swatch"
+   ],
+   "selector": ".color-swatch-picker--square.color-swatch-picker--xl .color-swatch-picker__item[data-selected=\"true\"] .color-swatch-picker__swatch",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".color-input-group"
+   ],
+   "selector": ".color-input-group",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".color-input-group__input"
+   ],
+   "selector": ".color-input-group__input",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".color-input-group__input",
+    ".color-input-group:has([data-slot=\"color-input-group-prefix\"]) &"
+   ],
+   "selector": ".color-input-group:has([data-slot=\"color-input-group-prefix\"]) .color-input-group__input",
+   "prop": "border-start-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".color-input-group__input",
+    ".color-input-group:has([data-slot=\"color-input-group-prefix\"]) &"
+   ],
+   "selector": ".color-input-group:has([data-slot=\"color-input-group-prefix\"]) .color-input-group__input",
+   "prop": "border-end-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".color-input-group__input",
+    ".color-input-group:has([data-slot=\"color-input-group-suffix\"]) &"
+   ],
+   "selector": ".color-input-group:has([data-slot=\"color-input-group-suffix\"]) .color-input-group__input",
+   "prop": "border-start-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "color-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".color-input-group__input",
+    ".color-input-group:has([data-slot=\"color-input-group-suffix\"]) &"
+   ],
+   "selector": ".color-input-group:has([data-slot=\"color-input-group-suffix\"]) .color-input-group__input",
+   "prop": "border-end-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "slider",
+   "ctx": "@layer components",
+   "path": [
+    ".slider",
+    ".slider__track"
+   ],
+   "selector": ".slider .slider__track",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "slider",
+   "ctx": "@layer components",
+   "path": [
+    ".slider",
+    ".slider__thumb"
+   ],
+   "selector": ".slider .slider__thumb",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "slider",
+   "ctx": "@layer components",
+   "path": [
+    ".slider",
+    ".slider__thumb",
+    "&::after"
+   ],
+   "selector": ".slider .slider__thumb::after",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "switch",
+   "ctx": "@layer components",
+   "path": [
+    ".switch__control"
+   ],
+   "selector": ".switch__control",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "switch",
+   "ctx": "@layer components",
+   "path": [
+    ".switch--sm .switch__control"
+   ],
+   "selector": ".switch--sm .switch__control",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "switch",
+   "ctx": "@layer components",
+   "path": [
+    ".switch__thumb"
+   ],
+   "selector": ".switch__thumb",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "switch",
+   "ctx": "@layer components",
+   "path": [
+    ".switch--sm .switch__thumb"
+   ],
+   "selector": ".switch--sm .switch__thumb",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "switch",
+   "ctx": "@layer components",
+   "path": [
+    ".switch--lg .switch__thumb"
+   ],
+   "selector": ".switch--lg .switch__thumb",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "badge",
+   "ctx": "@layer components",
+   "path": [
+    ".badge"
+   ],
+   "selector": ".badge",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "badge",
+   "ctx": "@layer components",
+   "path": [
+    ".badge--lg"
+   ],
+   "selector": ".badge--lg",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "badge",
+   "ctx": "@layer components",
+   "path": [
+    ".badge--sm"
+   ],
+   "selector": ".badge--sm",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "chip",
+   "ctx": "@layer components",
+   "path": [
+    ".chip"
+   ],
+   "selector": ".chip",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table-root--primary"
+   ],
+   "selector": ".table-root--primary",
+   "prop": "border-radius",
+   "kind": "other",
+   "value": "min(32px, calc(var(--radius) * 2.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table-root--secondary :is( th.table__column:first-child, [role=\"row\"] > [role=\"presentation\"]:first-of-type > .table__column )"
+   ],
+   "selector": ".table-root--secondary :is( th.table__column:first-child, [role=\"row\"] > [role=\"presentation\"]:first-of-type > .table__column )",
+   "prop": "border-start-start-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table-root--secondary :is( th.table__column:first-child, [role=\"row\"] > [role=\"presentation\"]:first-of-type > .table__column )"
+   ],
+   "selector": ".table-root--secondary :is( th.table__column:first-child, [role=\"row\"] > [role=\"presentation\"]:first-of-type > .table__column )",
+   "prop": "border-end-start-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table-root--secondary :is( th.table__column:last-child, [role=\"row\"] > [role=\"presentation\"]:last-of-type > .table__column )"
+   ],
+   "selector": ".table-root--secondary :is( th.table__column:last-child, [role=\"row\"] > [role=\"presentation\"]:last-of-type > .table__column )",
+   "prop": "border-start-end-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table-root--secondary :is( th.table__column:last-child, [role=\"row\"] > [role=\"presentation\"]:last-of-type > .table__column )"
+   ],
+   "selector": ".table-root--secondary :is( th.table__column:last-child, [role=\"row\"] > [role=\"presentation\"]:last-of-type > .table__column )",
+   "prop": "border-end-end-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table-root--secondary .table__body",
+    "& tr:first-child td:first-child, & tr:first-child td:last-child, & tr:last-child td:first-child, & tr:last-child td:last-child"
+   ],
+   "selector": ".table-root--secondary .table__body tr:first-child td:first-child, .table-root--secondary .table__body tr:first-child td:last-child, .table-root--secondary .table__body tr:last-child td:first-child, .table-root--secondary .table__body tr:last-child td:last-child",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table-root--secondary .table__body",
+    "&:not(tbody)"
+   ],
+   "selector": ".table-root--secondary .table__body:not(tbody)",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__column",
+    "&::after"
+   ],
+   "selector": ".table__column::after",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__column",
+    "&:focus-visible, &[data-focus-visible=\"true\"]"
+   ],
+   "selector": ".table__column:focus-visible, .table__column[data-focus-visible=\"true\"]",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__body tr:first-child td:first-child"
+   ],
+   "selector": ".table__body tr:first-child td:first-child",
+   "prop": "border-start-start-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__body tr:first-child td:last-child"
+   ],
+   "selector": ".table__body tr:first-child td:last-child",
+   "prop": "border-start-end-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__body tr:last-child td:first-child"
+   ],
+   "selector": ".table__body tr:last-child td:first-child",
+   "prop": "border-end-start-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__body tr:last-child td:last-child"
+   ],
+   "selector": ".table__body tr:last-child td:last-child",
+   "prop": "border-end-end-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__body:not(tbody)"
+   ],
+   "selector": ".table__body:not(tbody)",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__cell",
+    "&:focus-visible, &[data-focus-visible=\"true\"]"
+   ],
+   "selector": ".table__cell:focus-visible, .table__cell[data-focus-visible=\"true\"]",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > :is(.table__cell, .table__column):only-child, .table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > *:only-child :is(.table__cell, .table__column)"
+   ],
+   "selector": ".table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > :is(.table__cell, .table__column):only-child, .table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > *:only-child :is(.table__cell, .table__column)",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > :is(.table__cell, .table__column):first-child:not(:only-child), .table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > *:first-child:not(:only-child) :is(.table__cell, .table__column)"
+   ],
+   "selector": ".table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > :is(.table__cell, .table__column):first-child:not(:only-child), .table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > *:first-child:not(:only-child) :is(.table__cell, .table__column)",
+   "prop": "border-start-start-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > :is(.table__cell, .table__column):first-child:not(:only-child), .table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > *:first-child:not(:only-child) :is(.table__cell, .table__column)"
+   ],
+   "selector": ".table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > :is(.table__cell, .table__column):first-child:not(:only-child), .table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > *:first-child:not(:only-child) :is(.table__cell, .table__column)",
+   "prop": "border-end-start-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > :is(.table__cell, .table__column):last-child:not(:only-child), .table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > *:last-child:not(:only-child) :is(.table__cell, .table__column)"
+   ],
+   "selector": ".table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > :is(.table__cell, .table__column):last-child:not(:only-child), .table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > *:last-child:not(:only-child) :is(.table__cell, .table__column)",
+   "prop": "border-start-end-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > :is(.table__cell, .table__column):last-child:not(:only-child), .table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > *:last-child:not(:only-child) :is(.table__cell, .table__column)"
+   ],
+   "selector": ".table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > :is(.table__cell, .table__column):last-child:not(:only-child), .table__row:is(:focus-visible, [data-focus-visible=\"true\"]) > *:last-child:not(:only-child) :is(.table__cell, .table__column)",
+   "prop": "border-end-end-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "table",
+   "ctx": "@layer components",
+   "path": [
+    ".table__column-resizer"
+   ],
+   "selector": ".table__column-resizer",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "alert",
+   "ctx": "@layer components",
+   "path": [
+    ".alert"
+   ],
+   "selector": ".alert",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "skeleton",
+   "ctx": "@layer components",
+   "path": [
+    ".skeleton"
+   ],
+   "selector": ".skeleton",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "meter",
+   "ctx": "@layer components",
+   "path": [
+    ".meter",
+    ".meter__track"
+   ],
+   "selector": ".meter .meter__track",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "meter",
+   "ctx": "@layer components",
+   "path": [
+    ".meter",
+    ".meter__fill"
+   ],
+   "selector": ".meter .meter__fill",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "meter",
+   "ctx": "@layer components",
+   "path": [
+    ".meter--sm .meter__track"
+   ],
+   "selector": ".meter--sm .meter__track",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xs",
+   "value": "var(--radius-xs)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "meter",
+   "ctx": "@layer components",
+   "path": [
+    ".meter--sm .meter__fill"
+   ],
+   "selector": ".meter--sm .meter__fill",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xs",
+   "value": "var(--radius-xs)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "meter",
+   "ctx": "@layer components",
+   "path": [
+    ".meter--lg .meter__track"
+   ],
+   "selector": ".meter--lg .meter__track",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "meter",
+   "ctx": "@layer components",
+   "path": [
+    ".meter--lg .meter__fill"
+   ],
+   "selector": ".meter--lg .meter__fill",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "progress-bar",
+   "ctx": "@layer components",
+   "path": [
+    ".progress-bar",
+    ".progress-bar__track"
+   ],
+   "selector": ".progress-bar .progress-bar__track",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "progress-bar",
+   "ctx": "@layer components",
+   "path": [
+    ".progress-bar",
+    ".progress-bar__fill"
+   ],
+   "selector": ".progress-bar .progress-bar__fill",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "progress-bar",
+   "ctx": "@layer components",
+   "path": [
+    ".progress-bar--sm .progress-bar__track"
+   ],
+   "selector": ".progress-bar--sm .progress-bar__track",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xs",
+   "value": "var(--radius-xs)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "progress-bar",
+   "ctx": "@layer components",
+   "path": [
+    ".progress-bar--sm .progress-bar__fill"
+   ],
+   "selector": ".progress-bar--sm .progress-bar__fill",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xs",
+   "value": "var(--radius-xs)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "progress-bar",
+   "ctx": "@layer components",
+   "path": [
+    ".progress-bar--lg .progress-bar__track"
+   ],
+   "selector": ".progress-bar--lg .progress-bar__track",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "progress-bar",
+   "ctx": "@layer components",
+   "path": [
+    ".progress-bar--lg .progress-bar__fill"
+   ],
+   "selector": ".progress-bar--lg .progress-bar__fill",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "toast",
+   "ctx": "@layer components",
+   "path": [
+    ".toast"
+   ],
+   "selector": ".toast",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "checkbox",
+   "ctx": "@layer components",
+   "path": [
+    ".checkbox__control"
+   ],
+   "selector": ".checkbox__control",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "checkbox",
+   "ctx": "@layer components",
+   "path": [
+    ".checkbox__control",
+    "&::before"
+   ],
+   "selector": ".checkbox__control::before",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-otp",
+   "ctx": "@layer components",
+   "path": [
+    ".input-otp__slot"
+   ],
+   "selector": ".input-otp__slot",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-otp",
+   "ctx": "@layer components",
+   "path": [
+    ".input-otp__caret"
+   ],
+   "selector": ".input-otp__caret",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-otp",
+   "ctx": "@layer components",
+   "path": [
+    ".input-otp__separator"
+   ],
+   "selector": ".input-otp__separator",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input",
+   "ctx": "@layer components",
+   "path": [
+    ".input"
+   ],
+   "selector": ".input",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group"
+   ],
+   "selector": ".input-group",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__input"
+   ],
+   "selector": ".input-group__input",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__input",
+    ".input-group:has([data-slot=\"input-group-prefix\"]) &"
+   ],
+   "selector": ".input-group:has([data-slot=\"input-group-prefix\"]) .input-group__input",
+   "prop": "border-start-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__input",
+    ".input-group:has([data-slot=\"input-group-prefix\"]) &"
+   ],
+   "selector": ".input-group:has([data-slot=\"input-group-prefix\"]) .input-group__input",
+   "prop": "border-end-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__input",
+    ".input-group:has([data-slot=\"input-group-suffix\"]) &"
+   ],
+   "selector": ".input-group:has([data-slot=\"input-group-suffix\"]) .input-group__input",
+   "prop": "border-start-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__input",
+    ".input-group:has([data-slot=\"input-group-suffix\"]) &"
+   ],
+   "selector": ".input-group:has([data-slot=\"input-group-suffix\"]) .input-group__input",
+   "prop": "border-end-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__prefix"
+   ],
+   "selector": ".input-group__prefix",
+   "prop": "border-start-start-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__prefix"
+   ],
+   "selector": ".input-group__prefix",
+   "prop": "border-end-start-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__prefix"
+   ],
+   "selector": ".input-group__prefix",
+   "prop": "border-start-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__prefix"
+   ],
+   "selector": ".input-group__prefix",
+   "prop": "border-end-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__suffix"
+   ],
+   "selector": ".input-group__suffix",
+   "prop": "border-start-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__suffix"
+   ],
+   "selector": ".input-group__suffix",
+   "prop": "border-end-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__suffix"
+   ],
+   "selector": ".input-group__suffix",
+   "prop": "border-start-end-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".input-group__suffix"
+   ],
+   "selector": ".input-group__suffix",
+   "prop": "border-end-end-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__group"
+   ],
+   "selector": ".number-field__group",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__input"
+   ],
+   "selector": ".number-field__input",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__input",
+    ".number-field__group:has([slot=\"decrement\"]) &"
+   ],
+   "selector": ".number-field__group:has([slot=\"decrement\"]) .number-field__input",
+   "prop": "border-start-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__input",
+    ".number-field__group:has([slot=\"decrement\"]) &"
+   ],
+   "selector": ".number-field__group:has([slot=\"decrement\"]) .number-field__input",
+   "prop": "border-end-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__input",
+    ".number-field__group:has([slot=\"increment\"]) &"
+   ],
+   "selector": ".number-field__group:has([slot=\"increment\"]) .number-field__input",
+   "prop": "border-start-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__input",
+    ".number-field__group:has([slot=\"increment\"]) &"
+   ],
+   "selector": ".number-field__group:has([slot=\"increment\"]) .number-field__input",
+   "prop": "border-end-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__increment-button, .number-field__decrement-button"
+   ],
+   "selector": ".number-field__increment-button, .number-field__decrement-button",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__increment-button"
+   ],
+   "selector": ".number-field__increment-button",
+   "prop": "border-start-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__increment-button"
+   ],
+   "selector": ".number-field__increment-button",
+   "prop": "border-end-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__increment-button"
+   ],
+   "selector": ".number-field__increment-button",
+   "prop": "border-start-end-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__increment-button"
+   ],
+   "selector": ".number-field__increment-button",
+   "prop": "border-end-end-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__decrement-button"
+   ],
+   "selector": ".number-field__decrement-button",
+   "prop": "border-start-start-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__decrement-button"
+   ],
+   "selector": ".number-field__decrement-button",
+   "prop": "border-end-start-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__decrement-button"
+   ],
+   "selector": ".number-field__decrement-button",
+   "prop": "border-start-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "number-field",
+   "ctx": "@layer components",
+   "path": [
+    ".number-field__decrement-button"
+   ],
+   "selector": ".number-field__decrement-button",
+   "prop": "border-end-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "radio",
+   "ctx": "@layer components",
+   "path": [
+    ".radio__control"
+   ],
+   "selector": ".radio__control",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "radio",
+   "ctx": "@layer components",
+   "path": [
+    ".radio__indicator:empty::before"
+   ],
+   "selector": ".radio__indicator:empty::before",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "search-field",
+   "ctx": "@layer components",
+   "path": [
+    ".search-field__group"
+   ],
+   "selector": ".search-field__group",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "search-field",
+   "ctx": "@layer components",
+   "path": [
+    ".search-field__input"
+   ],
+   "selector": ".search-field__input",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "search-field",
+   "ctx": "@layer components",
+   "path": [
+    ".search-field__input",
+    ".search-field__group:has([data-slot=\"search-field-search-icon\"]) &"
+   ],
+   "selector": ".search-field__group:has([data-slot=\"search-field-search-icon\"]) .search-field__input",
+   "prop": "border-start-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "search-field",
+   "ctx": "@layer components",
+   "path": [
+    ".search-field__input",
+    ".search-field__group:has([data-slot=\"search-field-search-icon\"]) &"
+   ],
+   "selector": ".search-field__group:has([data-slot=\"search-field-search-icon\"]) .search-field__input",
+   "prop": "border-end-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "search-field",
+   "ctx": "@layer components",
+   "path": [
+    ".search-field__input",
+    ".search-field__group:has([slot=\"clear\"]) &"
+   ],
+   "selector": ".search-field__group:has([slot=\"clear\"]) .search-field__input",
+   "prop": "border-start-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "search-field",
+   "ctx": "@layer components",
+   "path": [
+    ".search-field__input",
+    ".search-field__group:has([slot=\"clear\"]) &"
+   ],
+   "selector": ".search-field__group:has([slot=\"clear\"]) .search-field__input",
+   "prop": "border-end-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "textarea",
+   "ctx": "@layer components",
+   "path": [
+    ".textarea"
+   ],
+   "selector": ".textarea",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".calendar__nav-button"
+   ],
+   "selector": ".calendar__nav-button",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".calendar__cell"
+   ],
+   "selector": ".calendar__cell",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".calendar__cell-indicator"
+   ],
+   "selector": ".calendar__cell-indicator",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xs",
+   "value": "var(--radius-xs)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__nav-button"
+   ],
+   "selector": ".range-calendar__nav-button",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell"
+   ],
+   "selector": ".range-calendar__cell",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    ".range-calendar__cell-button"
+   ],
+   "selector": ".range-calendar__cell .range-calendar__cell-button",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selected=\"true\"]:not([data-outside-month=\"true\"])"
+   ],
+   "selector": ".range-calendar__cell[data-selected=\"true\"]:not([data-outside-month=\"true\"])",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selected=\"true\"]:is(td:first-child > *, [aria-disabled] + td > *)"
+   ],
+   "selector": ".range-calendar__cell[data-selected=\"true\"]:is(td:first-child > *, [aria-disabled] + td > *)",
+   "prop": "border-start-start-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selected=\"true\"]:is(td:first-child > *, [aria-disabled] + td > *)"
+   ],
+   "selector": ".range-calendar__cell[data-selected=\"true\"]:is(td:first-child > *, [aria-disabled] + td > *)",
+   "prop": "border-end-start-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selected=\"true\"]:is(td:first-child > *, [aria-disabled] + td > *)",
+    "&[data-selection-start=\"true\"]"
+   ],
+   "selector": ":is(.range-calendar__cell[data-selected=\"true\"]:is(td:first-child > *, [aria-disabled] + td > *))[data-selection-start=\"true\"]",
+   "prop": "border-start-start-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selected=\"true\"]:is(td:first-child > *, [aria-disabled] + td > *)",
+    "&[data-selection-start=\"true\"]"
+   ],
+   "selector": ":is(.range-calendar__cell[data-selected=\"true\"]:is(td:first-child > *, [aria-disabled] + td > *))[data-selection-start=\"true\"]",
+   "prop": "border-end-start-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selected=\"true\"]:is(td:last-child > *, td:has(+ [aria-disabled]) > *)"
+   ],
+   "selector": ".range-calendar__cell[data-selected=\"true\"]:is(td:last-child > *, td:has(+ [aria-disabled]) > *)",
+   "prop": "border-start-end-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selected=\"true\"]:is(td:last-child > *, td:has(+ [aria-disabled]) > *)"
+   ],
+   "selector": ".range-calendar__cell[data-selected=\"true\"]:is(td:last-child > *, td:has(+ [aria-disabled]) > *)",
+   "prop": "border-end-end-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selected=\"true\"]:is(td:last-child > *, td:has(+ [aria-disabled]) > *)",
+    "&[data-selection-end=\"true\"]"
+   ],
+   "selector": ":is(.range-calendar__cell[data-selected=\"true\"]:is(td:last-child > *, td:has(+ [aria-disabled]) > *))[data-selection-end=\"true\"]",
+   "prop": "border-start-end-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selected=\"true\"]:is(td:last-child > *, td:has(+ [aria-disabled]) > *)",
+    "&[data-selection-end=\"true\"]"
+   ],
+   "selector": ":is(.range-calendar__cell[data-selected=\"true\"]:is(td:last-child > *, td:has(+ [aria-disabled]) > *))[data-selection-end=\"true\"]",
+   "prop": "border-end-end-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selection-start=\"true\"]:not([data-outside-month=\"true\"])"
+   ],
+   "selector": ".range-calendar__cell[data-selection-start=\"true\"]:not([data-outside-month=\"true\"])",
+   "prop": "border-start-start-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selection-start=\"true\"]:not([data-outside-month=\"true\"])"
+   ],
+   "selector": ".range-calendar__cell[data-selection-start=\"true\"]:not([data-outside-month=\"true\"])",
+   "prop": "border-end-start-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selection-end=\"true\"]:not([data-outside-month=\"true\"])"
+   ],
+   "selector": ".range-calendar__cell[data-selection-end=\"true\"]:not([data-outside-month=\"true\"])",
+   "prop": "border-start-end-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell",
+    "&[data-selection-end=\"true\"]:not([data-outside-month=\"true\"])"
+   ],
+   "selector": ".range-calendar__cell[data-selection-end=\"true\"]:not([data-outside-month=\"true\"])",
+   "prop": "border-end-end-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month=\"true\"]) + td > .range-calendar__cell[data-selected=\"true\"]"
+   ],
+   "selector": ".range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month=\"true\"]) + td > .range-calendar__cell[data-selected=\"true\"]",
+   "prop": "border-start-start-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month=\"true\"]) + td > .range-calendar__cell[data-selected=\"true\"]"
+   ],
+   "selector": ".range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month=\"true\"]) + td > .range-calendar__cell[data-selected=\"true\"]",
+   "prop": "border-end-start-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month=\"true\"]) + td > .range-calendar__cell[data-selected=\"true\"]",
+    "&[data-outside-month=\"true\"], &[data-selection-start=\"true\"]"
+   ],
+   "selector": ".range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month=\"true\"]) + td > .range-calendar__cell[data-selected=\"true\"][data-outside-month=\"true\"], .range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month=\"true\"]) + td > .range-calendar__cell[data-selected=\"true\"][data-selection-start=\"true\"]",
+   "prop": "border-start-start-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month=\"true\"]) + td > .range-calendar__cell[data-selected=\"true\"]",
+    "&[data-outside-month=\"true\"], &[data-selection-start=\"true\"]"
+   ],
+   "selector": ".range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month=\"true\"]) + td > .range-calendar__cell[data-selected=\"true\"][data-outside-month=\"true\"], .range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month=\"true\"]) + td > .range-calendar__cell[data-selected=\"true\"][data-selection-start=\"true\"]",
+   "prop": "border-end-start-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__grid-body td:has(> .range-calendar__cell[data-selected=\"true\"]):has( + td > .range-calendar__cell[data-outside-month=\"true\"] ) > .range-calendar__cell[data-selected=\"true\"]"
+   ],
+   "selector": ".range-calendar__grid-body td:has(> .range-calendar__cell[data-selected=\"true\"]):has( + td > .range-calendar__cell[data-outside-month=\"true\"] ) > .range-calendar__cell[data-selected=\"true\"]",
+   "prop": "border-start-end-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__grid-body td:has(> .range-calendar__cell[data-selected=\"true\"]):has( + td > .range-calendar__cell[data-outside-month=\"true\"] ) > .range-calendar__cell[data-selected=\"true\"]"
+   ],
+   "selector": ".range-calendar__grid-body td:has(> .range-calendar__cell[data-selected=\"true\"]):has( + td > .range-calendar__cell[data-outside-month=\"true\"] ) > .range-calendar__cell[data-selected=\"true\"]",
+   "prop": "border-end-end-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__grid-body td:has(> .range-calendar__cell[data-selected=\"true\"]):has( + td > .range-calendar__cell[data-outside-month=\"true\"] ) > .range-calendar__cell[data-selected=\"true\"]",
+    "&[data-outside-month=\"true\"], &[data-selection-end=\"true\"]"
+   ],
+   "selector": ".range-calendar__grid-body td:has(> .range-calendar__cell[data-selected=\"true\"]):has( + td > .range-calendar__cell[data-outside-month=\"true\"] ) > .range-calendar__cell[data-selected=\"true\"][data-outside-month=\"true\"], .range-calendar__grid-body td:has(> .range-calendar__cell[data-selected=\"true\"]):has( + td > .range-calendar__cell[data-outside-month=\"true\"] ) > .range-calendar__cell[data-selected=\"true\"][data-selection-end=\"true\"]",
+   "prop": "border-start-end-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__grid-body td:has(> .range-calendar__cell[data-selected=\"true\"]):has( + td > .range-calendar__cell[data-outside-month=\"true\"] ) > .range-calendar__cell[data-selected=\"true\"]",
+    "&[data-outside-month=\"true\"], &[data-selection-end=\"true\"]"
+   ],
+   "selector": ".range-calendar__grid-body td:has(> .range-calendar__cell[data-selected=\"true\"]):has( + td > .range-calendar__cell[data-outside-month=\"true\"] ) > .range-calendar__cell[data-selected=\"true\"][data-outside-month=\"true\"], .range-calendar__grid-body td:has(> .range-calendar__cell[data-selected=\"true\"]):has( + td > .range-calendar__cell[data-outside-month=\"true\"] ) > .range-calendar__cell[data-selected=\"true\"][data-selection-end=\"true\"]",
+   "prop": "border-end-end-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "range-calendar",
+   "ctx": "@layer components",
+   "path": [
+    ".range-calendar__cell-indicator"
+   ],
+   "selector": ".range-calendar__cell-indicator",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xs",
+   "value": "var(--radius-xs)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "calendar-year-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".calendar-year-picker__trigger"
+   ],
+   "selector": ".calendar-year-picker__trigger",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "calendar-year-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".calendar-year-picker__year-cell"
+   ],
+   "selector": ".calendar-year-picker__year-cell",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "date-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".date-input-group"
+   ],
+   "selector": ".date-input-group",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "date-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".date-input-group__input"
+   ],
+   "selector": ".date-input-group__input",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "date-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".date-input-group__input",
+    ".date-input-group:has([data-slot=\"date-input-group-prefix\"]) &"
+   ],
+   "selector": ".date-input-group:has([data-slot=\"date-input-group-prefix\"]) .date-input-group__input",
+   "prop": "border-start-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "date-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".date-input-group__input",
+    ".date-input-group:has([data-slot=\"date-input-group-prefix\"]) &"
+   ],
+   "selector": ".date-input-group:has([data-slot=\"date-input-group-prefix\"]) .date-input-group__input",
+   "prop": "border-end-start-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "date-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".date-input-group__input",
+    ".date-input-group:has([data-slot=\"date-input-group-suffix\"]) &"
+   ],
+   "selector": ".date-input-group:has([data-slot=\"date-input-group-suffix\"]) .date-input-group__input",
+   "prop": "border-start-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "date-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".date-input-group__input",
+    ".date-input-group:has([data-slot=\"date-input-group-suffix\"]) &"
+   ],
+   "selector": ".date-input-group:has([data-slot=\"date-input-group-suffix\"]) .date-input-group__input",
+   "prop": "border-end-end-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "date-input-group",
+   "ctx": "@layer components",
+   "path": [
+    ".date-input-group__segment"
+   ],
+   "selector": ".date-input-group__segment",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "date-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".date-picker__trigger"
+   ],
+   "selector": ".date-picker__trigger",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "date-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".date-picker__popover"
+   ],
+   "selector": ".date-picker__popover",
+   "prop": "border-radius",
+   "kind": "other",
+   "value": "min(32px, calc(var(--radius) * 2.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "date-range-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".date-range-picker__trigger"
+   ],
+   "selector": ".date-range-picker__trigger",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "date-range-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".date-range-picker__popover"
+   ],
+   "selector": ".date-range-picker__popover",
+   "prop": "border-radius",
+   "kind": "other",
+   "value": "min(32px, calc(var(--radius) * 2.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "card",
+   "ctx": "@layer components",
+   "path": [
+    ".card"
+   ],
+   "selector": ".card",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "separator",
+   "ctx": "@layer components",
+   "path": [
+    ".separator"
+   ],
+   "selector": ".separator",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "avatar",
+   "ctx": "@layer components",
+   "path": [
+    ".avatar"
+   ],
+   "selector": ".avatar",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "avatar",
+   "ctx": "@layer components",
+   "path": [
+    ".avatar--sm"
+   ],
+   "selector": ".avatar--sm",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "avatar",
+   "ctx": "@layer components",
+   "path": [
+    ".avatar--lg"
+   ],
+   "selector": ".avatar--lg",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "alert-dialog",
+   "ctx": "@layer components",
+   "path": [
+    ".alert-dialog__dialog"
+   ],
+   "selector": ".alert-dialog__dialog",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "alert-dialog",
+   "ctx": "@layer components",
+   "path": [
+    ".alert-dialog__icon"
+   ],
+   "selector": ".alert-dialog__icon",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "drawer",
+   "ctx": "@layer components",
+   "path": [
+    ".drawer__dialog",
+    "&[data-placement=\"bottom\"]"
+   ],
+   "selector": ".drawer__dialog[data-placement=\"bottom\"]",
+   "prop": "border-start-start-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "drawer",
+   "ctx": "@layer components",
+   "path": [
+    ".drawer__dialog",
+    "&[data-placement=\"bottom\"]"
+   ],
+   "selector": ".drawer__dialog[data-placement=\"bottom\"]",
+   "prop": "border-start-end-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "drawer",
+   "ctx": "@layer components",
+   "path": [
+    ".drawer__dialog",
+    "&[data-placement=\"top\"]"
+   ],
+   "selector": ".drawer__dialog[data-placement=\"top\"]",
+   "prop": "border-end-start-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "drawer",
+   "ctx": "@layer components",
+   "path": [
+    ".drawer__dialog",
+    "&[data-placement=\"top\"]"
+   ],
+   "selector": ".drawer__dialog[data-placement=\"top\"]",
+   "prop": "border-end-end-radius",
+   "kind": "ladder-capped",
+   "step": "2xl",
+   "value": "min(32px, var(--radius-2xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "drawer",
+   "ctx": "@layer components",
+   "path": [
+    ".drawer__dialog",
+    "&[data-placement=\"left\"]"
+   ],
+   "selector": ".drawer__dialog[data-placement=\"left\"]",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "drawer",
+   "ctx": "@layer components",
+   "path": [
+    ".drawer__dialog",
+    "&[data-placement=\"right\"]"
+   ],
+   "selector": ".drawer__dialog[data-placement=\"right\"]",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "drawer",
+   "ctx": "@layer components",
+   "path": [
+    ".drawer__handle",
+    "& > [data-slot=\"drawer-handle-bar\"]"
+   ],
+   "selector": ".drawer__handle > [data-slot=\"drawer-handle-bar\"]",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xs",
+   "value": "var(--radius-xs)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "modal",
+   "ctx": "@layer components",
+   "path": [
+    ".modal__dialog"
+   ],
+   "selector": ".modal__dialog",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "modal",
+   "ctx": "@layer components",
+   "path": [
+    ".modal__dialog--full"
+   ],
+   "selector": ".modal__dialog--full",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "modal",
+   "ctx": "@layer components",
+   "path": [
+    ".modal__icon"
+   ],
+   "selector": ".modal__icon",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "popover",
+   "ctx": "@layer components",
+   "path": [
+    ".popover"
+   ],
+   "selector": ".popover",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "tooltip",
+   "ctx": "@layer components",
+   "path": [
+    ".tooltip"
+   ],
+   "selector": ".tooltip",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "xl",
+   "value": "min(32px, var(--radius-xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "combo-box",
+   "ctx": "@layer components",
+   "path": [
+    ".combo-box__trigger",
+    "&:focus-visible:not(:focus), &[data-focus-visible=\"true\"]"
+   ],
+   "selector": ".combo-box__trigger:focus-visible:not(:focus), .combo-box__trigger[data-focus-visible=\"true\"]",
+   "prop": "border-radius",
+   "kind": "literal",
+   "value": "0.25rem",
+   "versions": [
+    "3.2.4"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "combo-box",
+   "ctx": "@layer components",
+   "path": [
+    ".combo-box__trigger",
+    "&:focus-visible, &[data-focus-visible=\"true\"]"
+   ],
+   "selector": ".combo-box__trigger:focus-visible, .combo-box__trigger[data-focus-visible=\"true\"]",
+   "prop": "border-radius",
+   "kind": "literal",
+   "value": "0.25rem",
+   "versions": [
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "combo-box",
+   "ctx": "@layer components",
+   "path": [
+    ".combo-box__popover"
+   ],
+   "selector": ".combo-box__popover",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "select",
+   "ctx": "@layer components",
+   "path": [
+    ".select__trigger"
+   ],
+   "selector": ".select__trigger",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "select",
+   "ctx": "@layer components",
+   "path": [
+    ".select__clear-button"
+   ],
+   "selector": ".select__clear-button",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "select",
+   "ctx": "@layer components",
+   "path": [
+    ".select__popover"
+   ],
+   "selector": ".select__popover",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "autocomplete",
+   "ctx": "@layer components",
+   "path": [
+    ".autocomplete__trigger"
+   ],
+   "selector": ".autocomplete__trigger",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius, calc(var(--radius) * 1.5))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "autocomplete",
+   "ctx": "@layer components",
+   "path": [
+    ".autocomplete__popover"
+   ],
+   "selector": ".autocomplete__popover",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "value": "min(32px, var(--radius-3xl))",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "autocomplete",
+   "ctx": "@layer components",
+   "path": [
+    ".autocomplete__clear-button"
+   ],
+   "selector": ".autocomplete__clear-button",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "kbd",
+   "ctx": "@layer components",
+   "path": [
+    ".kbd"
+   ],
+   "selector": ".kbd",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "lg",
+   "value": "var(--radius-lg)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "typography",
+   "ctx": "@layer components",
+   "path": [
+    ".typography-prose code"
+   ],
+   "selector": ".typography-prose code",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "typography",
+   "ctx": "@layer components",
+   "path": [
+    ".typography-prose pre"
+   ],
+   "selector": ".typography-prose pre",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "typography",
+   "ctx": "@layer components",
+   "path": [
+    ".typography-prose img"
+   ],
+   "selector": ".typography-prose img",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "xl",
+   "value": "var(--radius-xl)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui/styles",
+   "component": "typography",
+   "ctx": "@layer components",
+   "path": [
+    ".typography--code"
+   ],
+   "selector": ".typography--code",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "3.2.4",
+    "3.2.5"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "app-layout",
+   "ctx": "@layer components",
+   "path": [
+    ".navbar[data-in-app-layout=true].navbar--sticky,.navbar[data-in-app-layout=true].navbar--static,.navbar[data-in-app-layout=true].navbar--floating"
+   ],
+   "selector": ".navbar[data-in-app-layout=true].navbar--sticky,.navbar[data-in-app-layout=true].navbar--static,.navbar[data-in-app-layout=true].navbar--floating",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "action-bar",
+   "ctx": "@layer components",
+   "path": [
+    ".action-bar [data-slot=toolbar]"
+   ],
+   "selector": ".action-bar [data-slot=toolbar]",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "3xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda"
+   ],
+   "selector": ".agenda",
+   "prop": "--agenda-event-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__day-header-date"
+   ],
+   "selector": ".agenda__day-header-date",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__all-day-toggle"
+   ],
+   "selector": ".agenda__all-day-toggle",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "sm",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__all-day-event"
+   ],
+   "selector": ".agenda__all-day-event",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "md",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__event"
+   ],
+   "selector": ".agenda__event",
+   "prop": "border-radius",
+   "kind": "component-var",
+   "value": "var(--agenda-event-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__resize-handle:after"
+   ],
+   "selector": ".agenda__resize-handle:after",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__create-preview"
+   ],
+   "selector": ".agenda__create-preview",
+   "prop": "border-radius",
+   "kind": "component-var",
+   "value": "var(--agenda-event-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__drop-preview"
+   ],
+   "selector": ".agenda__drop-preview",
+   "prop": "border-radius",
+   "kind": "component-var",
+   "value": "var(--agenda-event-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__current-time-label"
+   ],
+   "selector": ".agenda__current-time-label",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__current-time-line--active:before"
+   ],
+   "selector": ".agenda__current-time-line--active:before",
+   "prop": "border-radius",
+   "kind": "literal",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__month-cell[data-drop-target]"
+   ],
+   "selector": ".agenda__month-cell[data-drop-target]",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__month-spanning-event"
+   ],
+   "selector": ".agenda__month-spanning-event",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "md",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__month-cell-date"
+   ],
+   "selector": ".agenda__month-cell-date",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__month-cell-more"
+   ],
+   "selector": ".agenda__month-cell-more",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "sm",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "agenda",
+   "ctx": "@layer components",
+   "path": [
+    ".agenda__month-event"
+   ],
+   "selector": ".agenda__month-event",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "sm",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "carousel",
+   "ctx": "@layer components",
+   "path": [
+    ".carousel__dot"
+   ],
+   "selector": ".carousel__dot",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "carousel",
+   "ctx": "@layer components",
+   "path": [
+    ".carousel__thumbnail"
+   ],
+   "selector": ".carousel__thumbnail",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "carousel",
+   "ctx": "@layer components",
+   "path": [
+    ".carousel__thumbnail img"
+   ],
+   "selector": ".carousel__thumbnail img",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chain-of-thought",
+   "ctx": "@layer components",
+   "path": [
+    ".chain-of-thought__step-indicator"
+   ],
+   "selector": ".chain-of-thought__step-indicator",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-attachment",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-attachment"
+   ],
+   "selector": ".chat-attachment",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-loader",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-loader__dot"
+   ],
+   "selector": ".chat-loader__dot",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-loader",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-loader__pulse"
+   ],
+   "selector": ".chat-loader__pulse",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-loader",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-loader__skeleton-avatar"
+   ],
+   "selector": ".chat-loader__skeleton-avatar",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-loader",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-loader__skeleton-line"
+   ],
+   "selector": ".chat-loader__skeleton-line",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "md",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-source",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-source__trigger-link"
+   ],
+   "selector": ".chat-source__trigger-link",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-source",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-source__icon,.chat-source__document-icon"
+   ],
+   "selector": ".chat-source__icon,.chat-source__document-icon",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-source",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-source__icon-fallback"
+   ],
+   "selector": ".chat-source__icon-fallback",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-tool",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-tool"
+   ],
+   "selector": ".chat-tool",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-tool",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-tool__trigger,.chat-tool-group__trigger"
+   ],
+   "selector": ".chat-tool__trigger,.chat-tool-group__trigger",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-tool",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-tool__args .code-block,.chat-tool__result .code-block"
+   ],
+   "selector": ".chat-tool__args .code-block,.chat-tool__result .code-block",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-tool",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-tool-group"
+   ],
+   "selector": ".chat-tool-group",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chat-message",
+   "ctx": "@layer components",
+   "path": [
+    ".chat-message__bubble"
+   ],
+   "selector": ".chat-message__bubble",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "cell-color-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".cell-color-picker .cell-color-picker__trigger"
+   ],
+   "selector": ".cell-color-picker .cell-color-picker__trigger",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "cell-color-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".cell-color-picker .cell-color-picker__swatch"
+   ],
+   "selector": ".cell-color-picker .cell-color-picker__swatch",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "cell-select",
+   "ctx": "@layer components",
+   "path": [
+    ".cell-select .cell-select__trigger"
+   ],
+   "selector": ".cell-select .cell-select__trigger",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "cell-switch",
+   "ctx": "@layer components",
+   "path": [
+    ".cell-switch .cell-switch__trigger"
+   ],
+   "selector": ".cell-switch .cell-switch__trigger",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "cell-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".cell-slider .cell-slider__track"
+   ],
+   "selector": ".cell-slider .cell-slider__track",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "cell-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".cell-slider .cell-slider__fill"
+   ],
+   "selector": ".cell-slider .cell-slider__fill",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "cell-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".cell-slider .cell-slider__thumb"
+   ],
+   "selector": ".cell-slider .cell-slider__thumb",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "cell-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".cell-slider .cell-slider__thumb:after"
+   ],
+   "selector": ".cell-slider .cell-slider__thumb:after",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "md",
+   "value": "var(--radius-md)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "cell-slider",
+   "ctx": "@layer components",
+   "path": [
+    ".cell-slider[data-orientation=horizontal] .cell-slider__track"
+   ],
+   "selector": ".cell-slider[data-orientation=horizontal] .cell-slider__track",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chart-tooltip",
+   "ctx": "@layer components",
+   "path": [
+    ".chart-tooltip"
+   ],
+   "selector": ".chart-tooltip",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "lg",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chart-tooltip",
+   "ctx": "@layer components",
+   "path": [
+    ".chart-tooltip__indicator--dot"
+   ],
+   "selector": ".chart-tooltip__indicator--dot",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "chart-tooltip",
+   "ctx": "@layer components",
+   "path": [
+    ".chart-tooltip__indicator--line"
+   ],
+   "selector": ".chart-tooltip__indicator--line",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "checkbox-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".checkbox-button-group"
+   ],
+   "selector": ".checkbox-button-group",
+   "prop": "--checkbox-button-group-item-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "checkbox-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".checkbox-button-group__item"
+   ],
+   "selector": ".checkbox-button-group__item",
+   "prop": "border-radius",
+   "kind": "component-var",
+   "value": "var(--checkbox-button-group-item-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "code-block",
+   "ctx": "@layer components",
+   "path": [
+    ".code-block"
+   ],
+   "selector": ".code-block",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "command",
+   "ctx": "@layer components",
+   "path": [
+    ".command__dialog"
+   ],
+   "selector": ".command__dialog",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "command",
+   "ctx": "@layer components",
+   "path": [
+    ".command__item"
+   ],
+   "selector": ".command__item",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "lg",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "context-menu",
+   "ctx": "@layer components",
+   "path": [
+    ".context-menu__popover"
+   ],
+   "selector": ".context-menu__popover",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "3xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "data-grid",
+   "ctx": "@layer components",
+   "path": [
+    "[data-slot=data-grid][data-pinned-start-detached] .table__body tr:first-child td:first-child[data-pinned=start][data-pinned-edge],[data-slot=data-grid][data-pinned-start-detached] .table__body tr:last-child td:first-child[data-pinned=start][data-pinned-edge],[data-slot=data-grid][data-pinned-end-detached] .table__body tr:first-child td:last-child[data-pinned=end][data-pinned-edge],[data-slot=data-grid][data-pinned-end-detached] .table__body tr:last-child td:last-child[data-pinned=end][data-pinned-edge]"
+   ],
+   "selector": "[data-slot=data-grid][data-pinned-start-detached] .table__body tr:first-child td:first-child[data-pinned=start][data-pinned-edge],[data-slot=data-grid][data-pinned-start-detached] .table__body tr:last-child td:first-child[data-pinned=start][data-pinned-edge],[data-slot=data-grid][data-pinned-end-detached] .table__body tr:first-child td:last-child[data-pinned=end][data-pinned-edge],[data-slot=data-grid][data-pinned-end-detached] .table__body tr:last-child td:last-child[data-pinned=end][data-pinned-edge]",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "drop-zone",
+   "ctx": "@layer components",
+   "path": [
+    ".drop-zone__area"
+   ],
+   "selector": ".drop-zone__area",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "drop-zone",
+   "ctx": "@layer components",
+   "path": [
+    ".drop-zone__trigger"
+   ],
+   "selector": ".drop-zone__trigger",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "3xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "drop-zone",
+   "ctx": "@layer components",
+   "path": [
+    ".drop-zone__file-item"
+   ],
+   "selector": ".drop-zone__file-item",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "drop-zone",
+   "ctx": "@layer components",
+   "path": [
+    ".drop-zone__file-format-icon-badge"
+   ],
+   "selector": ".drop-zone__file-format-icon-badge",
+   "prop": "border-radius",
+   "kind": "literal",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "drop-zone",
+   "ctx": "@layer components",
+   "path": [
+    ".drop-zone__file-remove-trigger"
+   ],
+   "selector": ".drop-zone__file-remove-trigger",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "md",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "emoji-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".emoji-picker__popover"
+   ],
+   "selector": ".emoji-picker__popover",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "emoji-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".emoji-picker__item"
+   ],
+   "selector": ".emoji-picker__item",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "lg",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "emoji-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".emoji-picker__skin-tone-picker"
+   ],
+   "selector": ".emoji-picker__skin-tone-picker",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "md",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "emoji-picker",
+   "ctx": "@layer components",
+   "path": [
+    ".emoji-picker__skin-tone-option"
+   ],
+   "selector": ".emoji-picker__skin-tone-option",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "empty-state",
+   "ctx": "@layer components",
+   "path": [
+    ".empty-state__media[data-variant=icon]"
+   ],
+   "selector": ".empty-state__media[data-variant=icon]",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "emoji-reaction-button",
+   "ctx": "@layer components",
+   "path": [
+    ".emoji-reaction-button"
+   ],
+   "selector": ".emoji-reaction-button",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "file-tree",
+   "ctx": "@layer components",
+   "path": [
+    ".file-tree__item"
+   ],
+   "selector": ".file-tree__item",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "lg",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "file-tree",
+   "ctx": "@layer components",
+   "path": [
+    ".file-tree__item[data-selected=true]:has(+[data-selected=true])"
+   ],
+   "selector": ".file-tree__item[data-selected=true]:has(+[data-selected=true])",
+   "prop": "border-bottom-right-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "file-tree",
+   "ctx": "@layer components",
+   "path": [
+    ".file-tree__item[data-selected=true]:has(+[data-selected=true])"
+   ],
+   "selector": ".file-tree__item[data-selected=true]:has(+[data-selected=true])",
+   "prop": "border-bottom-left-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "file-tree",
+   "ctx": "@layer components",
+   "path": [
+    ".file-tree__item[data-selected=true]+[data-selected=true]"
+   ],
+   "selector": ".file-tree__item[data-selected=true]+[data-selected=true]",
+   "prop": "border-top-left-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "file-tree",
+   "ctx": "@layer components",
+   "path": [
+    ".file-tree__item[data-selected=true]+[data-selected=true]"
+   ],
+   "selector": ".file-tree__item[data-selected=true]+[data-selected=true]",
+   "prop": "border-top-right-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "file-tree",
+   "ctx": "@layer components",
+   "path": [
+    ".file-tree__chevron"
+   ],
+   "selector": ".file-tree__chevron",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "md",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "floating-toc",
+   "ctx": "@layer components",
+   "path": [
+    ".floating-toc__bar:after"
+   ],
+   "selector": ".floating-toc__bar:after",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "sm",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "floating-toc",
+   "ctx": "@layer components",
+   "path": [
+    ".floating-toc__content"
+   ],
+   "selector": ".floating-toc__content",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "floating-toc",
+   "ctx": "@layer components",
+   "path": [
+    ".floating-toc__item"
+   ],
+   "selector": ".floating-toc__item",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "lg",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "holo-card",
+   "ctx": "@layer components",
+   "path": [
+    ".holo-card"
+   ],
+   "selector": ".holo-card",
+   "prop": "--holo-card-radius",
+   "kind": "literal",
+   "versions": [
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "holo-card",
+   "ctx": "@layer components",
+   "path": [
+    ".holo-card__surface"
+   ],
+   "selector": ".holo-card__surface",
+   "prop": "border-radius",
+   "kind": "component-var",
+   "value": "var(--holo-card-radius)",
+   "versions": [
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "holo-card",
+   "ctx": "@layer components",
+   "path": [
+    ".holo-card__inset"
+   ],
+   "selector": ".holo-card__inset",
+   "prop": "border-radius",
+   "kind": "other",
+   "versions": [
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "holo-card",
+   "ctx": "@layer components",
+   "path": [
+    ".holo-card__pattern"
+   ],
+   "selector": ".holo-card__pattern",
+   "prop": "border-radius",
+   "kind": "inherit",
+   "value": "inherit",
+   "versions": [
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "holo-card",
+   "ctx": "@layer components",
+   "path": [
+    ".holo-card__shine"
+   ],
+   "selector": ".holo-card__shine",
+   "prop": "border-radius",
+   "kind": "inherit",
+   "value": "inherit",
+   "versions": [
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "holo-card",
+   "ctx": "@layer components",
+   "path": [
+    ".holo-card__shine:before,.holo-card__shine:after"
+   ],
+   "selector": ".holo-card__shine:before,.holo-card__shine:after",
+   "prop": "border-radius",
+   "kind": "inherit",
+   "value": "inherit",
+   "versions": [
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "holo-card",
+   "ctx": "@layer components",
+   "path": [
+    ".holo-card__shine-pattern"
+   ],
+   "selector": ".holo-card__shine-pattern",
+   "prop": "border-radius",
+   "kind": "inherit",
+   "value": "inherit",
+   "versions": [
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "hover-card",
+   "ctx": "@layer components",
+   "path": [
+    ".hover-card__content"
+   ],
+   "selector": ".hover-card__content",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "inline-select",
+   "ctx": "@layer components",
+   "path": [
+    ".inline-select .inline-select__trigger"
+   ],
+   "selector": ".inline-select .inline-select__trigger",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "md",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kanban",
+   "ctx": "@layer components",
+   "path": [
+    ".kanban__column-body"
+   ],
+   "selector": ".kanban__column-body",
+   "prop": "border-radius",
+   "kind": "other",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kanban",
+   "ctx": "@layer components",
+   "path": [
+    ".kanban__column-indicator:empty"
+   ],
+   "selector": ".kanban__column-indicator:empty",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kanban",
+   "ctx": "@layer components",
+   "path": [
+    ".kanban__card"
+   ],
+   "selector": ".kanban__card",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kanban",
+   "ctx": "@layer components",
+   "path": [
+    ".kanban__card-content"
+   ],
+   "selector": ".kanban__card-content",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kanban",
+   "ctx": "@layer components",
+   "path": [
+    ".kanban__scroll-shadow"
+   ],
+   "selector": ".kanban__scroll-shadow",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kanban",
+   "ctx": "@layer components",
+   "path": [
+    ".kanban__card-list .react-aria-DropIndicator[data-drop-target]"
+   ],
+   "selector": ".kanban__card-list .react-aria-DropIndicator[data-drop-target]",
+   "prop": "border-radius",
+   "kind": "literal",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kanban",
+   "ctx": "@layer components",
+   "path": [
+    ".kanban__drop-indicator[data-drop-target]"
+   ],
+   "selector": ".kanban__drop-indicator[data-drop-target]",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kpi",
+   "ctx": "@layer components",
+   "path": [
+    ".kpi"
+   ],
+   "selector": ".kpi",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kpi",
+   "ctx": "@layer components",
+   "path": [
+    ".kpi__icon"
+   ],
+   "selector": ".kpi__icon",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "lg",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kpi",
+   "ctx": "@layer components",
+   "path": [
+    ".kpi>.kpi__chart"
+   ],
+   "selector": ".kpi>.kpi__chart",
+   "prop": "border-bottom-right-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kpi",
+   "ctx": "@layer components",
+   "path": [
+    ".kpi>.kpi__chart"
+   ],
+   "selector": ".kpi>.kpi__chart",
+   "prop": "border-bottom-left-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kpi",
+   "ctx": "@layer components",
+   "path": [
+    ".kpi>.kpi__chart:has(+.kpi__separator,+.kpi__footer)"
+   ],
+   "selector": ".kpi>.kpi__chart:has(+.kpi__separator,+.kpi__footer)",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kpi-group",
+   "ctx": "@layer components",
+   "path": [
+    ".kpi-group--horizontal"
+   ],
+   "selector": ".kpi-group--horizontal",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kpi-group",
+   "ctx": "@layer components",
+   "path": [
+    ".kpi-group--horizontal>[data-slot=kpi]"
+   ],
+   "selector": ".kpi-group--horizontal>[data-slot=kpi]",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kpi-group",
+   "ctx": "@layer components",
+   "path": [
+    ".kpi-group--vertical"
+   ],
+   "selector": ".kpi-group--vertical",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "kpi-group",
+   "ctx": "@layer components",
+   "path": [
+    ".kpi-group--vertical>[data-slot=kpi]"
+   ],
+   "selector": ".kpi-group--vertical>[data-slot=kpi]",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "list-view",
+   "ctx": "@layer components",
+   "path": [
+    ".list-view--primary"
+   ],
+   "selector": ".list-view--primary",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "3xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "list-view",
+   "ctx": "@layer components",
+   "path": [
+    ".list-view--primary:not([data-virtualized]) .list-view__item:first-child"
+   ],
+   "selector": ".list-view--primary:not([data-virtualized]) .list-view__item:first-child",
+   "prop": "border-top-left-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "list-view",
+   "ctx": "@layer components",
+   "path": [
+    ".list-view--primary:not([data-virtualized]) .list-view__item:first-child"
+   ],
+   "selector": ".list-view--primary:not([data-virtualized]) .list-view__item:first-child",
+   "prop": "border-top-right-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "list-view",
+   "ctx": "@layer components",
+   "path": [
+    ".list-view--primary:not([data-virtualized]) .list-view__item:last-child"
+   ],
+   "selector": ".list-view--primary:not([data-virtualized]) .list-view__item:last-child",
+   "prop": "border-bottom-right-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "list-view",
+   "ctx": "@layer components",
+   "path": [
+    ".list-view--primary:not([data-virtualized]) .list-view__item:last-child"
+   ],
+   "selector": ".list-view--primary:not([data-virtualized]) .list-view__item:last-child",
+   "prop": "border-bottom-left-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "map",
+   "ctx": "@layer components",
+   "path": [
+    ".map .maplibregl-popup-content"
+   ],
+   "selector": ".map .maplibregl-popup-content",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "map",
+   "ctx": "@layer components",
+   "path": [
+    ".map .maplibregl-ctrl-attrib"
+   ],
+   "selector": ".map .maplibregl-ctrl-attrib",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "map",
+   "ctx": "@layer components",
+   "path": [
+    ".map .maplibregl-ctrl-attrib-button:before"
+   ],
+   "selector": ".map .maplibregl-ctrl-attrib-button:before",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "map",
+   "ctx": "@layer components",
+   "path": [
+    ".map__default-marker"
+   ],
+   "selector": ".map__default-marker",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "map",
+   "ctx": "@layer components",
+   "path": [
+    ".map__popup-content"
+   ],
+   "selector": ".map__popup-content",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "map",
+   "ctx": "@layer components",
+   "path": [
+    ".map__tooltip"
+   ],
+   "selector": ".map__tooltip",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "md",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "markdown",
+   "ctx": "@layer components",
+   "path": [
+    ".markdown__inline-code"
+   ],
+   "selector": ".markdown__inline-code",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "sm",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "native-select",
+   "ctx": "@layer components",
+   "path": [
+    ".native-select__select"
+   ],
+   "selector": ".native-select__select",
+   "prop": "border-radius",
+   "kind": "field",
+   "value": "var(--field-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "navbar",
+   "ctx": "@layer components",
+   "path": [
+    ".navbar--floating"
+   ],
+   "selector": ".navbar--floating",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "navbar",
+   "ctx": "@layer components",
+   "path": [
+    ".navbar__item"
+   ],
+   "selector": ".navbar__item",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "lg",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "navbar",
+   "ctx": "@layer components",
+   "path": [
+    ".navbar__menu-toggle"
+   ],
+   "selector": ".navbar__menu-toggle",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "lg",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "navbar",
+   "ctx": "@layer components",
+   "path": [
+    ".navbar__menu-item"
+   ],
+   "selector": ".navbar__menu-item",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "lg",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "number-stepper",
+   "ctx": "@layer components",
+   "path": [
+    ".number-stepper__group"
+   ],
+   "selector": ".number-stepper__group",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "number-stepper",
+   "ctx": "@layer components",
+   "path": [
+    ".number-stepper__decrement-button,.number-stepper__increment-button"
+   ],
+   "selector": ".number-stepper__decrement-button,.number-stepper__increment-button",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "number-stepper",
+   "ctx": "@layer components",
+   "path": [
+    ".number-stepper__group--sm"
+   ],
+   "selector": ".number-stepper__group--sm",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "number-stepper",
+   "ctx": "@layer components",
+   "path": [
+    ".number-stepper__group--md"
+   ],
+   "selector": ".number-stepper__group--md",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "number-stepper",
+   "ctx": "@layer components",
+   "path": [
+    ".number-stepper__group--lg"
+   ],
+   "selector": ".number-stepper__group--lg",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "item-card",
+   "ctx": "@layer components",
+   "path": [
+    ".item-card"
+   ],
+   "selector": ".item-card",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "item-card",
+   "ctx": "@layer components",
+   "path": [
+    ".item-card__icon"
+   ],
+   "selector": ".item-card__icon",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "lg",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "item-card-group",
+   "ctx": "@layer components",
+   "path": [
+    ".item-card-group"
+   ],
+   "selector": ".item-card-group",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "item-card-group",
+   "ctx": "@layer components",
+   "path": [
+    ".item-card-group>[data-slot=item-card]"
+   ],
+   "selector": ".item-card-group>[data-slot=item-card]",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "item-card-group",
+   "ctx": "@layer components",
+   "path": [
+    ".item-card-group--transparent"
+   ],
+   "selector": ".item-card-group--transparent",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "item-card-group",
+   "ctx": "@layer components",
+   "path": [
+    ".item-card-group--grid>[data-slot=item-card]"
+   ],
+   "selector": ".item-card-group--grid>[data-slot=item-card]",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    "[data-sheet-handle]"
+   ],
+   "selector": "[data-sheet-handle]",
+   "prop": "border-radius",
+   "kind": "literal",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__content--bottom"
+   ],
+   "selector": ".sheet__content--bottom",
+   "prop": "border-top-left-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__content--bottom"
+   ],
+   "selector": ".sheet__content--bottom",
+   "prop": "border-top-right-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__content--top"
+   ],
+   "selector": ".sheet__content--top",
+   "prop": "border-bottom-right-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__content--top"
+   ],
+   "selector": ".sheet__content--top",
+   "prop": "border-bottom-left-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__content--left"
+   ],
+   "selector": ".sheet__content--left",
+   "prop": "border-top-right-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__content--left"
+   ],
+   "selector": ".sheet__content--left",
+   "prop": "border-bottom-right-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__content--right"
+   ],
+   "selector": ".sheet__content--right",
+   "prop": "border-top-left-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__content--right"
+   ],
+   "selector": ".sheet__content--right",
+   "prop": "border-bottom-left-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    "[data-sheet-detached]"
+   ],
+   "selector": "[data-sheet-detached]",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    "[data-sheet-detached] .sheet__dialog"
+   ],
+   "selector": "[data-sheet-detached] .sheet__dialog",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__dialog--bottom"
+   ],
+   "selector": ".sheet__dialog--bottom",
+   "prop": "border-top-left-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__dialog--bottom"
+   ],
+   "selector": ".sheet__dialog--bottom",
+   "prop": "border-top-right-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__dialog--top"
+   ],
+   "selector": ".sheet__dialog--top",
+   "prop": "border-bottom-right-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__dialog--top"
+   ],
+   "selector": ".sheet__dialog--top",
+   "prop": "border-bottom-left-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__dialog--left"
+   ],
+   "selector": ".sheet__dialog--left",
+   "prop": "border-top-right-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__dialog--left"
+   ],
+   "selector": ".sheet__dialog--left",
+   "prop": "border-bottom-right-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__dialog--right"
+   ],
+   "selector": ".sheet__dialog--right",
+   "prop": "border-top-left-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__dialog--right"
+   ],
+   "selector": ".sheet__dialog--right",
+   "prop": "border-bottom-left-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sheet",
+   "ctx": "@layer components",
+   "path": [
+    ".sheet__handle-bar"
+   ],
+   "selector": ".sheet__handle-bar",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "pressable-feedback",
+   "ctx": "@layer components",
+   "path": [
+    ".pressable-feedback"
+   ],
+   "selector": ".pressable-feedback",
+   "prop": "border-radius",
+   "kind": "inherit",
+   "value": "inherit",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "pressable-feedback",
+   "ctx": "@layer components",
+   "path": [
+    ".pressable-feedback__highlight"
+   ],
+   "selector": ".pressable-feedback__highlight",
+   "prop": "border-radius",
+   "kind": "inherit",
+   "value": "inherit",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "pressable-feedback",
+   "ctx": "@layer components",
+   "path": [
+    ".pressable-feedback__ripple"
+   ],
+   "selector": ".pressable-feedback__ripple",
+   "prop": "border-radius",
+   "kind": "inherit",
+   "value": "inherit",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "pressable-feedback",
+   "ctx": "@layer components",
+   "path": [
+    ".pressable-feedback__ripple-surface"
+   ],
+   "selector": ".pressable-feedback__ripple-surface",
+   "prop": "border-radius",
+   "kind": "inherit",
+   "value": "inherit",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "pressable-feedback",
+   "ctx": "@layer components",
+   "path": [
+    ".pressable-feedback__hold-confirm"
+   ],
+   "selector": ".pressable-feedback__hold-confirm",
+   "prop": "border-radius",
+   "kind": "inherit",
+   "value": "inherit",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "pressable-feedback",
+   "ctx": "@layer components",
+   "path": [
+    ".pressable-feedback__progress-feedback"
+   ],
+   "selector": ".pressable-feedback__progress-feedback",
+   "prop": "border-radius",
+   "kind": "inherit",
+   "value": "inherit",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "prompt-input",
+   "ctx": "@layer components",
+   "path": [
+    ".prompt-input__shell"
+   ],
+   "selector": ".prompt-input__shell",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "prompt-input",
+   "ctx": "@layer components",
+   "path": [
+    ".prompt-input__token"
+   ],
+   "selector": ".prompt-input__token",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "md",
+   "versions": [
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "prompt-input",
+   "ctx": "@layer components",
+   "path": [
+    ".prompt-input__token-suggestions"
+   ],
+   "selector": ".prompt-input__token-suggestions",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "prompt-input",
+   "ctx": "@layer components",
+   "path": [
+    ".prompt-input[data-layout=compact] .prompt-input__shell--compact,.prompt-input[data-layout=inline] .prompt-input__shell--inline"
+   ],
+   "selector": ".prompt-input[data-layout=compact] .prompt-input__shell--compact,.prompt-input[data-layout=inline] .prompt-input__shell--inline",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "prompt-input",
+   "ctx": "@layer components",
+   "path": [
+    ".prompt-input[data-layout=compact]:not([data-expanded]) .prompt-input__shell--compact:not(:has(.prompt-input__attachments>*)),.prompt-input[data-layout=inline] .prompt-input__shell--inline"
+   ],
+   "selector": ".prompt-input[data-layout=compact]:not([data-expanded]) .prompt-input__shell--compact:not(:has(.prompt-input__attachments>*)),.prompt-input[data-layout=inline] .prompt-input__shell--inline",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "3xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "prompt-input",
+   "ctx": "@layer components",
+   "path": [
+    ".prompt-input[data-layout=inline][data-expanded] .prompt-input__shell--inline,.prompt-input[data-layout=inline] .prompt-input__shell--inline:has(.prompt-input__attachments>*)"
+   ],
+   "selector": ".prompt-input[data-layout=inline][data-expanded] .prompt-input__shell--inline,.prompt-input[data-layout=inline] .prompt-input__shell--inline:has(.prompt-input__attachments>*)",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "prompt-input",
+   "ctx": "@layer components",
+   "path": [
+    ".prompt-input[data-layout=compact][data-expanded] .prompt-input__shell--compact,.prompt-input[data-layout=compact] .prompt-input__shell--compact:has(.prompt-input__attachments>*)"
+   ],
+   "selector": ".prompt-input[data-layout=compact][data-expanded] .prompt-input__shell--compact,.prompt-input[data-layout=compact] .prompt-input__shell--compact:has(.prompt-input__attachments>*)",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "prompt-input",
+   "ctx": "@layer components",
+   "path": [
+    ".prompt-input__queue"
+   ],
+   "selector": ".prompt-input__queue",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "prompt-suggestion",
+   "ctx": "@layer components",
+   "path": [
+    ".prompt-suggestion__item--pill"
+   ],
+   "selector": ".prompt-suggestion__item--pill",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "prompt-suggestion",
+   "ctx": "@layer components",
+   "path": [
+    ".prompt-suggestion__item--card"
+   ],
+   "selector": ".prompt-suggestion__item--card",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "radio-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".radio-button-group"
+   ],
+   "selector": ".radio-button-group",
+   "prop": "--radio-button-group-item-radius",
+   "kind": "ladder",
+   "step": "2xl",
+   "value": "var(--radius-2xl)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "radio-button-group",
+   "ctx": "@layer components",
+   "path": [
+    ".radio-button-group__item"
+   ],
+   "selector": ".radio-button-group__item",
+   "prop": "border-radius",
+   "kind": "component-var",
+   "value": "var(--radio-button-group-item-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "rating",
+   "ctx": "@layer components",
+   "path": [
+    ".rating__item:focus-visible:not(:focus),.rating__item[data-focus-visible=true]"
+   ],
+   "selector": ".rating__item:focus-visible:not(:focus),.rating__item[data-focus-visible=true]",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "sm",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "resizable",
+   "ctx": "@layer components",
+   "path": [
+    ".resizable"
+   ],
+   "selector": ".resizable",
+   "prop": "--resizable-indicator-drag-radius",
+   "kind": "ladder",
+   "step": "sm",
+   "value": "var(--radius-sm)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "resizable",
+   "ctx": "@layer components",
+   "path": [
+    ".resizable"
+   ],
+   "selector": ".resizable",
+   "prop": "--resizable-indicator-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "resizable",
+   "ctx": "@layer components",
+   "path": [
+    ".resizable__handle--pill .resizable__handle-indicator--pill,.resizable__handle-indicator--pill"
+   ],
+   "selector": ".resizable__handle--pill .resizable__handle-indicator--pill,.resizable__handle-indicator--pill",
+   "prop": "border-radius",
+   "kind": "component-var",
+   "value": "var(--resizable-indicator-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "resizable",
+   "ctx": "@layer components",
+   "path": [
+    ".resizable__handle-indicator--drag"
+   ],
+   "selector": ".resizable__handle-indicator--drag",
+   "prop": "border-radius",
+   "kind": "component-var",
+   "value": "var(--resizable-indicator-drag-radius)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "rich-text-editor",
+   "ctx": "@layer components",
+   "path": [
+    ".rich-text-editor__shell"
+   ],
+   "selector": ".rich-text-editor__shell",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "rich-text-editor",
+   "ctx": "@layer components",
+   "path": [
+    ".rich-text-editor__prosemirror code"
+   ],
+   "selector": ".rich-text-editor__prosemirror code",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "md",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "rich-text-editor",
+   "ctx": "@layer components",
+   "path": [
+    ".rich-text-editor__prosemirror pre"
+   ],
+   "selector": ".rich-text-editor__prosemirror pre",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "rich-text-editor",
+   "ctx": "@layer components",
+   "path": [
+    ".rich-text-editor__bubble-menu"
+   ],
+   "selector": ".rich-text-editor__bubble-menu",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "3xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "rich-text-editor",
+   "ctx": "@layer components",
+   "path": [
+    ".rich-text-editor__floating-menu"
+   ],
+   "selector": ".rich-text-editor__floating-menu",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "3xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "rich-text-editor",
+   "ctx": "@layer components",
+   "path": [
+    ".rich-text-editor__suggestion-menu"
+   ],
+   "selector": ".rich-text-editor__suggestion-menu",
+   "prop": "border-radius",
+   "kind": "ladder-capped",
+   "step": "3xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "rich-text-editor",
+   "ctx": "@layer components",
+   "path": [
+    ".rich-text-editor__suggestion-menu-item"
+   ],
+   "selector": ".rich-text-editor__suggestion-menu-item",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "3xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "rich-text-editor",
+   "ctx": "@layer components",
+   "path": [
+    ".rich-text-editor__suggestion-menu-icon"
+   ],
+   "selector": ".rich-text-editor__suggestion-menu-icon",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "rich-text-editor",
+   "ctx": "@layer components",
+   "path": [
+    ".rich-text-editor__prosemirror .rich-text-editor__suggestion-decoration"
+   ],
+   "selector": ".rich-text-editor__prosemirror .rich-text-editor__suggestion-decoration",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "sm",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "rich-text-editor",
+   "ctx": "@layer components",
+   "path": [
+    ".rich-text-editor__link-popover"
+   ],
+   "selector": ".rich-text-editor__link-popover",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "rich-text-editor",
+   "ctx": "@layer components",
+   "path": [
+    ".rich-text-editor .ProseMirror-selectednode"
+   ],
+   "selector": ".rich-text-editor .ProseMirror-selectednode",
+   "prop": "border-radius",
+   "kind": "literal",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "segment",
+   "ctx": "@layer components",
+   "path": [
+    ".segment"
+   ],
+   "selector": ".segment",
+   "prop": "border-radius",
+   "kind": "other",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "segment",
+   "ctx": "@layer components",
+   "path": [
+    ".segment__item"
+   ],
+   "selector": ".segment__item",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "3xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "segment",
+   "ctx": "@layer components",
+   "path": [
+    ".segment__separator"
+   ],
+   "selector": ".segment__separator",
+   "prop": "border-radius",
+   "kind": "literal",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "segment",
+   "ctx": "@layer components",
+   "path": [
+    ".segment__indicator"
+   ],
+   "selector": ".segment__indicator",
+   "prop": "border-radius",
+   "kind": "ladder",
+   "step": "3xl",
+   "value": "var(--radius-3xl)",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "stepper",
+   "ctx": "@layer components",
+   "path": [
+    ".stepper__step-button"
+   ],
+   "selector": ".stepper__step-button",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "lg",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "stepper",
+   "ctx": "@layer components",
+   "path": [
+    ".stepper__indicator"
+   ],
+   "selector": ".stepper__indicator",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "timeline",
+   "ctx": "@layer components",
+   "path": [
+    ".timeline__marker"
+   ],
+   "selector": ".timeline__marker",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "widget",
+   "ctx": "@layer components",
+   "path": [
+    ".widget"
+   ],
+   "selector": ".widget",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "widget",
+   "ctx": "@layer components",
+   "path": [
+    ".widget__content"
+   ],
+   "selector": ".widget__content",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "widget",
+   "ctx": "@layer components",
+   "path": [
+    ".widget__legend-item-dot"
+   ],
+   "selector": ".widget__legend-item-dot",
+   "prop": "border-radius",
+   "kind": "circle",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sidebar",
+   "ctx": "@layer components",
+   "path": [
+    ".sidebar--floating"
+   ],
+   "selector": ".sidebar--floating",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sidebar",
+   "ctx": "@layer components",
+   "path": [
+    ".sidebar__menu-item-content"
+   ],
+   "selector": ".sidebar__menu-item-content",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sidebar",
+   "ctx": "@layer components",
+   "path": [
+    ".sidebar__menu-action"
+   ],
+   "selector": ".sidebar__menu-action",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "lg",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sidebar",
+   "ctx": "@layer components",
+   "path": [
+    ".sidebar__provider:has(.sidebar--inset) .sidebar__main"
+   ],
+   "selector": ".sidebar__provider:has(.sidebar--inset) .sidebar__main",
+   "prop": "border-radius",
+   "kind": "base",
+   "autoStep": "2xl",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sidebar",
+   "ctx": "@layer components",
+   "path": [
+    ".sidebar__mobile-sheet[data-sheet-drawer-direction=left],.sidebar__mobile-sheet[data-sheet-drawer-direction=right]"
+   ],
+   "selector": ".sidebar__mobile-sheet[data-sheet-drawer-direction=left],.sidebar__mobile-sheet[data-sheet-drawer-direction=right]",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sidebar",
+   "ctx": "@layer components",
+   "path": [
+    ".sidebar__mobile-dialog"
+   ],
+   "selector": ".sidebar__mobile-dialog",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  },
+  {
+   "pkg": "@heroui-pro/react",
+   "component": "sidebar",
+   "ctx": "@layer components",
+   "path": [
+    ".sidebar__mobile-sheet[data-sheet-drawer-direction=left]:after,.sidebar__mobile-sheet[data-sheet-drawer-direction=right]:after"
+   ],
+   "selector": ".sidebar__mobile-sheet[data-sheet-drawer-direction=left]:after,.sidebar__mobile-sheet[data-sheet-drawer-direction=right]:after",
+   "prop": "border-radius",
+   "kind": "zero",
+   "value": "0",
+   "versions": [
+    "1.0.0-beta.8",
+    "1.0.0-beta.9"
+   ]
+  }
+ ]
+}

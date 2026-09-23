@@ -1,0 +1,24 @@
+/* @orumio/design — curvature. Hand-written (SHAPE.md §Curvature, §Fallback).
+
+   Every rounded rectangle draws continuous curvature. Chromium 139+ renders `corner-shape`; an engine
+   that cannot (WebKit — every browser on iOS — and Firefox, as of 2026-09) draws a circular arc of the
+   same radius, which reads rounder than the design. There the whole ladder is scaled by K, the factor
+   whose arc best matches the squircle's silhouette, so the corners sit where the design put them.
+   When such an engine gains `corner-shape`, the @supports condition stops matching and the scale
+   returns to 1 by itself. Circles are 9999px and are never scaled. */
+@layer base {
+  *,
+  ::before,
+  ::after {
+    corner-shape: var(--shape-curvature);
+  }
+}
+
+@layer theme {
+  @supports not (corner-shape: superellipse(1.8)) {
+    :root,
+    :host {
+      --shape-scale: 0.64;
+    }
+  }
+}

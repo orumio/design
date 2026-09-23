@@ -1,0 +1,23 @@
+/* @orumio/design — the profile for a HeroUI product. Import it ONCE, directly after HeroUI:
+
+     @import "@heroui/styles/css";
+     @import "@heroui-pro/react/css";
+     @import "@orumio/design/shape/app.css";
+
+   A product that must leave a module out imports the modules it keeps instead, and says why in its
+   entry (`/* deviation: omit <module> — <reason> *\/`). Deviations of VALUE go in the product's
+   shape.deviations.css, never here. */
+@import "./tokens.css";
+@import "./circles.css";
+@import "./roles.css";
+@import "./curvature.css";
+
+/* A true circle in product code: `rounded-circle`, or `rounded-full`, which means the same here. */
+@utility rounded-circle {
+  border-radius: calc(infinity * 1px);
+  corner-shape: round;
+}
+@utility rounded-full {
+  border-radius: calc(infinity * 1px);
+  corner-shape: round;
+}
