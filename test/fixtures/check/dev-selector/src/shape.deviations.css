@@ -1,0 +1,9 @@
+:root {
+  /* deviation: square buttons on the POS — masanori/2026-09-23 */
+  --shape-part-button: 0;
+}
+
+.card {
+  /* deviation: one special card — masanori/2026-09-23 */
+  --shape-part-card: 0;
+}

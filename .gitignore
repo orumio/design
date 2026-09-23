@@ -2,3 +2,5 @@ node_modules/
 census/
 specimen-out/
 *.local.json
+# the check fixtures carry fake HeroUI manifests ({name, version} only)
+!test/fixtures/check/*/node_modules/

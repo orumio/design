@@ -1,0 +1,5 @@
+@import "@heroui/styles/css";
+/* deviation: omit circles — this product draws no HeroUI circles yet */
+/* deviation: omit curvature.css - the kiosk browser mis-draws corner-shape */
+@import "@orumio/design/shape/tokens.css";
+@import "@orumio/design/shape/roles.css";

@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+@import "@heroui-pro/react/css";
+/* the shared shape, directly after HeroUI */
+
+@import "@orumio/design/shape/app.css";
+@import "./shape.deviations.css";
+
+@source "../**/*.{ts,tsx}";
+
+.panel {
+  border-radius: var(--radius-card);
+  border-top-left-radius: var(--radius-nested, 1rem);
+}
+.avatar {
+  corner-shape: round;
+  border-radius: 0;
+}
+.panel-content {
+  background: url("data:image/svg+xml;utf8,<svg/>");
+  border-radius: inherit;
+  padding: var(--radius-lg); /* reading a token is fine */
+}

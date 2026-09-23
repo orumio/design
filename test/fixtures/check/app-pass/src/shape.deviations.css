@@ -1,0 +1,8 @@
+/* This product's differences from the principle. */
+:root {
+  /* deviation: denser tables for warehouse screens — masanori/2026-09-23 */
+  --shape-role-inset: var(--radius-md);
+
+  /* deviation: the button reads as a key on a scanner - masanori/2026-09-22 */
+  --shape-part-button: var(--radius-lg);
+}

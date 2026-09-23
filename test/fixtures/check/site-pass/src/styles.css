@@ -1,0 +1,6 @@
+@import "tailwindcss" source("../");
+@import "@orumio/design/shape/site.css";
+
+.hero {
+  border-radius: var(--radius-sheet);
+}

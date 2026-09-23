@@ -1,0 +1,7 @@
+.tile {
+  border-radius: var(--radius-card);
+  corner-shape: superellipse(2);
+}
+.dot {
+  corner-shape: round;
+}

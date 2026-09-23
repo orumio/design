@@ -1,0 +1,11 @@
+@import "@heroui/styles/css";
+@import "@orumio/design/shape/app.css";
+
+@theme {
+  --color-brand: teal;
+  --radius-card: 1rem;
+}
+:root {
+  --shape-role-card: var(--radius-xl);
+  --field-radius: 4px;
+}

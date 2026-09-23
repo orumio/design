@@ -1,0 +1,5 @@
+@import "@heroui/styles/css";
+@import "@orumio/design/shape/tokens.css";
+@import "@orumio/design/shape/roles.css";
+@import "@orumio/design/shape/curvature.css";
+/* deviation: omit curvature */

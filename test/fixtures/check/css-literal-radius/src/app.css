@@ -1,0 +1,13 @@
+@import "@heroui/styles/css";
+@import "@orumio/design/shape/app.css";
+
+.card {
+  border-radius: 12px;
+  border-top-left-radius: var(--radius-lg);
+}
+.badge {
+  @apply px-2 rounded-[5px];
+}
+.inner {
+  border-radius: calc(var(--radius-card) - 4px);
+}

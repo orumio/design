@@ -1,0 +1,9 @@
+:root {
+  /* deviation: denser rows — masanori/2026-09-23 */
+  --shape-role-inset: var(--radius-md);
+  --shape-role-control: var(--radius-lg);
+  /* deviation: calmer sheets — masanori/2026-13-01 */
+  --shape-role-sheet: var(--radius-3xl);
+  /* denser */
+  --shape-step-md: 0.4rem;
+}
