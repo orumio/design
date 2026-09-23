@@ -5,43 +5,57 @@
 @layer components {
   .close-button {
     border-radius: var(--shape-part-close-button, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .accordion__item::after {
     border-radius: var(--radius-xs);
+    corner-shape: var(--shape-curvature);
   }
   .accordion--surface {
     border-radius: var(--shape-part-accordion, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .accordion--surface .accordion__item:first-child [data-slot="accordion-trigger"] {
     border-start-start-radius: var(--shape-part-accordion-trigger, var(--radius-card));
+    corner-start-start-shape: var(--shape-curvature);
     border-start-end-radius: var(--shape-part-accordion-trigger, var(--radius-card));
+    corner-start-end-shape: var(--shape-curvature);
   }
   .accordion--surface .accordion__item:last-child:not(:has([data-slot="accordion-trigger"][aria-expanded="true"])) [data-slot="accordion-trigger"] {
     border-end-start-radius: var(--shape-part-accordion-trigger, var(--radius-card));
+    corner-end-start-shape: var(--shape-curvature);
     border-end-end-radius: var(--shape-part-accordion-trigger, var(--radius-card));
+    corner-end-end-shape: var(--shape-curvature);
   }
   .link {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .pagination__link {
     border-radius: var(--shape-part-pagination-link, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .tabs__list-container {
     border-radius: var(--shape-part-tabs-list-container, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .tabs__list-container {
     > .tabs__list-container__scroll-prev, > .tabs__list-container__scroll-next {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .tabs__tab {
     border-radius: var(--shape-part-tabs-tab, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .tabs__separator {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .tabs__indicator {
     border-radius: var(--shape-part-tabs-indicator, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .tabs--secondary > .tabs__list-container {
     border-radius: 0;
@@ -58,110 +72,148 @@
   }
   .button {
     border-radius: var(--shape-part-button, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .button-group .button {
     border-radius: 0;
   }
   .button-group--horizontal .button:first-child {
     border-start-start-radius: var(--shape-part-button, var(--radius-control));
+    corner-start-start-shape: var(--shape-curvature);
     border-end-start-radius: var(--shape-part-button, var(--radius-control));
+    corner-end-start-shape: var(--shape-curvature);
   }
   .button-group--horizontal .button:last-child {
     border-start-end-radius: var(--shape-part-button, var(--radius-control));
+    corner-start-end-shape: var(--shape-curvature);
     border-end-end-radius: var(--shape-part-button, var(--radius-control));
+    corner-end-end-shape: var(--shape-curvature);
   }
   .button-group--horizontal .button:first-child:last-child {
     border-radius: var(--shape-part-button, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .button-group--vertical .button:first-child {
     border-top-left-radius: var(--shape-part-button, var(--radius-control));
+    corner-top-left-shape: var(--shape-curvature);
     border-top-right-radius: var(--shape-part-button, var(--radius-control));
+    corner-top-right-shape: var(--shape-curvature);
   }
   .button-group--vertical .button:last-child {
     border-bottom-right-radius: var(--shape-part-button, var(--radius-control));
+    corner-bottom-right-shape: var(--shape-curvature);
     border-bottom-left-radius: var(--shape-part-button, var(--radius-control));
+    corner-bottom-left-shape: var(--shape-curvature);
   }
   .button-group--vertical .button:first-child:last-child {
     border-radius: var(--shape-part-button, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .button-group__separator {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .toggle-button {
     border-radius: var(--shape-part-toggle-button, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .toggle-button-group .toggle-button {
     border-radius: 0;
   }
   .toggle-button-group--horizontal .toggle-button:first-child {
     border-start-start-radius: var(--shape-part-toggle-button, var(--radius-control));
+    corner-start-start-shape: var(--shape-curvature);
     border-end-start-radius: var(--shape-part-toggle-button, var(--radius-control));
+    corner-end-start-shape: var(--shape-curvature);
   }
   .toggle-button-group--horizontal .toggle-button:last-child {
     border-start-end-radius: var(--shape-part-toggle-button, var(--radius-control));
+    corner-start-end-shape: var(--shape-curvature);
     border-end-end-radius: var(--shape-part-toggle-button, var(--radius-control));
+    corner-end-end-shape: var(--shape-curvature);
   }
   .toggle-button-group--horizontal .toggle-button:first-child:last-child {
     border-radius: var(--shape-part-toggle-button, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .toggle-button-group--vertical .toggle-button:first-child {
     border-top-left-radius: var(--shape-part-toggle-button, var(--radius-control));
+    corner-top-left-shape: var(--shape-curvature);
     border-top-right-radius: var(--shape-part-toggle-button, var(--radius-control));
+    corner-top-right-shape: var(--shape-curvature);
   }
   .toggle-button-group--vertical .toggle-button:last-child {
     border-bottom-right-radius: var(--shape-part-toggle-button, var(--radius-control));
+    corner-bottom-right-shape: var(--shape-curvature);
     border-bottom-left-radius: var(--shape-part-toggle-button, var(--radius-control));
+    corner-bottom-left-shape: var(--shape-curvature);
   }
   .toggle-button-group--vertical .toggle-button:first-child:last-child {
     border-radius: var(--shape-part-toggle-button, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .toggle-button-group__separator {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .toggle-button-group--detached .toggle-button {
     border-radius: var(--shape-part-toggle-button, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .toolbar--attached {
     border-radius: var(--shape-part-toolbar, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .dropdown__popover {
     border-radius: var(--shape-part-dropdown-popover, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .list-box-item {
     border-radius: var(--shape-part-list-box-item, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .menu-item {
     border-radius: var(--shape-part-menu-item, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .tag {
     border-radius: var(--shape-part-tag, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .tag--lg {
     border-radius: var(--shape-part-tag, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .color-area {
     border-radius: var(--shape-part-color-area, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .color-area--show-dots::after {
     border-radius: inherit;
+    corner-shape: inherit;
   }
   .color-area__thumb {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .color-picker__trigger {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .color-picker__popover {
     border-radius: var(--shape-part-color-picker-popover, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .color-slider {
     .color-slider__track {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .color-slider {
     .color-slider__thumb {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .color-slider {
@@ -176,7 +228,9 @@
       .color-slider__track {
         &::before {
           border-start-start-radius: 9999px;
+          corner-start-start-shape: round;
           border-end-start-radius: 9999px;
+          corner-end-start-shape: round;
         }
       }
     }
@@ -186,7 +240,9 @@
       .color-slider__track {
         &::after {
           border-start-end-radius: 9999px;
+          corner-start-end-shape: round;
           border-end-end-radius: 9999px;
+          corner-end-end-shape: round;
         }
       }
     }
@@ -203,7 +259,9 @@
       .color-slider__track {
         &::before {
           border-end-start-radius: 9999px;
+          corner-end-start-shape: round;
           border-end-end-radius: 9999px;
+          corner-end-end-shape: round;
         }
       }
     }
@@ -213,132 +271,162 @@
       .color-slider__track {
         &::after {
           border-start-start-radius: 9999px;
+          corner-start-start-shape: round;
           border-start-end-radius: 9999px;
+          corner-start-end-shape: round;
         }
       }
     }
   }
   .color-swatch--circle {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .color-swatch--square {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .color-swatch--xs {
     &.color-swatch--circle {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .color-swatch--sm {
     &.color-swatch--circle {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .color-swatch--lg {
     &.color-swatch--circle {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .color-swatch--xl {
     &.color-swatch--circle {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .color-swatch-picker__item {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .color-swatch-picker__swatch {
     border-radius: inherit;
+    corner-shape: inherit;
   }
   .color-swatch-picker--xs .color-swatch-picker__item {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .color-swatch-picker--sm .color-swatch-picker__item {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .color-swatch-picker--lg .color-swatch-picker__item {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .color-swatch-picker--xl .color-swatch-picker__item {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .color-swatch-picker--square .color-swatch-picker__item {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .color-swatch-picker--square .color-swatch-picker__item {
     .color-swatch-picker__swatch {
       border-radius: var(--radius-lg);
+      corner-shape: var(--shape-curvature);
     }
   }
   .color-swatch-picker--square .color-swatch-picker__item {
     &[data-selected="true"] {
       .color-swatch-picker__swatch {
         border-radius: var(--radius-lg);
+        corner-shape: var(--shape-curvature);
       }
     }
   }
   .color-swatch-picker--square.color-swatch-picker--xs .color-swatch-picker__item {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .color-swatch-picker--square.color-swatch-picker--xs .color-swatch-picker__item {
     .color-swatch-picker__swatch {
       border-radius: var(--radius-md);
+      corner-shape: var(--shape-curvature);
     }
   }
   .color-swatch-picker--square.color-swatch-picker--xs .color-swatch-picker__item {
     &[data-selected="true"] {
       .color-swatch-picker__swatch {
         border-radius: var(--radius-md);
+        corner-shape: var(--shape-curvature);
       }
     }
   }
   .color-swatch-picker--square.color-swatch-picker--sm .color-swatch-picker__item {
     border-radius: var(--radius-lg);
+    corner-shape: var(--shape-curvature);
   }
   .color-swatch-picker--square.color-swatch-picker--sm .color-swatch-picker__item {
     .color-swatch-picker__swatch {
       border-radius: var(--radius-lg);
+      corner-shape: var(--shape-curvature);
     }
   }
   .color-swatch-picker--square.color-swatch-picker--sm .color-swatch-picker__item {
     &[data-selected="true"] {
       .color-swatch-picker__swatch {
         border-radius: var(--radius-md);
+        corner-shape: var(--shape-curvature);
       }
     }
   }
   .color-swatch-picker--square.color-swatch-picker--lg .color-swatch-picker__item {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .color-swatch-picker--square.color-swatch-picker--lg .color-swatch-picker__item {
     .color-swatch-picker__swatch {
       border-radius: var(--radius-lg);
+      corner-shape: var(--shape-curvature);
     }
   }
   .color-swatch-picker--square.color-swatch-picker--lg .color-swatch-picker__item {
     &[data-selected="true"] {
       .color-swatch-picker__swatch {
         border-radius: var(--radius-lg);
+        corner-shape: var(--shape-curvature);
       }
     }
   }
   .color-swatch-picker--square.color-swatch-picker--xl .color-swatch-picker__item {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .color-swatch-picker--square.color-swatch-picker--xl .color-swatch-picker__item {
     .color-swatch-picker__swatch {
       border-radius: var(--radius-lg);
+      corner-shape: var(--shape-curvature);
     }
   }
   .color-swatch-picker--square.color-swatch-picker--xl .color-swatch-picker__item {
     &[data-selected="true"] {
       .color-swatch-picker__swatch {
         border-radius: var(--radius-lg);
+        corner-shape: var(--shape-curvature);
       }
     }
   }
   .color-input-group {
     border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-shape: var(--shape-curvature);
   }
   .color-input-group__input {
     border-radius: 0;
@@ -358,57 +446,74 @@
   .slider {
     .slider__track {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .slider {
     .slider__thumb {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .slider {
     .slider__thumb {
       &::after {
         border-radius: 9999px;
+        corner-shape: round;
       }
     }
   }
   .switch__control {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .switch--sm .switch__control {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .switch__thumb {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .switch--sm .switch__thumb {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .switch--lg .switch__thumb {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .badge {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .badge--lg {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .badge--sm {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .chip {
     border-radius: var(--shape-part-chip, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .table-root--primary {
     border-radius: var(--shape-part-table-root, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .table-root--secondary :is( th.table__column:first-child, [role="row"] > [role="presentation"]:first-of-type > .table__column ) {
     border-start-start-radius: var(--shape-part-table-column, var(--radius-nested));
+    corner-start-start-shape: var(--shape-curvature);
     border-end-start-radius: var(--shape-part-table-column, var(--radius-nested));
+    corner-end-start-shape: var(--shape-curvature);
   }
   .table-root--secondary :is( th.table__column:last-child, [role="row"] > [role="presentation"]:last-of-type > .table__column ) {
     border-start-end-radius: var(--shape-part-table-column, var(--radius-nested));
+    corner-start-end-shape: var(--shape-curvature);
     border-end-end-radius: var(--shape-part-table-column, var(--radius-nested));
+    corner-end-end-shape: var(--shape-curvature);
   }
   .table-root--secondary .table__body {
     & tr:first-child td:first-child, & tr:first-child td:last-child, & tr:last-child td:first-child, & tr:last-child td:last-child {
@@ -423,122 +528,158 @@
   .table__column {
     &::after {
       border-radius: var(--radius-sm);
+      corner-shape: var(--shape-curvature);
     }
   }
   .table__column {
     &:focus-visible, &[data-focus-visible="true"] {
       border-radius: var(--shape-part-table-column, var(--radius-inset));
+      corner-shape: var(--shape-curvature);
     }
   }
   .table__body tr:first-child td:first-child {
     border-start-start-radius: var(--shape-part-table-body, var(--radius-nested));
+    corner-start-start-shape: var(--shape-curvature);
   }
   .table__body tr:first-child td:last-child {
     border-start-end-radius: var(--shape-part-table-body, var(--radius-nested));
+    corner-start-end-shape: var(--shape-curvature);
   }
   .table__body tr:last-child td:first-child {
     border-end-start-radius: var(--shape-part-table-body, var(--radius-nested));
+    corner-end-start-shape: var(--shape-curvature);
   }
   .table__body tr:last-child td:last-child {
     border-end-end-radius: var(--shape-part-table-body, var(--radius-nested));
+    corner-end-end-shape: var(--shape-curvature);
   }
   .table__body:not(tbody) {
     border-radius: var(--shape-part-table-body, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .table__cell {
     &:focus-visible, &[data-focus-visible="true"] {
       border-radius: var(--shape-part-table-cell, var(--radius-inset));
+      corner-shape: var(--shape-curvature);
     }
   }
   .table__row:is(:focus-visible, [data-focus-visible="true"]) > :is(.table__cell, .table__column):only-child, .table__row:is(:focus-visible, [data-focus-visible="true"]) > *:only-child :is(.table__cell, .table__column) {
     border-radius: var(--shape-part-table-cell, var(--radius-inset));
+    corner-shape: var(--shape-curvature);
   }
   .table__row:is(:focus-visible, [data-focus-visible="true"]) > :is(.table__cell, .table__column):first-child:not(:only-child), .table__row:is(:focus-visible, [data-focus-visible="true"]) > *:first-child:not(:only-child) :is(.table__cell, .table__column) {
     border-start-start-radius: var(--shape-part-table-cell, var(--radius-inset));
+    corner-start-start-shape: var(--shape-curvature);
     border-end-start-radius: var(--shape-part-table-cell, var(--radius-inset));
+    corner-end-start-shape: var(--shape-curvature);
   }
   .table__row:is(:focus-visible, [data-focus-visible="true"]) > :is(.table__cell, .table__column):last-child:not(:only-child), .table__row:is(:focus-visible, [data-focus-visible="true"]) > *:last-child:not(:only-child) :is(.table__cell, .table__column) {
     border-start-end-radius: var(--shape-part-table-cell, var(--radius-inset));
+    corner-start-end-shape: var(--shape-curvature);
     border-end-end-radius: var(--shape-part-table-cell, var(--radius-inset));
+    corner-end-end-shape: var(--shape-curvature);
   }
   .table__column-resizer {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .alert {
     border-radius: var(--shape-part-alert, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .skeleton {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .meter {
     .meter__track {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .meter {
     .meter__fill {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .meter--sm .meter__track {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .meter--sm .meter__fill {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .meter--lg .meter__track {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .meter--lg .meter__fill {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .progress-bar {
     .progress-bar__track {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .progress-bar {
     .progress-bar__fill {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .progress-bar--sm .progress-bar__track {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .progress-bar--sm .progress-bar__fill {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .progress-bar--lg .progress-bar__track {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .progress-bar--lg .progress-bar__fill {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .toast {
     border-radius: var(--shape-part-toast, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .checkbox__control {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .checkbox__control {
     &::before {
       border-radius: var(--radius-md);
+      corner-shape: var(--shape-curvature);
     }
   }
   .input-otp__slot {
     border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-shape: var(--shape-curvature);
   }
   .input-otp__caret {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .input-otp__separator {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .input {
     border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-shape: var(--shape-curvature);
   }
   .input-group {
     border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-shape: var(--shape-curvature);
   }
   .input-group__input {
     border-radius: 0;
@@ -557,7 +698,9 @@
   }
   .input-group__prefix {
     border-start-start-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-start-start-shape: var(--shape-curvature);
     border-end-start-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-end-start-shape: var(--shape-curvature);
     border-start-end-radius: 0;
     border-end-end-radius: 0;
   }
@@ -565,10 +708,13 @@
     border-start-start-radius: 0;
     border-end-start-radius: 0;
     border-start-end-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-start-end-shape: var(--shape-curvature);
     border-end-end-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-end-end-shape: var(--shape-curvature);
   }
   .number-field__group {
     border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-shape: var(--shape-curvature);
   }
   .number-field__input {
     border-radius: 0;
@@ -592,22 +738,29 @@
     border-start-start-radius: 0;
     border-end-start-radius: 0;
     border-start-end-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-start-end-shape: var(--shape-curvature);
     border-end-end-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-end-end-shape: var(--shape-curvature);
   }
   .number-field__decrement-button {
     border-start-start-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-start-start-shape: var(--shape-curvature);
     border-end-start-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-end-start-shape: var(--shape-curvature);
     border-start-end-radius: 0;
     border-end-end-radius: 0;
   }
   .radio__control {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .radio__indicator:empty::before {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .search-field__group {
     border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-shape: var(--shape-curvature);
   }
   .search-field__input {
     border-radius: 0;
@@ -626,25 +779,32 @@
   }
   .textarea {
     border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-shape: var(--shape-curvature);
   }
   .calendar__nav-button {
     border-radius: var(--shape-part-calendar-nav-button, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .calendar__cell {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .calendar__cell-indicator {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .range-calendar__nav-button {
     border-radius: var(--shape-part-range-calendar-nav-button, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .range-calendar__cell {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .range-calendar__cell {
     .range-calendar__cell-button {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .range-calendar__cell {
@@ -655,74 +815,98 @@
   .range-calendar__cell {
     &[data-selected="true"]:is(td:first-child > *, [aria-disabled] + td > *) {
       border-start-start-radius: 9999px;
+      corner-start-start-shape: round;
       border-end-start-radius: 9999px;
+      corner-end-start-shape: round;
     }
   }
   .range-calendar__cell {
     &[data-selected="true"]:is(td:first-child > *, [aria-disabled] + td > *) {
       &[data-selection-start="true"] {
         border-start-start-radius: 9999px;
+        corner-start-start-shape: round;
         border-end-start-radius: 9999px;
+        corner-end-start-shape: round;
       }
     }
   }
   .range-calendar__cell {
     &[data-selected="true"]:is(td:last-child > *, td:has(+ [aria-disabled]) > *) {
       border-start-end-radius: 9999px;
+      corner-start-end-shape: round;
       border-end-end-radius: 9999px;
+      corner-end-end-shape: round;
     }
   }
   .range-calendar__cell {
     &[data-selected="true"]:is(td:last-child > *, td:has(+ [aria-disabled]) > *) {
       &[data-selection-end="true"] {
         border-start-end-radius: 9999px;
+        corner-start-end-shape: round;
         border-end-end-radius: 9999px;
+        corner-end-end-shape: round;
       }
     }
   }
   .range-calendar__cell {
     &[data-selection-start="true"]:not([data-outside-month="true"]) {
       border-start-start-radius: 9999px;
+      corner-start-start-shape: round;
       border-end-start-radius: 9999px;
+      corner-end-start-shape: round;
     }
   }
   .range-calendar__cell {
     &[data-selection-end="true"]:not([data-outside-month="true"]) {
       border-start-end-radius: 9999px;
+      corner-start-end-shape: round;
       border-end-end-radius: 9999px;
+      corner-end-end-shape: round;
     }
   }
   .range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month="true"]) + td > .range-calendar__cell[data-selected="true"] {
     border-start-start-radius: 9999px;
+    corner-start-start-shape: round;
     border-end-start-radius: 9999px;
+    corner-end-start-shape: round;
   }
   .range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month="true"]) + td > .range-calendar__cell[data-selected="true"] {
     &[data-outside-month="true"], &[data-selection-start="true"] {
       border-start-start-radius: 9999px;
+      corner-start-start-shape: round;
       border-end-start-radius: 9999px;
+      corner-end-start-shape: round;
     }
   }
   .range-calendar__grid-body td:has(> .range-calendar__cell[data-selected="true"]):has( + td > .range-calendar__cell[data-outside-month="true"] ) > .range-calendar__cell[data-selected="true"] {
     border-start-end-radius: 9999px;
+    corner-start-end-shape: round;
     border-end-end-radius: 9999px;
+    corner-end-end-shape: round;
   }
   .range-calendar__grid-body td:has(> .range-calendar__cell[data-selected="true"]):has( + td > .range-calendar__cell[data-outside-month="true"] ) > .range-calendar__cell[data-selected="true"] {
     &[data-outside-month="true"], &[data-selection-end="true"] {
       border-start-end-radius: 9999px;
+      corner-start-end-shape: round;
       border-end-end-radius: 9999px;
+      corner-end-end-shape: round;
     }
   }
   .range-calendar__cell-indicator {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .calendar-year-picker__trigger {
     border-radius: var(--shape-part-calendar-year-picker-trigger, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .calendar-year-picker__year-cell {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .date-input-group {
     border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-shape: var(--shape-curvature);
   }
   .date-input-group__input {
     border-radius: 0;
@@ -741,50 +925,66 @@
   }
   .date-input-group__segment {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .date-picker__trigger {
     border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-shape: var(--shape-curvature);
   }
   .date-picker__popover {
     border-radius: var(--shape-part-date-picker-popover, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .date-range-picker__trigger {
     border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-shape: var(--shape-curvature);
   }
   .date-range-picker__popover {
     border-radius: var(--shape-part-date-range-picker-popover, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .card {
     border-radius: var(--shape-part-card, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .separator {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .avatar {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .avatar--sm {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .avatar--lg {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .alert-dialog__dialog {
     border-radius: var(--shape-part-alert-dialog-dialog, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .alert-dialog__icon {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .drawer__dialog {
     &[data-placement="bottom"] {
       border-start-start-radius: var(--shape-part-drawer-dialog, var(--radius-nested));
+      corner-start-start-shape: var(--shape-curvature);
       border-start-end-radius: var(--shape-part-drawer-dialog, var(--radius-nested));
+      corner-start-end-shape: var(--shape-curvature);
     }
   }
   .drawer__dialog {
     &[data-placement="top"] {
       border-end-start-radius: var(--shape-part-drawer-dialog, var(--radius-nested));
+      corner-end-start-shape: var(--shape-curvature);
       border-end-end-radius: var(--shape-part-drawer-dialog, var(--radius-nested));
+      corner-end-end-shape: var(--shape-curvature);
     }
   }
   .drawer__dialog {
@@ -800,182 +1000,236 @@
   .drawer__handle {
     & > [data-slot="drawer-handle-bar"] {
       border-radius: 9999px;
+      corner-shape: round;
     }
   }
   .modal__dialog {
     border-radius: var(--shape-part-modal-dialog, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .modal__dialog--full {
     border-radius: 0;
   }
   .modal__icon {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .popover {
     border-radius: var(--shape-part-popover, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .tooltip {
     border-radius: var(--shape-part-tooltip, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .combo-box__trigger {
     &:focus-visible:not(:focus), &[data-focus-visible="true"] {
       border-radius: var(--radius-xs);
+      corner-shape: var(--shape-curvature);
     }
   }
   .combo-box__trigger {
     &:focus-visible, &[data-focus-visible="true"] {
       border-radius: var(--radius-xs);
+      corner-shape: var(--shape-curvature);
     }
   }
   .combo-box__popover {
     border-radius: var(--shape-part-combo-box-popover, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .select__trigger {
     border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-shape: var(--shape-curvature);
   }
   .select__clear-button {
     border-radius: var(--shape-part-select-clear-button, var(--radius-inset));
+    corner-shape: var(--shape-curvature);
   }
   .select__popover {
     border-radius: var(--shape-part-select-popover, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .autocomplete__trigger {
     border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    corner-shape: var(--shape-curvature);
   }
   .autocomplete__popover {
     border-radius: var(--shape-part-autocomplete-popover, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .autocomplete__clear-button {
     border-radius: var(--shape-part-autocomplete-clear-button, var(--radius-inset));
+    corner-shape: var(--shape-curvature);
   }
   .kbd {
     border-radius: var(--shape-part-kbd, var(--radius-inset));
+    corner-shape: var(--shape-curvature);
   }
   .typography-prose code {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .typography-prose pre {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .typography-prose img {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .typography--code {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .navbar[data-in-app-layout=true].navbar--sticky,.navbar[data-in-app-layout=true].navbar--static,.navbar[data-in-app-layout=true].navbar--floating {
     border-radius: 0;
   }
   .action-bar [data-slot=toolbar] {
     border-radius: var(--radius-3xl);
+    corner-shape: var(--shape-curvature);
   }
   .agenda {
     --agenda-event-radius: var(--radius-md);
   }
   .agenda__day-header-date {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .agenda__all-day-toggle {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .agenda__all-day-event {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .agenda__event {
     border-radius: var(--agenda-event-radius);
+    corner-shape: var(--shape-curvature);
   }
   .agenda__resize-handle:after {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .agenda__create-preview {
     border-radius: var(--agenda-event-radius);
+    corner-shape: var(--shape-curvature);
   }
   .agenda__drop-preview {
     border-radius: var(--agenda-event-radius);
+    corner-shape: var(--shape-curvature);
   }
   .agenda__current-time-label {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .agenda__month-cell[data-drop-target] {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .agenda__month-spanning-event {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .agenda__month-cell-date {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .agenda__month-cell-more {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .agenda__month-event {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .carousel__dot {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .carousel__thumbnail {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .carousel__thumbnail img {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .chain-of-thought__step-indicator {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .chat-attachment {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .chat-loader__dot {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .chat-loader__pulse {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .chat-loader__skeleton-avatar {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .chat-loader__skeleton-line {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .chat-source__trigger-link {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .chat-source__icon,.chat-source__document-icon {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .chat-source__icon-fallback {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .chat-tool {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .chat-tool__trigger,.chat-tool-group__trigger {
     border-radius: 0;
   }
   .chat-tool__args .code-block,.chat-tool__result .code-block {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .chat-tool-group {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .chat-message__bubble {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .cell-color-picker .cell-color-picker__trigger {
     border-radius: var(--field-radius);
+    corner-shape: var(--shape-curvature);
   }
   .cell-color-picker .cell-color-picker__swatch {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .cell-select .cell-select__trigger {
     border-radius: var(--field-radius);
+    corner-shape: var(--shape-curvature);
   }
   .cell-switch .cell-switch__trigger {
     border-radius: var(--field-radius);
+    corner-shape: var(--shape-curvature);
   }
   .cell-slider .cell-slider__track {
     border-radius: var(--field-radius);
+    corner-shape: var(--shape-curvature);
   }
   .cell-slider .cell-slider__fill {
     border-radius: 0;
@@ -985,75 +1239,97 @@
   }
   .cell-slider .cell-slider__thumb:after {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .cell-slider[data-orientation=horizontal] .cell-slider__track {
     border-radius: var(--field-radius);
+    corner-shape: var(--shape-curvature);
   }
   .chart-tooltip {
     border-radius: var(--shape-part-chart-tooltip, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .chart-tooltip__indicator--dot {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .chart-tooltip__indicator--line {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .checkbox-button-group {
     --checkbox-button-group-item-radius: var(--radius-2xl);
   }
   .checkbox-button-group__item {
     border-radius: var(--checkbox-button-group-item-radius);
+    corner-shape: var(--shape-curvature);
   }
   .code-block {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .command__dialog {
     border-radius: var(--shape-part-command-dialog, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .command__item {
     border-radius: var(--shape-part-command-item, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .context-menu__popover {
     border-radius: var(--shape-part-context-menu-popover, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   [data-slot=data-grid][data-pinned-start-detached] .table__body tr:first-child td:first-child[data-pinned=start][data-pinned-edge],[data-slot=data-grid][data-pinned-start-detached] .table__body tr:last-child td:first-child[data-pinned=start][data-pinned-edge],[data-slot=data-grid][data-pinned-end-detached] .table__body tr:first-child td:last-child[data-pinned=end][data-pinned-edge],[data-slot=data-grid][data-pinned-end-detached] .table__body tr:last-child td:last-child[data-pinned=end][data-pinned-edge] {
     border-radius: 0;
   }
   .drop-zone__area {
     border-radius: var(--shape-part-drop-zone-area, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .drop-zone__trigger {
     border-radius: var(--shape-part-drop-zone-trigger, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .drop-zone__file-item {
     border-radius: var(--shape-part-drop-zone-file-item, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .drop-zone__file-format-icon-badge {
     border-radius: var(--radius-xs);
+    corner-shape: var(--shape-curvature);
   }
   .drop-zone__file-remove-trigger {
     border-radius: var(--shape-part-drop-zone-file-remove-trigger, var(--radius-inset));
+    corner-shape: var(--shape-curvature);
   }
   .emoji-picker__popover {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .emoji-picker__item {
     border-radius: var(--radius-lg);
+    corner-shape: var(--shape-curvature);
   }
   .emoji-picker__skin-tone-picker {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .emoji-picker__skin-tone-option {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .empty-state__media[data-variant=icon] {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .emoji-reaction-button {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .file-tree__item {
     border-radius: var(--radius-lg);
+    corner-shape: var(--shape-curvature);
   }
   .file-tree__item[data-selected=true]:has(+[data-selected=true]) {
     border-bottom-right-radius: 0;
@@ -1065,144 +1341,189 @@
   }
   .file-tree__chevron {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .floating-toc__bar:after {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .floating-toc__content {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .floating-toc__item {
     border-radius: var(--radius-lg);
+    corner-shape: var(--shape-curvature);
   }
   .holo-card__surface {
     border-radius: var(--holo-card-radius);
+    corner-shape: var(--shape-curvature);
   }
   .holo-card__pattern {
     border-radius: inherit;
+    corner-shape: inherit;
   }
   .holo-card__shine {
     border-radius: inherit;
+    corner-shape: inherit;
   }
   .holo-card__shine:before,.holo-card__shine:after {
     border-radius: inherit;
+    corner-shape: inherit;
   }
   .holo-card__shine-pattern {
     border-radius: inherit;
+    corner-shape: inherit;
   }
   .hover-card__content {
     border-radius: var(--shape-part-hover-card-content, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .inline-select .inline-select__trigger {
     border-radius: var(--shape-part-inline-select-trigger, var(--radius-inset));
+    corner-shape: var(--shape-curvature);
   }
   .kanban__column-indicator:empty {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .kanban__card {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .kanban__card-content {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .kanban__scroll-shadow {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .kanban__drop-indicator[data-drop-target] {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .kpi {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .kpi__icon {
     border-radius: var(--radius-lg);
+    corner-shape: var(--shape-curvature);
   }
   .kpi>.kpi__chart {
     border-bottom-right-radius: var(--radius-2xl);
+    corner-bottom-right-shape: var(--shape-curvature);
     border-bottom-left-radius: var(--radius-2xl);
+    corner-bottom-left-shape: var(--shape-curvature);
   }
   .kpi>.kpi__chart:has(+.kpi__separator,+.kpi__footer) {
     border-radius: 0;
   }
   .kpi-group--horizontal {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .kpi-group--horizontal>[data-slot=kpi] {
     border-radius: 0;
   }
   .kpi-group--vertical {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .kpi-group--vertical>[data-slot=kpi] {
     border-radius: 0;
   }
   .list-view--primary {
     border-radius: var(--radius-3xl);
+    corner-shape: var(--shape-curvature);
   }
   .list-view--primary:not([data-virtualized]) .list-view__item:first-child {
     border-top-left-radius: var(--radius-2xl);
+    corner-top-left-shape: var(--shape-curvature);
     border-top-right-radius: var(--radius-2xl);
+    corner-top-right-shape: var(--shape-curvature);
   }
   .list-view--primary:not([data-virtualized]) .list-view__item:last-child {
     border-bottom-right-radius: var(--radius-2xl);
+    corner-bottom-right-shape: var(--shape-curvature);
     border-bottom-left-radius: var(--radius-2xl);
+    corner-bottom-left-shape: var(--shape-curvature);
   }
   .map .maplibregl-popup-content {
     border-radius: 0;
   }
   .map .maplibregl-ctrl-attrib {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .map .maplibregl-ctrl-attrib-button:before {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .map__default-marker {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .map__tooltip {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .markdown__inline-code {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .native-select__select {
     border-radius: var(--field-radius);
+    corner-shape: var(--shape-curvature);
   }
   .navbar--floating {
     border-radius: var(--shape-part-navbar, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .navbar__item {
     border-radius: var(--shape-part-navbar-item, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .navbar__menu-toggle {
     border-radius: var(--shape-part-navbar-menu-toggle, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .navbar__menu-item {
     border-radius: var(--shape-part-navbar-menu-item, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .number-stepper__group {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .number-stepper__decrement-button,.number-stepper__increment-button {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .number-stepper__group--sm {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .number-stepper__group--md {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .number-stepper__group--lg {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .item-card {
     border-radius: var(--shape-part-item-card, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .item-card__icon {
     border-radius: var(--shape-part-item-card-icon, var(--radius-inset));
+    corner-shape: var(--shape-curvature);
   }
   .item-card-group {
     border-radius: var(--shape-part-item-card-group, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .item-card-group>[data-slot=item-card] {
     border-radius: 0;
@@ -1212,107 +1533,146 @@
   }
   .item-card-group--grid>[data-slot=item-card] {
     border-radius: var(--shape-part-item-card, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   [data-sheet-handle] {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .sheet__content--bottom {
     border-top-left-radius: var(--shape-part-sheet-content, var(--radius-sheet));
+    corner-top-left-shape: var(--shape-curvature);
     border-top-right-radius: var(--shape-part-sheet-content, var(--radius-sheet));
+    corner-top-right-shape: var(--shape-curvature);
   }
   .sheet__content--top {
     border-bottom-right-radius: var(--shape-part-sheet-content, var(--radius-sheet));
+    corner-bottom-right-shape: var(--shape-curvature);
     border-bottom-left-radius: var(--shape-part-sheet-content, var(--radius-sheet));
+    corner-bottom-left-shape: var(--shape-curvature);
   }
   .sheet__content--left {
     border-top-right-radius: var(--shape-part-sheet-content, var(--radius-sheet));
+    corner-top-right-shape: var(--shape-curvature);
     border-bottom-right-radius: var(--shape-part-sheet-content, var(--radius-sheet));
+    corner-bottom-right-shape: var(--shape-curvature);
   }
   .sheet__content--right {
     border-top-left-radius: var(--shape-part-sheet-content, var(--radius-sheet));
+    corner-top-left-shape: var(--shape-curvature);
     border-bottom-left-radius: var(--shape-part-sheet-content, var(--radius-sheet));
+    corner-bottom-left-shape: var(--shape-curvature);
   }
   [data-sheet-detached] {
     border-radius: var(--shape-part-sheet, var(--radius-sheet));
+    corner-shape: var(--shape-curvature);
   }
   [data-sheet-detached] .sheet__dialog {
     border-radius: var(--shape-part-sheet-dialog, var(--radius-sheet));
+    corner-shape: var(--shape-curvature);
   }
   .sheet__dialog--bottom {
     border-top-left-radius: var(--shape-part-sheet-dialog, var(--radius-sheet));
+    corner-top-left-shape: var(--shape-curvature);
     border-top-right-radius: var(--shape-part-sheet-dialog, var(--radius-sheet));
+    corner-top-right-shape: var(--shape-curvature);
   }
   .sheet__dialog--top {
     border-bottom-right-radius: var(--shape-part-sheet-dialog, var(--radius-sheet));
+    corner-bottom-right-shape: var(--shape-curvature);
     border-bottom-left-radius: var(--shape-part-sheet-dialog, var(--radius-sheet));
+    corner-bottom-left-shape: var(--shape-curvature);
   }
   .sheet__dialog--left {
     border-top-right-radius: var(--shape-part-sheet-dialog, var(--radius-sheet));
+    corner-top-right-shape: var(--shape-curvature);
     border-bottom-right-radius: var(--shape-part-sheet-dialog, var(--radius-sheet));
+    corner-bottom-right-shape: var(--shape-curvature);
   }
   .sheet__dialog--right {
     border-top-left-radius: var(--shape-part-sheet-dialog, var(--radius-sheet));
+    corner-top-left-shape: var(--shape-curvature);
     border-bottom-left-radius: var(--shape-part-sheet-dialog, var(--radius-sheet));
+    corner-bottom-left-shape: var(--shape-curvature);
   }
   .sheet__handle-bar {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .pressable-feedback {
     border-radius: inherit;
+    corner-shape: inherit;
   }
   .pressable-feedback__highlight {
     border-radius: inherit;
+    corner-shape: inherit;
   }
   .pressable-feedback__ripple {
     border-radius: inherit;
+    corner-shape: inherit;
   }
   .pressable-feedback__ripple-surface {
     border-radius: inherit;
+    corner-shape: inherit;
   }
   .pressable-feedback__hold-confirm {
     border-radius: inherit;
+    corner-shape: inherit;
   }
   .pressable-feedback__progress-feedback {
     border-radius: inherit;
+    corner-shape: inherit;
   }
   .prompt-input__shell {
     border-radius: var(--shape-part-prompt-input-shell, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .prompt-input__token {
     border-radius: var(--shape-part-prompt-input-token, var(--radius-inset));
+    corner-shape: var(--shape-curvature);
   }
   .prompt-input__token-suggestions {
     border-radius: var(--shape-part-prompt-input-token-suggestions, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .prompt-input[data-layout=compact] .prompt-input__shell--compact,.prompt-input[data-layout=inline] .prompt-input__shell--inline {
     border-radius: var(--shape-part-prompt-input-shell, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .prompt-input[data-layout=compact]:not([data-expanded]) .prompt-input__shell--compact:not(:has(.prompt-input__attachments>*)),.prompt-input[data-layout=inline] .prompt-input__shell--inline {
     border-radius: var(--shape-part-prompt-input-shell, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .prompt-input[data-layout=inline][data-expanded] .prompt-input__shell--inline,.prompt-input[data-layout=inline] .prompt-input__shell--inline:has(.prompt-input__attachments>*) {
     border-radius: var(--shape-part-prompt-input-shell, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .prompt-input[data-layout=compact][data-expanded] .prompt-input__shell--compact,.prompt-input[data-layout=compact] .prompt-input__shell--compact:has(.prompt-input__attachments>*) {
     border-radius: var(--shape-part-prompt-input-shell, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .prompt-input__queue {
     border-radius: var(--shape-part-prompt-input-queue, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .prompt-suggestion__item--pill {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .prompt-suggestion__item--card {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .radio-button-group {
     --radio-button-group-item-radius: var(--radius-2xl);
   }
   .radio-button-group__item {
     border-radius: var(--radio-button-group-item-radius);
+    corner-shape: var(--shape-curvature);
   }
   .rating__item:focus-visible:not(:focus),.rating__item[data-focus-visible=true] {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .resizable {
     --resizable-indicator-drag-radius: var(--radius-sm);
@@ -1320,78 +1680,103 @@
   }
   .resizable__handle--pill .resizable__handle-indicator--pill,.resizable__handle-indicator--pill {
     border-radius: var(--resizable-indicator-radius);
+    corner-shape: round;
   }
   .resizable__handle-indicator--drag {
     border-radius: var(--resizable-indicator-drag-radius);
+    corner-shape: var(--shape-curvature);
   }
   .rich-text-editor__shell {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .rich-text-editor__prosemirror code {
     border-radius: var(--radius-md);
+    corner-shape: var(--shape-curvature);
   }
   .rich-text-editor__prosemirror pre {
     border-radius: var(--radius-xl);
+    corner-shape: var(--shape-curvature);
   }
   .rich-text-editor__bubble-menu {
     border-radius: var(--radius-3xl);
+    corner-shape: var(--shape-curvature);
   }
   .rich-text-editor__floating-menu {
     border-radius: var(--radius-3xl);
+    corner-shape: var(--shape-curvature);
   }
   .rich-text-editor__suggestion-menu-item {
     border-radius: var(--radius-3xl);
+    corner-shape: var(--shape-curvature);
   }
   .rich-text-editor__suggestion-menu-icon {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .rich-text-editor__prosemirror .rich-text-editor__suggestion-decoration {
     border-radius: var(--radius-sm);
+    corner-shape: var(--shape-curvature);
   }
   .rich-text-editor__link-popover {
     border-radius: var(--radius-2xl);
+    corner-shape: var(--shape-curvature);
   }
   .segment {
     border-radius: var(--shape-part-segment, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .segment__item {
     border-radius: var(--shape-part-segment-item, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .segment__separator {
     border-radius: var(--radius-xs);
+    corner-shape: var(--shape-curvature);
   }
   .segment__indicator {
     border-radius: var(--shape-part-segment-indicator, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .stepper__step-button {
     border-radius: var(--shape-part-stepper-step-button, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .stepper__indicator {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .timeline__marker {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .widget {
     border-radius: var(--shape-part-widget, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .widget__content {
     border-radius: var(--shape-part-widget-content, var(--radius-nested));
+    corner-shape: var(--shape-curvature);
   }
   .widget__legend-item-dot {
     border-radius: 9999px;
+    corner-shape: round;
   }
   .sidebar--floating {
     border-radius: var(--shape-part-sidebar, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .sidebar__menu-item-content {
     border-radius: var(--shape-part-sidebar-menu-item-content, var(--radius-control));
+    corner-shape: var(--shape-curvature);
   }
   .sidebar__menu-action {
     border-radius: var(--shape-part-sidebar-menu-action, var(--radius-inset));
+    corner-shape: var(--shape-curvature);
   }
   .sidebar__provider:has(.sidebar--inset) .sidebar__main {
     border-radius: var(--shape-part-sidebar-main, var(--radius-card));
+    corner-shape: var(--shape-curvature);
   }
   .sidebar__mobile-sheet[data-sheet-drawer-direction=left],.sidebar__mobile-sheet[data-sheet-drawer-direction=right] {
     border-radius: 0;

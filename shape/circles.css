@@ -32,9 +32,9 @@
       .color-slider__track {
         &::before {
           border-start-start-radius: 9999px;
-          corner-shape: round;
+          corner-start-start-shape: round;
           border-end-start-radius: 9999px;
-          corner-shape: round;
+          corner-end-start-shape: round;
         }
       }
     }
@@ -44,9 +44,9 @@
       .color-slider__track {
         &::after {
           border-start-end-radius: 9999px;
-          corner-shape: round;
+          corner-start-end-shape: round;
           border-end-end-radius: 9999px;
-          corner-shape: round;
+          corner-end-end-shape: round;
         }
       }
     }
@@ -56,9 +56,9 @@
       .color-slider__track {
         &::before {
           border-end-start-radius: 9999px;
-          corner-shape: round;
+          corner-end-start-shape: round;
           border-end-end-radius: 9999px;
-          corner-shape: round;
+          corner-end-end-shape: round;
         }
       }
     }
@@ -68,9 +68,9 @@
       .color-slider__track {
         &::after {
           border-start-start-radius: 9999px;
-          corner-shape: round;
+          corner-start-start-shape: round;
           border-start-end-radius: 9999px;
-          corner-shape: round;
+          corner-start-end-shape: round;
         }
       }
     }
@@ -263,81 +263,81 @@
   .range-calendar__cell {
     &[data-selected="true"]:is(td:first-child > *, [aria-disabled] + td > *) {
       border-start-start-radius: 9999px;
-      corner-shape: round;
+      corner-start-start-shape: round;
       border-end-start-radius: 9999px;
-      corner-shape: round;
+      corner-end-start-shape: round;
     }
   }
   .range-calendar__cell {
     &[data-selected="true"]:is(td:first-child > *, [aria-disabled] + td > *) {
       &[data-selection-start="true"] {
         border-start-start-radius: 9999px;
-        corner-shape: round;
+        corner-start-start-shape: round;
         border-end-start-radius: 9999px;
-        corner-shape: round;
+        corner-end-start-shape: round;
       }
     }
   }
   .range-calendar__cell {
     &[data-selected="true"]:is(td:last-child > *, td:has(+ [aria-disabled]) > *) {
       border-start-end-radius: 9999px;
-      corner-shape: round;
+      corner-start-end-shape: round;
       border-end-end-radius: 9999px;
-      corner-shape: round;
+      corner-end-end-shape: round;
     }
   }
   .range-calendar__cell {
     &[data-selected="true"]:is(td:last-child > *, td:has(+ [aria-disabled]) > *) {
       &[data-selection-end="true"] {
         border-start-end-radius: 9999px;
-        corner-shape: round;
+        corner-start-end-shape: round;
         border-end-end-radius: 9999px;
-        corner-shape: round;
+        corner-end-end-shape: round;
       }
     }
   }
   .range-calendar__cell {
     &[data-selection-start="true"]:not([data-outside-month="true"]) {
       border-start-start-radius: 9999px;
-      corner-shape: round;
+      corner-start-start-shape: round;
       border-end-start-radius: 9999px;
-      corner-shape: round;
+      corner-end-start-shape: round;
     }
   }
   .range-calendar__cell {
     &[data-selection-end="true"]:not([data-outside-month="true"]) {
       border-start-end-radius: 9999px;
-      corner-shape: round;
+      corner-start-end-shape: round;
       border-end-end-radius: 9999px;
-      corner-shape: round;
+      corner-end-end-shape: round;
     }
   }
   .range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month="true"]) + td > .range-calendar__cell[data-selected="true"] {
     border-start-start-radius: 9999px;
-    corner-shape: round;
+    corner-start-start-shape: round;
     border-end-start-radius: 9999px;
-    corner-shape: round;
+    corner-end-start-shape: round;
   }
   .range-calendar__grid-body td:has(> .range-calendar__cell[data-outside-month="true"]) + td > .range-calendar__cell[data-selected="true"] {
     &[data-outside-month="true"], &[data-selection-start="true"] {
       border-start-start-radius: 9999px;
-      corner-shape: round;
+      corner-start-start-shape: round;
       border-end-start-radius: 9999px;
-      corner-shape: round;
+      corner-end-start-shape: round;
     }
   }
   .range-calendar__grid-body td:has(> .range-calendar__cell[data-selected="true"]):has( + td > .range-calendar__cell[data-outside-month="true"] ) > .range-calendar__cell[data-selected="true"] {
     border-start-end-radius: 9999px;
-    corner-shape: round;
+    corner-start-end-shape: round;
     border-end-end-radius: 9999px;
-    corner-shape: round;
+    corner-end-end-shape: round;
   }
   .range-calendar__grid-body td:has(> .range-calendar__cell[data-selected="true"]):has( + td > .range-calendar__cell[data-outside-month="true"] ) > .range-calendar__cell[data-selected="true"] {
     &[data-outside-month="true"], &[data-selection-end="true"] {
       border-start-end-radius: 9999px;
-      corner-shape: round;
+      corner-start-end-shape: round;
       border-end-end-radius: 9999px;
-      corner-shape: round;
+      corner-end-end-shape: round;
     }
   }
   .range-calendar__cell-indicator {
@@ -506,6 +506,8 @@
   }
   .resizable {
     --resizable-indicator-radius: 9999px;
+  }
+  .resizable__handle--pill .resizable__handle-indicator--pill,.resizable__handle-indicator--pill {
     corner-shape: round;
   }
   .rich-text-editor__suggestion-menu-icon {

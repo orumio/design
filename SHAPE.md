@@ -66,7 +66,7 @@ A checkbox is a small rounded square (md) on purpose: it is not a radio.
 | Module | Content | Layer |
 |---|---|---|
 | `tokens.css` (generated) | the ladder, the roles, `--shape-scale: 1`, `--radius`, `--field-radius` | `@theme static`, `theme`, `base` |
-| `roles.css` (generated) | every HeroUI radius row the census found, re-emitted with the same selector | `components` |
+| `roles.css` (generated) | every HeroUI radius row the census found, re-emitted with the same selector, each with the same corners' shape (`corner-start-start-shape` …) so whatever wins a corner's radius wins its shape | `components` |
 | `circles.css` (generated) | circle rows: 9999px + `corner-shape: round`; inheriting rows inherit the shape too | `components` |
 | `curvature.css` | the curvature on every element, and the fallback scale | `base`, `theme` |
 
@@ -148,7 +148,8 @@ draw a circular arc of the same radius, which reads rounder than the squircle.
   any engine, but they cut borders, shadows and focus rings, and this interface is built from 1px
   borders and soft shadows.
 - A product that omits `curvature.css` gets no scale: its design is straight, and shrinking it would
-  change it.
+  change it. `roles.css` carries the curvature on HeroUI's rows through `--shape-curvature`, so a
+  product that wants round arcs everywhere declares `--shape-curvature: round` as a deviation.
 
 ## 7. HeroUI updates
 

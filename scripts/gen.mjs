@@ -132,12 +132,53 @@ function emit(entries) {
   return out;
 }
 
+// ── Corner shape follows the radius, corner by corner ─────────────────────────────────────────────
+// A row that sets a radius also sets the SAME corners' shape, in the same rule: whatever wins a
+// corner's radius (specificity, then order) then wins its shape too. Declaring the shape only on
+// circle rows let a more specific non-circle row take the radius and leave the circle's `round`
+// behind (the square colour swatches, found by the specimen). A custom property that carries a
+// radius sets no shape on the element that DEFINES it; the rows that READ it take the shape.
+const SHAPE_PROP = {
+  "border-radius": "corner-shape",
+  "border-top-left-radius": "corner-top-left-shape",
+  "border-top-right-radius": "corner-top-right-shape",
+  "border-bottom-right-radius": "corner-bottom-right-shape",
+  "border-bottom-left-radius": "corner-bottom-left-shape",
+  "border-start-start-radius": "corner-start-start-shape",
+  "border-start-end-radius": "corner-start-end-shape",
+  "border-end-start-radius": "corner-end-start-shape",
+  "border-end-end-radius": "corner-end-end-shape",
+};
+
+/** Decisions for custom properties that carry a radius (`--resizable-indicator-radius: …`). */
+const varRole = new Map();
+for (const row of census.rows) if (row.prop.startsWith("--")) varRole.set(row.prop, decide(row));
+
+/** The shape a row's corners take, or null for none (a custom property; a zero corner has no curve). */
+export function shapeFor(row, role) {
+  if (row.prop.startsWith("--")) return null;
+  if (row.kind === "zero") return null;
+  if (role === R.CIRCLE) return "round";
+  if (role === "inherit") return "inherit";
+  if (row.kind === "component-var") {
+    const name = row.value?.match(/^var\((--[a-z0-9-]+)\)$/)?.[1];
+    return varRole.get(name) === R.CIRCLE ? "round" : "var(--shape-curvature)";
+  }
+  return "var(--shape-curvature)";
+}
+
+function shapeDecl(row, role) {
+  const shape = shapeFor(row, role);
+  const prop = SHAPE_PROP[row.prop];
+  return shape && prop ? [`${prop}: ${shape};`] : [];
+}
+
 function rolesCss() {
   const entries = [];
   for (const row of census.rows) {
     const role = decide(row);
     if (role === "skip") continue;
-    entries.push({ row, decls: [`${row.prop}: ${valueFor(row, role)};`] });
+    entries.push({ row, decls: [`${row.prop}: ${valueFor(row, role)};`, ...shapeDecl(row, role)] });
   }
   const capped = R.HEIGHT_CAPPED.map(({ selector, height, role }) => {
     const part = selector.replace(/^\./, "").replace(/--.*$/, "").replace("__", "-");
@@ -156,8 +197,9 @@ function circlesCss() {
   const entries = [];
   for (const row of census.rows) {
     const role = decide(row);
-    if (role === R.CIRCLE) entries.push({ row, decls: [`${row.prop}: 9999px;`, "corner-shape: round;"] });
-    else if (role === "inherit") entries.push({ row, decls: ["corner-shape: inherit;"] });
+    if (role === R.CIRCLE) entries.push({ row, decls: [`${row.prop}: 9999px;`, ...shapeDecl(row, role)] });
+    else if (role === "inherit") entries.push({ row, decls: shapeDecl(row, role) });
+    else if (shapeFor(row, role) === "round") entries.push({ row, decls: shapeDecl(row, role) }); // reads a circle variable
   }
   return (
     HEADER(
