@@ -2,6 +2,14 @@
 
 A release that changes what renders is at least a minor version, and says here what changes and where.
 
+## 1.0.4 — 2026-09-23
+
+Nothing renders differently.
+
+- `@orumio/design/check` exports the check as functions (`createContext`, `checkEntry`,
+  `checkDeviations`, `runChecks`, `ownVersion`), so launch-kit's SHAPE row can hold a registered
+  product to the profile import and the form of its deviations with the kit's own copy, statically.
+
 ## 1.0.3 — 2026-09-23
 
 Nothing renders differently.

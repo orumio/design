@@ -1,6 +1,6 @@
 {
   "name": "@orumio/design",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Orumio's shared shape: the corner-radius ladder, the roles, and continuous curvature, for HeroUI products and plain sites.",
   "license": "MIT",
   "repository": {
@@ -21,6 +21,7 @@
       "default": "./tailwind-merge.mjs"
     },
     "./roles": "./src/roles.mjs",
+    "./check": "./src/check/index.mjs",
     "./package.json": "./package.json"
   },
   "bin": {

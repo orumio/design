@@ -1,5 +1,7 @@
 // orumio-shape-check, as functions: run every check against a product root and format the report.
-// bin/check.mjs is the CLI around this; tests call it directly.
+// bin/check.mjs is the CLI around this; tests call it directly. Published as `@orumio/design/check`
+// so a gate outside the product (launch-kit's SHAPE row) can hold it to single rows without running
+// the product's own copy of the CLI.
 import { createContext } from "./context.mjs";
 import {
   checkEntry,
@@ -10,6 +12,9 @@ import {
   checkProClassified,
   checkOutdated,
 } from "./rules.mjs";
+
+export { createContext, ownVersion } from "./context.mjs";
+export { checkEntry, checkDeviations } from "./rules.mjs";
 
 /** → { ctx, rows } — one row per check, in order 1…7. */
 export function runChecks({ root = process.cwd(), profile, entry, outdated = false, lsRemote } = {}) {

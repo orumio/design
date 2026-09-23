@@ -309,3 +309,10 @@ test("listFiles: build output is skipped, including a Next.js distDir named .nex
     fs.rmSync(root, { recursive: true, force: true });
   }
 });
+
+test("the check is published as @orumio/design/check", async () => {
+  const pub = await import("@orumio/design/check");
+  for (const name of ["createContext", "checkEntry", "checkDeviations", "runChecks", "ownVersion"]) {
+    assert.equal(typeof pub[name], "function", name);
+  }
+});
