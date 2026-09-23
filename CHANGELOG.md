@@ -2,6 +2,13 @@
 
 A release that changes what renders is at least a minor version, and says here what changes and where.
 
+## 1.0.2 — 2026-09-23
+
+Nothing renders differently.
+
+- `@orumio/design/tailwind-merge` ships its own types (`tailwind-merge.d.mts`), so a strict TypeScript
+  product imports it without a declaration of its own (found adopting it in trade-counter).
+
 ## 1.0.1 — 2026-09-23
 
 Nothing renders differently.
