@@ -10,7 +10,8 @@ First release.
   sheet) and the circle role, as tokens and Tailwind utilities (`rounded-control`, …).
 - Every radius row of HeroUI 3.2.4 – 3.2.5 and HeroUI Pro 1.0.0-beta.8 – beta.9 classified and
   re-emitted by complete selector; circles declared as a role.
-- Continuous curvature, and on engines without `corner-shape` the ladder scaled by K = 0.64.
+- Continuous curvature, and on engines without `corner-shape` the ladder scaled by K = 0.64 (the owner's
+  yes of 2026-09-23, replacing the 2026-09-01 ruling that such engines keep the same radius).
 - `orumio-shape-check`: the profile import, the form of deviations, no shape outside the package,
   censused HeroUI, classified Pro components.
 
