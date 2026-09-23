@@ -1,6 +1,6 @@
 {
   "name": "@orumio/design",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Orumio's shared shape: the corner-radius ladder, the roles, and continuous curvature, for HeroUI products and plain sites.",
   "license": "MIT",
   "repository": {

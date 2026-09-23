@@ -18,6 +18,10 @@ export const IGNORED_DIRS = new Set([
   ".git",
 ]);
 
+/** Build output is never product code. Next.js also writes to any `distDir` a product names, and
+ * products name them `.next-<purpose>` (product-video-engine's `.next-e2e`), so the prefix is ignored. */
+export const isIgnoredDir = (name) => IGNORED_DIRS.has(name) || name.startsWith(".next-");
+
 const MAX_BYTES = 2 * 1024 * 1024; // a bigger "source" file is generated output, not product code
 
 /** Every file under `root` (absolute paths, sorted) whose name `accept` returns true for. */
@@ -33,7 +37,7 @@ export function listFiles(root, accept) {
     for (const e of entries) {
       const full = path.join(dir, e.name);
       if (e.isDirectory()) {
-        if (!IGNORED_DIRS.has(e.name)) visit(full);
+        if (!isIgnoredDir(e.name)) visit(full);
       } else if (e.isFile() && accept(e.name)) {
         try {
           if (fs.statSync(full).size <= MAX_BYTES) out.push(full);

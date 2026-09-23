@@ -7,6 +7,9 @@ import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { runChecks, formatReport, exitCode } from "../src/check/index.mjs";
 import { parseCss, importsOf, walk } from "../src/check/css.mjs";
+import { listFiles, isIgnoredDir } from "../src/check/files.mjs";
+import fs from "node:fs";
+import os from "node:os";
 import { heroImports, kebabComponent, componentOf, checkOutdated, deviationCommentProblem, radiusValueProblem } from "../src/check/rules.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -289,5 +292,20 @@ test("deviation comments and radius values", () => {
   }
   for (const bad of ["12px", "9999px", "var(--radius)", "var(--shape-role-card)", "calc(var(--radius-lg) - 2px)", "50%"]) {
     assert.notEqual(radiusValueProblem(bad), null, bad);
+  }
+});
+
+test("listFiles: build output is skipped, including a Next.js distDir named .next-<purpose>", () => {
+  for (const d of [".next", ".next-e2e", ".next-dev", "node_modules", ".open-next"]) assert.ok(isIgnoredDir(d), d);
+  for (const d of ["next", "nextra", ".nextjs-src", "src"]) assert.ok(!isIgnoredDir(d), d);
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "shape-walk-"));
+  try {
+    for (const rel of ["src/app.css", ".next-e2e/static/chunk.css", ".next/static/chunk.css"]) {
+      fs.mkdirSync(path.dirname(path.join(root, rel)), { recursive: true });
+      fs.writeFileSync(path.join(root, rel), ":root{}");
+    }
+    assert.deepEqual(listFiles(root, (n) => n.endsWith(".css")).map((f) => path.relative(root, f)), ["src/app.css"]);
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
   }
 });

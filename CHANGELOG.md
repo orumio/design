@@ -2,6 +2,14 @@
 
 A release that changes what renders is at least a minor version, and says here what changes and where.
 
+## 1.0.3 — 2026-09-23
+
+Nothing renders differently.
+
+- `orumio-shape-check` skips a Next.js build directory named `.next-<purpose>` as it skips `.next`
+  (found adopting it in product-video-engine, whose e2e build goes to `.next-e2e/`: 5,000 findings in
+  compiled output).
+
 ## 1.0.2 — 2026-09-23
 
 Nothing renders differently.
