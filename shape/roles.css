@@ -425,7 +425,7 @@
     }
   }
   .color-input-group {
-    border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-radius: var(--field-radius);
     corner-shape: var(--shape-curvature);
   }
   .color-input-group__input {
@@ -662,7 +662,7 @@
     }
   }
   .input-otp__slot {
-    border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-radius: var(--field-radius);
     corner-shape: var(--shape-curvature);
   }
   .input-otp__caret {
@@ -674,11 +674,11 @@
     corner-shape: var(--shape-curvature);
   }
   .input {
-    border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-radius: var(--field-radius);
     corner-shape: var(--shape-curvature);
   }
   .input-group {
-    border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-radius: var(--field-radius);
     corner-shape: var(--shape-curvature);
   }
   .input-group__input {
@@ -697,9 +697,9 @@
     }
   }
   .input-group__prefix {
-    border-start-start-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-start-start-radius: var(--field-radius);
     corner-start-start-shape: var(--shape-curvature);
-    border-end-start-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-end-start-radius: var(--field-radius);
     corner-end-start-shape: var(--shape-curvature);
     border-start-end-radius: 0;
     border-end-end-radius: 0;
@@ -707,13 +707,13 @@
   .input-group__suffix {
     border-start-start-radius: 0;
     border-end-start-radius: 0;
-    border-start-end-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-start-end-radius: var(--field-radius);
     corner-start-end-shape: var(--shape-curvature);
-    border-end-end-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-end-end-radius: var(--field-radius);
     corner-end-end-shape: var(--shape-curvature);
   }
   .number-field__group {
-    border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-radius: var(--field-radius);
     corner-shape: var(--shape-curvature);
   }
   .number-field__input {
@@ -737,15 +737,15 @@
   .number-field__increment-button {
     border-start-start-radius: 0;
     border-end-start-radius: 0;
-    border-start-end-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-start-end-radius: var(--field-radius);
     corner-start-end-shape: var(--shape-curvature);
-    border-end-end-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-end-end-radius: var(--field-radius);
     corner-end-end-shape: var(--shape-curvature);
   }
   .number-field__decrement-button {
-    border-start-start-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-start-start-radius: var(--field-radius);
     corner-start-start-shape: var(--shape-curvature);
-    border-end-start-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-end-start-radius: var(--field-radius);
     corner-end-start-shape: var(--shape-curvature);
     border-start-end-radius: 0;
     border-end-end-radius: 0;
@@ -759,7 +759,7 @@
     corner-shape: round;
   }
   .search-field__group {
-    border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-radius: var(--field-radius);
     corner-shape: var(--shape-curvature);
   }
   .search-field__input {
@@ -778,7 +778,7 @@
     }
   }
   .textarea {
-    border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-radius: var(--field-radius);
     corner-shape: var(--shape-curvature);
   }
   .calendar__nav-button {
@@ -905,7 +905,7 @@
     corner-shape: round;
   }
   .date-input-group {
-    border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-radius: var(--field-radius);
     corner-shape: var(--shape-curvature);
   }
   .date-input-group__input {
@@ -928,7 +928,7 @@
     corner-shape: var(--shape-curvature);
   }
   .date-picker__trigger {
-    border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-radius: var(--field-radius);
     corner-shape: var(--shape-curvature);
   }
   .date-picker__popover {
@@ -936,7 +936,7 @@
     corner-shape: var(--shape-curvature);
   }
   .date-range-picker__trigger {
-    border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-radius: var(--field-radius);
     corner-shape: var(--shape-curvature);
   }
   .date-range-picker__popover {
@@ -1039,7 +1039,7 @@
     corner-shape: var(--shape-curvature);
   }
   .select__trigger {
-    border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-radius: var(--field-radius);
     corner-shape: var(--shape-curvature);
   }
   .select__clear-button {
@@ -1051,7 +1051,7 @@
     corner-shape: var(--shape-curvature);
   }
   .autocomplete__trigger {
-    border-radius: var(--field-radius, calc(var(--radius) * 1.5));
+    border-radius: var(--field-radius);
     corner-shape: var(--shape-curvature);
   }
   .autocomplete__popover {

@@ -95,6 +95,8 @@ function valueFor(row, role) {
   if (STEP_NAMES.includes(role)) return `var(--radius-${role})`;
   if (role === R.CIRCLE) return "9999px";
   if (role === "inherit") return "inherit";
+  // The field token is always defined by tokens.css, so HeroUI's fallback after it is dead: name the token.
+  if (role === "keep" && row.kind === "field") return "var(--field-radius)";
   if (role === "keep") {
     if (row.value === undefined) throw new Error(`keep without a publishable value: ${row.selector}`);
     return row.value;

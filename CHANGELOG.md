@@ -2,6 +2,14 @@
 
 A release that changes what renders is at least a minor version, and says here what changes and where.
 
+## 1.0.1 — 2026-09-23
+
+Nothing renders differently.
+
+- `roles.css` names the field token alone (`var(--field-radius)`) instead of repeating HeroUI's dead
+  fallback after it; `tokens.css` always defines the token.
+- `app.css` records the Tailwind 4.3.3 measurement behind the `rounded-full` utility.
+
 ## 1.0.0 — 2026-09-23
 
 First release.

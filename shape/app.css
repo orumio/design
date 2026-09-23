@@ -12,7 +12,10 @@
 @import "./roles.css";
 @import "./curvature.css";
 
-/* A true circle in product code: `rounded-circle`, or `rounded-full`, which means the same here. */
+/* A true circle in product code: `rounded-circle`, or `rounded-full`, which means the same here.
+   Measured on Tailwind 4.3.3 (2026-09-23): an @utility named like a built-in is MERGED with it, not
+   substituted, and the merge reaches every variant (`md:rounded-full`, `hover:rounded-full` carry
+   `corner-shape: round`). The border-radius is repeated so the rule holds if a later Tailwind replaces. */
 @utility rounded-circle {
   border-radius: calc(infinity * 1px);
   corner-shape: round;
