@@ -2,6 +2,13 @@
 
 A release that changes what renders is at least a minor version, and says here what changes and where.
 
+## 1.1.0 — 2026-09-25
+
+- Add two semantic colour palettes, `orumio-navy` and `warm-neutral`, with app and site CSS profiles
+  and a typed JavaScript API for generated media. Shape output and its existing API are unchanged.
+- `warm-neutral` preserves Trade Counter's light screen colours and strengthened text on tinted
+  grounds. `orumio-navy` extends the launch-kit's public colours into a complete app palette.
+
 ## 1.0.5 — 2026-09-24
 
 Nothing renders differently on HeroUI 3.2.4 – 3.2.5 / Pro beta.8 – beta.9.

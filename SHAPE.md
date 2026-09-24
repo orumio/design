@@ -217,4 +217,5 @@ written form of this system. Where it and the code that followed disagreed, this
 
 ## 10. Not in this package
 
-Colour, spacing, type and elevation are not here. This package is shape only.
+Colour is a separate module in this package (`COLOR.md`). Spacing, type and elevation remain outside
+the shape subsystem. The shape roles never depend on which palette a product chooses.

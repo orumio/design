@@ -1,10 +1,10 @@
 # @orumio/design
 
-Orumio's shared shape: one corner-radius ladder, the roles that sit on it, and continuous curvature
-(`corner-shape: superellipse(1.8)`), for HeroUI products and plain sites. Shape only — no colour,
-spacing or type.
+Orumio's shared shape and colour: one corner-radius ladder and two selectable semantic palettes for
+HeroUI products and plain sites. Spacing and type remain product-owned.
 
 **Read [`SHAPE.md`](SHAPE.md) first.** It is the principle; `src/roles.mjs` is the same decision in code.
+For colour, read [`COLOR.md`](COLOR.md); `src/color.mjs` is its one source of values.
 
 ```sh
 pnpm add "@orumio/design@github:orumio/design#semver:^1.0.0"

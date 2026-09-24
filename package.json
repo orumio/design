@@ -1,7 +1,7 @@
 {
   "name": "@orumio/design",
-  "version": "1.0.5",
-  "description": "Orumio's shared shape: the corner-radius ladder, the roles, and continuous curvature, for HeroUI products and plain sites.",
+  "version": "1.1.0",
+  "description": "Orumio's shared shape and selectable semantic colour palettes for apps and sites.",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -21,6 +21,14 @@
       "default": "./tailwind-merge.mjs"
     },
     "./roles": "./src/roles.mjs",
+    "./color": {
+      "types": "./color.d.mts",
+      "default": "./src/color.mjs"
+    },
+    "./color/*.css": {
+      "style": "./color/*.css",
+      "default": "./color/*.css"
+    },
     "./check": "./src/check/index.mjs",
     "./package.json": "./package.json"
   },
@@ -29,17 +37,22 @@
   },
   "files": [
     "shape/",
+    "color/",
+    "color.d.mts",
     "src/",
     "bin/",
     "tailwind-merge.mjs",
     "tailwind-merge.d.mts",
     "SHAPE.md",
+    "COLOR.md",
     "CHANGELOG.md",
     "LICENSE"
   ],
   "scripts": {
     "gen": "node scripts/gen.mjs",
     "gen:check": "node scripts/gen.mjs --check",
+    "color:gen": "node scripts/gen-color.mjs",
+    "color:check": "node scripts/gen-color.mjs --check",
     "census": "node scripts/census.mjs",
     "specimen": "node scripts/specimen.mjs",
     "test": "node --test"
