@@ -1034,6 +1034,12 @@
       corner-shape: var(--shape-curvature);
     }
   }
+  .combo-box__trigger {
+    &:focus-visible:not([data-focused]), &[data-focus-visible="true"] {
+      border-radius: var(--radius-xs);
+      corner-shape: var(--shape-curvature);
+    }
+  }
   .combo-box__popover {
     border-radius: var(--shape-part-combo-box-popover, var(--radius-card));
     corner-shape: var(--shape-curvature);
@@ -1358,6 +1364,10 @@
   .holo-card__surface {
     border-radius: var(--holo-card-radius);
     corner-shape: var(--shape-curvature);
+  }
+  .holo-card__image {
+    border-radius: inherit;
+    corner-shape: inherit;
   }
   .holo-card__pattern {
     border-radius: inherit;

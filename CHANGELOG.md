@@ -2,6 +2,18 @@
 
 A release that changes what renders is at least a minor version, and says here what changes and where.
 
+## 1.0.5 — 2026-09-24
+
+Nothing renders differently on HeroUI 3.2.4 – 3.2.5 / Pro beta.8 – beta.9.
+
+- HeroUI 3.2.6 and HeroUI Pro 1.0.0-beta.10 are censused (`CENSUSED`, `peerDependencies`). Three rows
+  are new and each follows an existing rule: the combo-box chevron's focus ring under 3.2.6's new
+  selector (`xs`, as before), and Pro's `.holo-card__image` (`inherit`). The specimen passes 455 / 455
+  rows in Chromium, WebKit and Firefox on trade-counter (found moving it to the latest dependencies).
+- The census skips a custom property that ends in `-radius` but is no corner (`NOT_A_CORNER`): 3.2.6's
+  `--avatar-group-cut-radius` is the radius of the mask that cuts an overlapped avatar, not a border
+  radius.
+
 ## 1.0.4 — 2026-09-23
 
 Nothing renders differently.

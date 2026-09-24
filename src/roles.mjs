@@ -64,8 +64,8 @@ export const HEROUI_N_TO_STEP = {
 /** The HeroUI versions whose every radius row is in src/census.generated.json. A product outside this
  *  set fails orumio-shape-check (#5) until the census has been run against it. */
 export const CENSUSED = {
-  "@heroui/styles": ["3.2.4", "3.2.5"],
-  "@heroui-pro/react": ["1.0.0-beta.8", "1.0.0-beta.9"],
+  "@heroui/styles": ["3.2.4", "3.2.5", "3.2.6"],
+  "@heroui-pro/react": ["1.0.0-beta.8", "1.0.0-beta.9", "1.0.0-beta.10"],
 };
 
 /** Pro components classified row by row below. Any other Pro component falls back to

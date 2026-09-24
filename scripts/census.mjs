@@ -85,12 +85,18 @@ export function flatten(rulePath) {
   }, null);
 }
 
+/** Custom properties whose name ends in `-radius` but which no border-radius reads — named, each with
+ *  its reason, so a component token (`--card-radius`) is never dropped by a pattern.
+ *  `--avatar-group-cut-radius` (@heroui/styles 3.2.6): the radius of the radial-gradient MASK that cuts
+ *  an overlapped avatar in a clipped group; the avatar's own corner is `.avatar`'s circle row. */
+export const NOT_A_CORNER = new Set(["--avatar-group-cut-radius"]);
+
 /** Walk a parsed stylesheet and return every declaration that SETS a radius. */
 export function radiusRows(root, { pkg, component }) {
   const rows = [];
   root.walkDecls((d) => {
     const isRadiusProp = /(^|-)radius$/.test(d.prop) || /^border-.*-radius$/.test(d.prop);
-    if (!isRadiusProp) return;
+    if (!isRadiusProp || NOT_A_CORNER.has(d.prop)) return;
     // The key is the COMPLETE selector: a nested rule (`.combo-box__input { &:focus-visible {…} }`) is
     // kept as its path of rule selectors, outermost first, so roles.css can re-emit the same nesting
     // and land on the same specificity; `selector` is that path flattened the way nesting resolves.

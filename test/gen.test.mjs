@@ -27,3 +27,11 @@ test("census.generated.json: Pro rows carry only 0, inherit or var(--name); no r
   }
   for (const r of census.rows) assert.ok(!("n" in r), `${r.pkg} ${r.selector}: carries n`);
 });
+
+test("census.generated.json: a -radius property that is not a corner (NOT_A_CORNER) is never a row", () => {
+  const census = JSON.parse(fs.readFileSync(path.join(ROOT, "src/census.generated.json"), "utf8"));
+  const src = fs.readFileSync(path.join(ROOT, "scripts/census.mjs"), "utf8");
+  const named = [...src.match(/NOT_A_CORNER = new Set\(\[([^\]]*)\]\)/)[1].matchAll(/"([^"]+)"/g)].map((m) => m[1]);
+  assert.ok(named.length > 0);
+  for (const r of census.rows) assert.ok(!named.includes(r.prop), `${r.component} ${r.selector}: ${r.prop} is a row`);
+});
