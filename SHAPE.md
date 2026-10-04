@@ -115,6 +115,7 @@ A product may differ from the principle on purpose. It says so in one place, and
 | 5 | The installed HeroUI versions are censused (§7) |
 | 6 | Every HeroUI Pro component the product imports is classified row by row |
 | 7 | `--outdated` (network): WARN if a newer v1 tag exists |
+| 8 | App profile: no pressable (`button` / `Button` / `ToggleButton` / `CloseButton` / `*.Trigger` / `a` / `Link`, or any element with `onPress` / `onClick`) carries `rounded-full` or `rounded-circle` in its own `className` — §2: a pressable is a control, an icon button a rounded square. A person drawn as a pressable is marked `// shape-exempt: <reason>`. The site profile skips it (a site's `rounded-full` is a pill) |
 
 What a machine cannot check is whether the role is right — whether this panel is nested or a card.
 That is §2's question, asked in review.

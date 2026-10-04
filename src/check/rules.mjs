@@ -1,4 +1,4 @@
-// The seven checks of orumio-shape-check (SHAPE.md §4). Each takes the run's context and returns
+// The eight checks of orumio-shape-check (SHAPE.md §4). Each takes the run's context and returns
 //   { id, result: "PASS" | "FAIL" | "WARN" | "SKIP", title, summary, details: [{ file, line, message }] }
 // and never throws on a product's content: a check that cannot tell says so in its row.
 import fs from "node:fs";
@@ -309,6 +309,130 @@ export function checkNoAdHocRadiusInScripts(ctx) {
   }
   const ex = exempted ? `, ${exempted} exempt line${exempted === 1 ? "" : "s"}` : "";
   return row(4, title, details, `${ctx.scriptFiles.length} source files${ex}`);
+}
+
+// ── 8 ── a pressable is never a circle (app profile) ────────────────────────────────────────────────
+// SHAPE.md §2: "It is pressed or typed into → control. An icon button is a rounded square, never a circle." In the app
+// profile `rounded-full` IS a circle (§3), so a pressable that writes it — or `rounded-circle` — draws a circle where a
+// control belongs. Found 2026-10-04 in trade-counter: Policy's per-row disclosure trigger was a hand-built 32 px circle
+// whose hover ground was not even centred on its chevron, and three more pressables carried capsules — none of which
+// checks 1–7 could see, because `rounded-full` is a legitimate utility (dots, avatars, switches). A pressable here is a
+// JSX element that is a button (`button`, `Button`, `ToggleButton`, `CloseButton`), a trigger (`X.Trigger`), a link
+// (`a`, `Link`), or anything carrying `onPress` / `onClick`. A person drawn as a pressable (an account menu's face) is
+// the one honest exception: mark it `// shape-exempt: <reason>` as in check 4. A site's `rounded-full` is a pill, so
+// the site profile skips this row.
+const PRESSABLE_TAG = /^(?:button|Button|ToggleButton|CloseButton|a|Link|(?:[A-Z][\w]*\.)*Trigger|[A-Z][\w]*\.Trigger)$/;
+const CIRCLE_CLASS = /(?<![\w-])(?:[a-z0-9-]+:)*(rounded-(?:full|circle))(?![\w-])/;
+const TAG_OPEN = /<([A-Za-z][\w.]*)(?=[\s>/])/g;
+
+/**
+ * The opening tag starting at `start` (the `<`), read to its closing `>` across braces, strings and lines — or null
+ * when what follows `<Name` is not a JSX opening tag (a TypeScript generic or a comparison runs into a `<`, a `;` or an
+ * arrow at depth 0, which no tag's attributes contain outside braces).
+ */
+function openingTag(text, start) {
+  let depth = 0;
+  let quote = null;
+  for (let i = start + 1; i < text.length; i++) {
+    const c = text[i];
+    if (quote) {
+      if (c === "\\") i++;
+      else if (c === quote) quote = null;
+      continue;
+    }
+    if (c === '"' || c === "'" || c === "`") quote = c;
+    else if (c === "{") depth++;
+    else if (c === "}") depth--;
+    else if (depth === 0 && (c === "<" || c === ";" || (c === "=" && text[i + 1] === ">"))) return null;
+    else if (c === ">" && depth === 0) return text.slice(start, i + 1);
+  }
+  return null;
+}
+
+/**
+ * The tag's OWN attributes: { names, classes } — the attribute names at depth 0, and each `className` / `class` value
+ * (a string, or a braced expression). Never what an attribute holds: `<Section action={<Action onPress … />}>` is not
+ * pressable, and a nested element's `rounded-circle` is not Section's (found on inbox-works, 2026-10-04).
+ */
+function ownAttributes(tag) {
+  const names = [];
+  const classes = [];
+  let depth = 0;
+  let quote = null;
+  for (let i = 1; i < tag.length; i++) {
+    const c = tag[i];
+    if (quote) {
+      if (c === "\\") i++;
+      else if (c === quote) quote = null;
+      continue;
+    }
+    if (depth === 0) {
+      const nm = /^[\s]([A-Za-z_][\w-]*)\s*=/.exec(tag.slice(i - 1, i + 80));
+      if (nm && /\s/.test(tag[i - 1])) {
+        names.push(nm[1]);
+        if (nm[1] === "className" || nm[1] === "class") {
+          let j = i + nm[0].length - 1;
+          while (/\s/.test(tag[j])) j++;
+          const open = tag[j];
+          if (open === '"' || open === "'" || open === "`") classes.push(tag.slice(j + 1, tag.indexOf(open, j + 1)));
+          else if (open === "{") {
+            let d = 0;
+            let k = j;
+            for (; k < tag.length; k++) {
+              if (tag[k] === "{") d++;
+              else if (tag[k] === "}" && --d === 0) break;
+            }
+            classes.push(tag.slice(j, k + 1));
+          }
+        }
+      }
+    }
+    if (c === '"' || c === "'" || c === "`") quote = c;
+    else if (c === "{") depth++;
+    else if (c === "}") depth--;
+  }
+  return { names, classes };
+}
+
+export function checkNoPressableCircle(ctx) {
+  const title = "No pressable is a circle (rounded-full / rounded-circle on a button, trigger, link or press handler)";
+  if (ctx.profile.name !== "app") return { id: 8, result: "SKIP", title, summary: `the ${ctx.profile.name} profile: rounded-full is a pill there`, details: [] };
+  const details = [];
+  let exempted = 0;
+  for (const f of ctx.scriptFiles) {
+    const text = ctx.read(f);
+    if (!/rounded-(?:full|circle)/.test(text)) continue;
+    const file = ctx.rel(f);
+    const lines = text.split("\n");
+    const lineAt = (offset) => text.slice(0, offset).split("\n").length;
+    TAG_OPEN.lastIndex = 0;
+    let m;
+    while ((m = TAG_OPEN.exec(text))) {
+      const tag = openingTag(text, m.index);
+      if (tag === null) continue;
+      const name = m[1];
+      const own = ownAttributes(tag);
+      const press = own.names.find((n) => n === "onPress" || n === "onClick");
+      if (!PRESSABLE_TAG.test(name) && !press) continue;
+      const cls = own.classes.find((c) => CIRCLE_CLASS.test(c));
+      if (cls === undefined) continue;
+      const circle = CIRCLE_CLASS.exec(cls);
+      const line = lineAt(m.index + tag.indexOf(cls) + circle.index);
+      const tagLine = lineAt(m.index);
+      const inline = exemption(lines[line - 1]) ?? exemption(lines[tagLine - 1]);
+      const above = tagLine > 1 && COMMENT_LINE.test(lines[tagLine - 2].trim()) ? exemption(lines[tagLine - 2]) : null;
+      const ex = inline ?? above;
+      if (ex && ex.reason) {
+        exempted++;
+        continue;
+      }
+      const what = `<${name}>${PRESSABLE_TAG.test(name) ? "" : ` (${press})`}`;
+      if (ex) details.push({ file, line, message: `shape-exempt without a reason — // shape-exempt: <reason>` });
+      else details.push({ file, line, message: `${what} carries ${circle[1]} — a pressable is a control: use rounded-control (or HeroUI's Button / buttonVariants), or mark a person // shape-exempt: <reason>` });
+    }
+  }
+  const ex = exempted ? `, ${exempted} exempt` : "";
+  return row(8, title, details, `${ctx.scriptFiles.length} source files${ex}`);
 }
 
 // ── 5 ── the installed HeroUI is censused ───────────────────────────────────────────────────────────

@@ -35,9 +35,9 @@ test("app-pass: every check passes (7 is skipped without --outdated)", () => {
   assert.match(rowOf(res, 6).summary, /empty-state, sidebar/);
 });
 
-test("site-pass: every check passes, no HeroUI installed", () => {
+test("site-pass: every check passes, no HeroUI installed (8 is the app profile's)", () => {
   const res = run("site-pass", { profile: "site" });
-  for (const r of res.rows) assert.equal(r.result, r.id === 7 ? "SKIP" : "PASS", `row ${r.id}: ${r.summary}`);
+  for (const r of res.rows) assert.equal(r.result, r.id === 7 || r.id === 8 ? "SKIP" : "PASS", `row ${r.id}: ${r.summary}`);
   assert.equal(res.ctx.rel(res.ctx.entry), "src/styles.css");
   assert.match(rowOf(res, 5).summary, /no HeroUI/);
 });
@@ -169,6 +169,31 @@ test("4: borderRadius with a valid exemption passes (app-pass)", () => {
   assert.equal(r.result, "PASS");
 });
 
+// ── 8 ── a pressable is never a circle ──────────────────────────────────────────────────────────────
+test("8: a pressable with rounded-full / rounded-circle fails in the app profile; a dot, an avatar, a chip and an exempt person pass", () => {
+  const r = rowOf(run("tsx-pressable-circle"), 8);
+  assert.equal(r.result, "FAIL");
+  assert.deepEqual(where(r), [
+    "src/Controls.tsx:4",
+    "src/Controls.tsx:7",
+    "src/Controls.tsx:11",
+    "src/Controls.tsx:12",
+    "src/Controls.tsx:13",
+    "src/Controls.tsx:19",
+    "src/Controls.tsx:21",
+  ]);
+  assert.match(r.details[0].message, /<Button> .*rounded-full.*rounded-control/);
+  assert.match(r.details[1].message, /<Disclosure\.Trigger>/);
+  assert.match(r.details[2].message, /<div> \(onClick\)/);
+  assert.match(r.details[5].message, /shape-exempt without a reason/);
+  assert.ok(!where(r).some((w) => w.startsWith("src/Generic.tsx")), "a TypeScript generic is not a tag");
+});
+
+test("8: the site profile is not held to it — a site's rounded-full is a pill", () => {
+  const r = rowOf(run("tsx-pressable-circle", { profile: "site" }), 8);
+  assert.equal(r.result, "SKIP");
+});
+
 // ── 5 ── censused versions ──────────────────────────────────────────────────────────────────────────
 test("5: an uncensused HeroUI version fails", () => {
   const r = rowOf(run("uncensused"), 5);
@@ -225,7 +250,7 @@ test("CLI: exit 0 on a passing product, 1 on a failing one, 2 on a usage error",
 test("formatReport: one line per check, then FAIL details", () => {
   const text = formatReport(run("css-corner-shape"));
   const rows = text.split("\n").filter((l) => /^\d+\s+(PASS|FAIL|WARN|SKIP)\s/.test(l));
-  assert.equal(rows.length, 7);
+  assert.equal(rows.length, 8);
   assert.match(text, /FAIL #3 .*\n  src\/components\/Tile\.module\.css:3: corner-shape/);
 });
 

@@ -11,12 +11,13 @@ import {
   checkCensused,
   checkProClassified,
   checkOutdated,
+  checkNoPressableCircle,
 } from "./rules.mjs";
 
 export { createContext, ownVersion } from "./context.mjs";
 export { checkEntry, checkDeviations } from "./rules.mjs";
 
-/** → { ctx, rows } — one row per check, in order 1…7. */
+/** → { ctx, rows } — one row per check, in order 1…8. */
 export function runChecks({ root = process.cwd(), profile, entry, outdated = false, lsRemote } = {}) {
   const ctx = createContext({ root, profile, entry });
   const rows = [
@@ -27,6 +28,7 @@ export function runChecks({ root = process.cwd(), profile, entry, outdated = fal
     checkCensused(ctx),
     checkProClassified(ctx),
     checkOutdated({ enabled: outdated, ...(lsRemote ? { lsRemote } : {}) }),
+    checkNoPressableCircle(ctx),
   ];
   return { ctx, rows };
 }

@@ -2,6 +2,21 @@
 
 A release that changes what renders is at least a minor version, and says here what changes and where.
 
+## 1.2.0 — 2026-10-04
+
+Nothing renders differently. **A product's `test` can newly fail** on upgrade — fix the finding, do not pin back.
+
+- `orumio-shape-check` #8 (app profile): a pressable — `button` / `Button` / `ToggleButton` / `CloseButton` /
+  `*.Trigger` / `a` / `Link`, or any element with `onPress` / `onClick` — must not carry `rounded-full` or
+  `rounded-circle` in its own `className`. SHAPE.md §2 already said "an icon button is a rounded square, never a
+  circle"; no check could see it, because `rounded-full` is a true circle in the app profile and a legitimate one for
+  dots, avatars and switches. Only the element's OWN attributes are read (a pressable passed inside another element's
+  attribute is that element's, not its host's). A person drawn as a pressable is marked `// shape-exempt: <reason>`.
+  The site profile skips the row: a site's `rounded-full` is a pill.
+- Found by trade-counter's owner on Policy (2026-10-04): a hand-built 32 px circular disclosure trigger whose hover
+  ground was not centred on its chevron. The check then found three more in trade-counter and one in inbox-works
+  (a member's own picture — a person, to be marked exempt); every other product passes.
+
 ## 1.1.1 — 2026-10-04
 
 Nothing renders differently: the step a choice card had (HeroUI Pro's `var(--radius-2xl)`) is the step its role gives it.
