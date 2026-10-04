@@ -1674,10 +1674,10 @@
     corner-shape: var(--shape-curvature);
   }
   .radio-button-group {
-    --radio-button-group-item-radius: var(--radius-2xl);
+    --radio-button-group-item-radius: var(--shape-part-radio-button-group, var(--radius-nested));
   }
   .radio-button-group__item {
-    border-radius: var(--radio-button-group-item-radius);
+    border-radius: var(--shape-part-radio-button-group-item, var(--radius-nested));
     corner-shape: var(--shape-curvature);
   }
   .rating__item:focus-visible:not(:focus),.rating__item[data-focus-visible=true] {

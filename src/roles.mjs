@@ -86,6 +86,7 @@ export const PRO_CLASSIFIED = [
   "native-select",
   "navbar",
   "prompt-input",
+  "radio-button-group",
   "segment",
   "sheet",
   "sidebar",
@@ -203,6 +204,10 @@ export const RULES = [
   ["prompt-input", /__token-suggestions$/, "card"],
   ["prompt-input", /:not\(\[data-expanded\]\)/, "control"], // the one-line shell is an input
   ["prompt-input", null, "nested"], // the shells and the queue
+  // A choice card (a radio as a selectable card): a surface inside a card or a pane, so nested — HeroUI Pro's own
+  // default (`--radio-button-group-item-radius: var(--radius-2xl)`) is already that step; its radio dot is the OSS
+  // `radio`'s circle. Classified for trade-counter's decision cards and Policy (R2 S3, 2026-10-04).
+  ["radio-button-group", null, "nested"],
   ["segment", /^\.segment$/, "nested"], // the track: concentric with its items
   ["segment", /__separator$/, "xs"],
   ["segment", null, "control"],

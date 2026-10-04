@@ -2,6 +2,15 @@
 
 A release that changes what renders is at least a minor version, and says here what changes and where.
 
+## 1.1.1 — 2026-10-04
+
+Nothing renders differently: the step a choice card had (HeroUI Pro's `var(--radius-2xl)`) is the step its role gives it.
+
+- HeroUI Pro's `RadioButtonGroup` (`radio-button-group`) is classified: a choice card is a surface inside a card or a pane,
+  so **nested**, and its radio dot stays the OSS `radio`'s circle. A product that imports it no longer fails
+  `orumio-shape-check` #6, and a deviation that moves the nested role now moves choice cards with it. Found by
+  trade-counter's decision cards and Policy (R2 S3), which use it to compare candidates at a glance.
+
 ## 1.1.0 — 2026-09-25
 
 - Add two semantic colour palettes, `orumio-navy` and `warm-neutral`, with app and site CSS profiles

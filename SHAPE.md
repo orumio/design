@@ -29,7 +29,7 @@ a surface from the surface it sits on, and a person from a thing, before reading
 |---|---|---|---|
 | inset | lg (10) | dense list rows, a clear button inside a field, an icon tile in a card, an inline select, a token in a prompt | `rounded-inset` |
 | control | xl (13) | buttons and icon buttons, inputs and selects (through `--field-radius`), segment items, nav and menu items, tabs, pagination links, tooltips | `rounded-control` |
-| nested | 2xl (17) | a surface inside a card: an alert, a table body, a drop area, a chip, a tag, a drawer, a segment's track, a tab list | `rounded-nested` |
+| nested | 2xl (17) | a surface inside a card: an alert, a table body, a drop area, a chip, a tag, a drawer, a segment's track, a tab list, a choice card (a radio drawn as a card) | `rounded-nested` |
 | card | 3xl (22) | cards, modals, popovers, menus' panels, toasts, a floating nav or sidebar | `rounded-card` |
 | sheet | 4xl (30) | the largest surfaces: sheets (bottom sheets on a phone) | `rounded-sheet` |
 | circle | — | people (avatars), state dots, switches, radios, count badges, step numbers, timeline markers, handle bars, slider thumbs and tracks, progress and meter bars, calendar day cells | `rounded-circle` (in the app profile `rounded-full` means the same) |
