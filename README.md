@@ -1,6 +1,6 @@
 # @orumio/design
 
-Orumio's shared shape and colour: one corner-radius ladder and two selectable semantic palettes for
+Orumio's shared shape and colour: one corner-radius ladder and three selectable semantic palettes for
 HeroUI products and plain sites. Spacing and type remain product-owned.
 
 **Read [`SHAPE.md`](SHAPE.md) first.** It is the principle; `src/roles.mjs` is the same decision in code.

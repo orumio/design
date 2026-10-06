@@ -22,12 +22,13 @@ function block(id) {
   for (const key of ["surface", "surface-secondary", "surface-tertiary", "overlay", "default", "field"]) {
     lines.push(`  --${key}-foreground: var(--foreground);`);
   }
-  lines.push(`  --surface-selected: color-mix(in oklab, var(--foreground) ${id === "warm-neutral" ? "5%" : "10%"}, transparent);`);
-  lines.push("  --tint-surface: 10%;", "  --tint-soft: 15%;", "  --tint-soft-hover: 22%;");
+  lines.push(`  --surface-selected: color-mix(in oklab, var(--${p.selected.color}) ${p.selected.percent}%, transparent);`);
+  lines.push(`  --tint-surface: ${p.tint.surface}%;`, `  --tint-soft: ${p.tint.soft}%;`, `  --tint-soft-hover: ${p.tint.softHover}%;`);
+  const ground = `var(--${p.tint.ground})`;
   for (const key of ["accent", "danger", "success", "warning", "active", "attention"]) {
-    lines.push(`  --${key}-surface: color-mix(in oklab, var(--${key}) var(--tint-surface), var(--background));`);
-    lines.push(`  --${key}-soft: color-mix(in oklab, var(--${key}) var(--tint-soft), var(--background));`);
-    if (["accent", "danger"].includes(key)) lines.push(`  --${key}-soft-hover: color-mix(in oklab, var(--${key}) var(--tint-soft-hover), var(--background));`);
+    lines.push(`  --${key}-surface: color-mix(in oklab, var(--${key}) var(--tint-surface), ${ground});`);
+    lines.push(`  --${key}-soft: color-mix(in oklab, var(--${key}) var(--tint-soft), ${ground});`);
+    if (["accent", "danger"].includes(key)) lines.push(`  --${key}-soft-hover: color-mix(in oklab, var(--${key}) var(--tint-soft-hover), ${ground});`);
   }
   lines.push("  --active-soft-foreground: color-mix(in oklab, var(--active) 80%, var(--foreground) 30%);");
   lines.push("  --attention-soft-foreground: color-mix(in oklab, var(--attention) 80%, var(--foreground) 30%);");

@@ -2,6 +2,19 @@
 
 A release that changes what renders is at least a minor version, and says here what changes and where.
 
+## 1.3.0 — 2026-10-06
+
+Nothing renders differently in a product on `orumio-navy` or `warm-neutral`: their generated blocks are byte-identical.
+
+- A third palette, `cool-neutral`: the colours of shared-inventory's screen frames (DIST-UX-a, fixed by the founder on
+  2026-10-06) — a blue primary action, white cards, a cool grey canvas, a white field with a one-pixel line. A product
+  selects it with `{ "palette": "cool-neutral" }` in its root `design.json`. COLOR.md says what differs from the frames
+  (muted text is two steps darker, for 4.5:1 on HeroUI's default fill) and what the frames do not decide.
+- Each palette now names what its soft grounds are composited onto and at which tints (`tint`), and the wash of a
+  selected row (`selected`). The two existing palettes carry the values the generator had hard-coded; `cool-neutral`
+  composites onto the card surface at lighter tints. `mediaColors()` resolves soft grounds from the same fields.
+- The launch kit's hub still generates tokens for the first two palettes only.
+
 ## 1.2.0 — 2026-10-04
 
 Nothing renders differently. **A product's `test` can newly fail** on upgrade — fix the finding, do not pin back.

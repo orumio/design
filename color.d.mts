@@ -1,4 +1,4 @@
-export type PaletteId = "orumio-navy" | "warm-neutral";
+export type PaletteId = "orumio-navy" | "warm-neutral" | "cool-neutral";
 export type Palette = {
   brand: Record<"navy" | "surface" | "surfaceRaised" | "line" | "ink" | "inkMuted" | "inkFaint", string>;
   accents: Record<"blue" | "violet" | "warm", string>;
@@ -14,6 +14,10 @@ export type Palette = {
     "canvas" | "surface" | "surfaceRaised" | "line" | "ink" | "inkMuted" |
     "inkFaint" | "link" | "focus" | "accentBlue" | "accentViolet" |
     "accentWarm" | "shadowCard" | "shadowFrame", string>;
+  /** What a soft ground is composited onto, and how much of the colour each level takes (percent). */
+  tint: { ground: "background" | "surface"; surface: number; soft: number; softHover: number };
+  /** The translucent wash of a selected row: which colour, and how much of it (percent). */
+  selected: { color: "foreground" | "accent"; percent: number };
   colorScheme: "dark" | "light";
 };
 export declare const PALETTE_IDS: readonly PaletteId[];

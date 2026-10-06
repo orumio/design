@@ -2,7 +2,7 @@
  * Colour values for sites, HeroUI applications and rendered media. COLOR.md is
  * the usage contract; generated CSS is an output of this module, never an input.
  */
-export const PALETTE_IDS = Object.freeze(["orumio-navy", "warm-neutral"]);
+export const PALETTE_IDS = Object.freeze(["orumio-navy", "warm-neutral", "cool-neutral"]);
 
 /** Review/print surface, independent of the selected product palette. */
 export const PRINT_SURFACE = Object.freeze({
@@ -40,6 +40,8 @@ const NAVY = {
     shadowCard: "0 1.5rem 3rem rgb(0 0 0 / 0.45)",
     shadowFrame: "0 2rem 4rem rgb(0 0 0 / 0.5)",
   },
+  tint: { ground: "background", surface: 10, soft: 15, softHover: 22 },
+  selected: { color: "foreground", percent: 10 },
   colorScheme: "dark",
 };
 
@@ -72,10 +74,50 @@ const WARM = {
     shadowCard: "0 1.5rem 3rem rgb(0 0 0 / 0.08)",
     shadowFrame: "0 2rem 4rem rgb(0 0 0 / 0.12)",
   },
+  tint: { ground: "background", surface: 10, soft: 15, softHover: 22 },
+  selected: { color: "foreground", percent: 5 },
   colorScheme: "light",
 };
 
-const PALETTES = Object.freeze({ "orumio-navy": NAVY, "warm-neutral": WARM });
+// The screen frames the founder fixed for shared-inventory (DIST-UX-a, 2026-10-06): a blue primary
+// action on white cards over a cool grey canvas. Its chips and banners sit on those cards, so the
+// soft grounds are composited onto the surface, not the canvas, and at the frames' lighter tints.
+// Muted text is two steps darker than the frames' #6B6B73, which measured 4.44:1 on the default fill.
+const COOL = {
+  brand: {
+    navy: "#18181B", surface: "#FFFFFF", surfaceRaised: "#F5F5F6", line: "#E4E4E7",
+    ink: "#18181B", inkMuted: "#696971", inkFaint: "#52525B",
+  },
+  accents: { blue: "#0A56AD", violet: "#4338CA", warm: "#A3560A" },
+  app: {
+    background: "#F5F5F6", foreground: "#18181B", surface: "#FFFFFF",
+    surfaceSecondary: "#F5F5F6", surfaceTertiary: "#F1F1F3", overlay: "#FFFFFF",
+    muted: "#696971", fieldPlaceholder: "#696971", separator: "#ECECEF",
+    border: "#E4E4E7", default: "#EBEBEE", scrollbar: "#D4D4D8",
+    fieldBackground: "#FFFFFF", accent: "#0B6BD6", accentForeground: "#FFFFFF",
+    focus: "#0B6BD6", success: "#15803D", successForeground: "#FFFFFF",
+    warning: "#A3560A", warningForeground: "#FFFFFF", danger: "#B42318",
+    dangerForeground: "#FFFFFF", sidebar: "#FFFFFF", active: "#0F766E",
+    activeForeground: "#FFFFFF", attention: "#4F46E5",
+    surfaceShadow: "0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(0, 0, 0, 0.045)",
+    overlayShadow: "0 12px 32px rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.06)",
+    fieldShadow: "inset 0 0 0 1px #D4D4D8", backdrop: "rgba(24, 24, 27, 0.38)", snow: "#FFFFFF",
+  },
+  site: { mutedStrong: "#52525B", activeStrong: "#115E59", attentionStrong: "#4338CA" },
+  kit: {
+    canvas: "#F5F5F6", surface: "#FFFFFF", surfaceRaised: "#F5F5F6", line: "#E4E4E7",
+    ink: "#18181B", inkMuted: "#696971", inkFaint: "#52525B",
+    link: "#0A56AD", focus: "#0B6BD6", accentBlue: "#0A56AD",
+    accentViolet: "#4338CA", accentWarm: "#A3560A",
+    shadowCard: "0 1.5rem 3rem rgb(0 0 0 / 0.08)",
+    shadowFrame: "0 2rem 4rem rgb(0 0 0 / 0.12)",
+  },
+  tint: { ground: "surface", surface: 5, soft: 10, softHover: 15 },
+  selected: { color: "accent", percent: 7 },
+  colorScheme: "light",
+};
+
+const PALETTES = Object.freeze({ "orumio-navy": NAVY, "warm-neutral": WARM, "cool-neutral": COOL });
 
 /** Invalid explicit choices fail; omission is only allowed at the API boundary. */
 export function getPalette(id = "orumio-navy") {
@@ -86,7 +128,7 @@ export function getPalette(id = "orumio-navy") {
 export function paletteIdFromConfig(config) {
   if (!config || typeof config !== "object" || Array.isArray(config) ||
       Object.keys(config).length !== 1 || !Object.hasOwn(config, "palette")) {
-    throw new Error('design.json must contain only { "palette": "orumio-navy" | "warm-neutral" }');
+    throw new Error(`design.json must contain only { "palette": ${PALETTE_IDS.map((id) => `"${id}"`).join(" | ")} }`);
   }
   getPalette(config.palette);
   return config.palette;
@@ -127,16 +169,16 @@ export function mixOklab(a, b, percent) {
 }
 
 export function mediaColors(id) {
-  const p = getPalette(id), a = p.app;
+  const p = getPalette(id), a = p.app, ground = a[p.tint.ground];
   return {
     background: a.background, foreground: a.foreground, muted: a.muted,
     mutedStrong: p.site.mutedStrong, surface: a.surface,
     surfaceSecondary: a.surfaceSecondary, border: a.border,
     accent: a.accent, accentForeground: a.accentForeground,
     active: a.active, activeStrong: p.site.activeStrong,
-    activeSoft: mixOklab(a.active, a.background, 15),
+    activeSoft: mixOklab(a.active, ground, p.tint.soft),
     attention: a.attention, attentionStrong: p.site.attentionStrong,
-    attentionSoft: mixOklab(a.attention, a.background, 15),
+    attentionSoft: mixOklab(a.attention, ground, p.tint.soft),
     link: p.kit.link, focus: p.kit.focus,
   };
 }
