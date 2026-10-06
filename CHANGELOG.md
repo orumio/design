@@ -2,6 +2,14 @@
 
 A release that changes what renders is at least a minor version, and says here what changes and where.
 
+## 1.3.1 — 2026-10-06
+
+Changes `cool-neutral` only; no product had adopted it.
+
+- The field line is drawn outside the box (`0 0 0 1px`, the same colour) instead of inset. HeroUI's radio covers an
+  inset line with its own white disc, so an unselected radio on a white card had no outline at all; a checkbox and an
+  input kept theirs. Found by rendering the radio on a card at three times scale after 1.3.0 was tagged.
+
 ## 1.3.0 — 2026-10-06
 
 Nothing renders differently in a product on `orumio-navy` or `warm-neutral`: their generated blocks are byte-identical.

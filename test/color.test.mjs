@@ -75,6 +75,8 @@ test("cool-neutral keeps the frames' colours and reads on every ground HeroUI pu
   // The frames' own values (shared-inventory DIST-UX-a): canvas, card, primary action, status hues.
   assert.deepEqual([app.background, app.surface, app.accent, app.success, app.warning, app.danger],
     ["#F5F5F6", "#FFFFFF", "#0B6BD6", "#15803D", "#A3560A", "#B42318"]);
+  // Outside the box: HeroUI's radio paints its disc over an inset line, and an unselected radio vanishes.
+  assert.equal(app.fieldShadow, "0 0 0 1px #D4D4D8");
   // The frames' soft blue ground is the accent at this tint on the card.
   assert.equal(mixOklab(app.accent, app[tint.ground], tint.soft), "#e8f1fc");
   const channel = (hex, i) => { const c = parseInt(hex.slice(i, i + 2), 16) / 255; return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4; };

@@ -83,6 +83,7 @@ const WARM = {
 // action on white cards over a cool grey canvas. Its chips and banners sit on those cards, so the
 // soft grounds are composited onto the surface, not the canvas, and at the frames' lighter tints.
 // Muted text is two steps darker than the frames' #6B6B73, which measured 4.44:1 on the default fill.
+// The field line is drawn outside the box: HeroUI's radio covers an inset one with its own disc.
 const COOL = {
   brand: {
     navy: "#18181B", surface: "#FFFFFF", surfaceRaised: "#F5F5F6", line: "#E4E4E7",
@@ -101,7 +102,7 @@ const COOL = {
     activeForeground: "#FFFFFF", attention: "#4F46E5",
     surfaceShadow: "0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(0, 0, 0, 0.045)",
     overlayShadow: "0 12px 32px rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.06)",
-    fieldShadow: "inset 0 0 0 1px #D4D4D8", backdrop: "rgba(24, 24, 27, 0.38)", snow: "#FFFFFF",
+    fieldShadow: "0 0 0 1px #D4D4D8", backdrop: "rgba(24, 24, 27, 0.38)", snow: "#FFFFFF",
   },
   site: { mutedStrong: "#52525B", activeStrong: "#115E59", attentionStrong: "#4338CA" },
   kit: {

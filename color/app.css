@@ -175,7 +175,7 @@
   --attention: #4F46E5;
   --surface-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(0, 0, 0, 0.045);
   --overlay-shadow: 0 12px 32px rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.06);
-  --field-shadow: inset 0 0 0 1px #D4D4D8;
+  --field-shadow: 0 0 0 1px #D4D4D8;
   --backdrop: rgba(24, 24, 27, 0.38);
   --snow: #FFFFFF;
   --muted-strong: #52525B;

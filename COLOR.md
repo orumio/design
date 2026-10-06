@@ -50,7 +50,10 @@ run a component draws meets 4.5:1. What differs from the frames, and what the fr
   This is the one intentional adjustment.
 - **Soft grounds follow the formula.** Blue, green and red land within three steps (of 255) of the
   frames' chips. The frames' amber ground is yellower than the formula's, which keeps the hue of its own text.
-- **A field is white with a one-pixel inset line**, drawn by the field shadow, as in the frames.
+- **A field is white with a one-pixel line**, the frames' input line, drawn by the field shadow
+  outside the box. HeroUI's radio covers an inset line with its own white disc, which left an
+  unselected radio invisible on a card. HeroUI draws inputs, radios and checkboxes with the same
+  variable, so the frames' darker radio outline cannot be had separately.
 - **One overlay shadow.** HeroUI draws a tooltip, a menu and a dialog with the same variable; the
   palette uses the frames' menu shadow for all three, not the deeper one the frames give a dialog.
 - **`active` and `attention` are not in the frames.** shared-inventory has no in-motion or needs-you
