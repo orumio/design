@@ -13,6 +13,9 @@
   founder on 2026-10-06): a blue primary action, white cards and a cool grey canvas. It is an app
   palette. The launch kit's hub generates tokens for `orumio-navy` and `warm-neutral` only, so a
   product is not served from the hub in `cool-neutral` until the kit generates that block too.
+- `deep-green` is MarginTrace's surface (chosen by the founder on 2026-10-20): a calm forest primary
+  action, sienna for a fall and moss for a rise, on HeroUI's light neutrals and a warm near-white
+  canvas. It is an app palette; like `cool-neutral`, the hub does not generate it yet.
 - An independently served product records its choice once in its root `design.json`. The app, its
   landing page and its own media camera read that file. A hub-owned product records its choice in
   its launch-kit manifest. A listing-stage manifest points to the product file instead of copying
@@ -65,11 +68,35 @@ run a component draws meets 4.5:1. What differs from the frames, and what the fr
   its own soft ground to 4.39:1 (the frames' own chip pair): on a fill use the foreground, on a soft
   ground the soft foreground.
 
+## deep-green and MarginTrace
+
+The values are what MarginTrace rendered when the founder chose it (its `globals.css` brand over
+HeroUI 3.2.4's light defaults, resolved to sRGB), assigned to roles. What differs from that, and why:
+
+- **Muted text is #696971, not HeroUI's #71717A.** HeroUI's grey measured 4.06:1 on the default fill
+  (an unselected tab, a key cap) and 4.02:1 on the tertiary surface; #696971 is the value
+  `cool-neutral` arrived at for the same reason and measures 4.53:1 or better on every neutral here.
+- **Text on solid success and warning is white.** MarginTrace overrode the hues but not their
+  foregrounds, so a solid green or gold control drew HeroUI's near-black on them (under 3:1).
+- **Soft grounds are HeroUI's own:** the hue at 15 % on the white card (`tint.ground: "surface"`),
+  which is what `color-mix(... 15%, transparent)` showed on MarginTrace's cards.
+- **`active` and `attention` are not MarginTrace's.** It has no in-motion or needs-you state; the
+  teal and indigo complete the vocabulary at the same contrast as `cool-neutral`'s.
+- **A grey chip sits on the tertiary surface (#EAEAEB)**, as in every palette here, a step darker
+  than HeroUI's #F5F5F5. Rendered side by side with what MarginTrace drew, this and the muted text
+  are the only differences a reader would see.
+- **The scrollbar thumb is a light grey.** HeroUI's default thumb is the foreground; the palette
+  uses the same quiet grey as `cool-neutral`.
+
+Every pair the palette is meant to draw — foreground, muted and strong muted text on each neutral,
+the placeholder on a field, white on every solid hue, every hue on the canvas and a card, and each
+soft foreground on its soft ground — measures 4.5:1 or better (`test/color.test.mjs`).
+
 Import `@orumio/design/color/app.css` after `shape/app.css` for a HeroUI product, or
 `@orumio/design/color/site.css` after `shape/site.css` for a plain site. Put
 `data-orumio-palette="..."` on the document root before first paint. A HeroUI app also sets
 `data-theme` to the palette's `colorScheme` on that root, so dark component variants match the
-selected colours. The default combinations are navy/dark, warm-neutral/light and cool-neutral/light.
+selected colours. The default combinations are navy/dark, warm-neutral/light, cool-neutral/light and deep-green/light.
 Trade Counter's dormant dark block remains its own compatibility surface; it is not a shared palette.
 
 The launch kit's print and listing-review light surface is independent of palette selection. A

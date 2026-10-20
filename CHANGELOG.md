@@ -2,6 +2,17 @@
 
 A release that changes what renders is at least a minor version, and says here what changes and where.
 
+## 1.4.0 — 2026-10-20
+
+Nothing renders differently in a product on `orumio-navy`, `warm-neutral` or `cool-neutral`: their generated blocks
+are byte-identical.
+
+- A fourth palette, `deep-green`: MarginTrace's own surface as it rendered when the founder chose it on 2026-10-20 — a
+  calm forest primary action, sienna for a fall and moss for a rise, on HeroUI's light neutrals with a warm near-white
+  canvas. A product selects it with `{ "palette": "deep-green" }` in its root `design.json`. COLOR.md says what differs
+  from what rendered (muted text #696971 for 4.5:1 on the default fill; white text on solid success and warning).
+- The launch kit's hub still generates tokens for `orumio-navy` and `warm-neutral` only.
+
 ## 1.3.1 — 2026-10-06
 
 Changes `cool-neutral` only; no product had adopted it.

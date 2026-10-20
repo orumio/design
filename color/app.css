@@ -214,3 +214,75 @@
   --warning-soft-foreground: color-mix(in oklab, var(--warning) 80%, var(--foreground) 30%);
   --default-soft: var(--surface-tertiary);
 }
+
+:root[data-orumio-palette="deep-green"],
+[data-orumio-palette="deep-green"],
+[data-orumio-palette="deep-green"] [data-theme="light"] {
+  color-scheme: light;
+  --background: #FAFAF8;
+  --foreground: #18181B;
+  --surface: #FFFFFF;
+  --surface-secondary: #EFEFF0;
+  --surface-tertiary: #EAEAEB;
+  --overlay: #FFFFFF;
+  --muted: #696971;
+  --field-placeholder: #696971;
+  --separator: #E4E4E7;
+  --border: #DEDEE0;
+  --default: #EBEBEC;
+  --scrollbar: #D4D4D8;
+  --field-background: #FFFFFF;
+  --accent: #2F5D50;
+  --accent-foreground: #FFFFFF;
+  --focus: #2F5D50;
+  --success: #2F6B45;
+  --success-foreground: #FFFFFF;
+  --warning: #8A6D1F;
+  --warning-foreground: #FFFFFF;
+  --danger: #A1452F;
+  --danger-foreground: #FFFFFF;
+  --sidebar: #FAFAF8;
+  --active: #0F766E;
+  --active-foreground: #FFFFFF;
+  --attention: #4F46E5;
+  --surface-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04), 0 1px 2px 0 rgba(0, 0, 0, 0.06), 0 0 1px 0 rgba(0, 0, 0, 0.06);
+  --overlay-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06), 0 -6px 12px 0 rgba(0, 0, 0, 0.03), 0 14px 28px 0 rgba(0, 0, 0, 0.08);
+  --field-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04), 0 1px 2px 0 rgba(0, 0, 0, 0.06), 0 0 1px 0 rgba(0, 0, 0, 0.06);
+  --backdrop: rgba(0, 0, 0, 0.5);
+  --snow: #FFFFFF;
+  --muted-strong: #52525B;
+  --active-strong: #115E59;
+  --attention-strong: #4338CA;
+  --eclipse: var(--foreground);
+  --teal: var(--active);
+  --surface-foreground: var(--foreground);
+  --surface-secondary-foreground: var(--foreground);
+  --surface-tertiary-foreground: var(--foreground);
+  --overlay-foreground: var(--foreground);
+  --default-foreground: var(--foreground);
+  --field-foreground: var(--foreground);
+  --surface-selected: color-mix(in oklab, var(--foreground) 5%, transparent);
+  --tint-surface: 10%;
+  --tint-soft: 15%;
+  --tint-soft-hover: 20%;
+  --accent-surface: color-mix(in oklab, var(--accent) var(--tint-surface), var(--surface));
+  --accent-soft: color-mix(in oklab, var(--accent) var(--tint-soft), var(--surface));
+  --accent-soft-hover: color-mix(in oklab, var(--accent) var(--tint-soft-hover), var(--surface));
+  --danger-surface: color-mix(in oklab, var(--danger) var(--tint-surface), var(--surface));
+  --danger-soft: color-mix(in oklab, var(--danger) var(--tint-soft), var(--surface));
+  --danger-soft-hover: color-mix(in oklab, var(--danger) var(--tint-soft-hover), var(--surface));
+  --success-surface: color-mix(in oklab, var(--success) var(--tint-surface), var(--surface));
+  --success-soft: color-mix(in oklab, var(--success) var(--tint-soft), var(--surface));
+  --warning-surface: color-mix(in oklab, var(--warning) var(--tint-surface), var(--surface));
+  --warning-soft: color-mix(in oklab, var(--warning) var(--tint-soft), var(--surface));
+  --active-surface: color-mix(in oklab, var(--active) var(--tint-surface), var(--surface));
+  --active-soft: color-mix(in oklab, var(--active) var(--tint-soft), var(--surface));
+  --attention-surface: color-mix(in oklab, var(--attention) var(--tint-surface), var(--surface));
+  --attention-soft: color-mix(in oklab, var(--attention) var(--tint-soft), var(--surface));
+  --active-soft-foreground: color-mix(in oklab, var(--active) 80%, var(--foreground) 30%);
+  --attention-soft-foreground: color-mix(in oklab, var(--attention) 80%, var(--foreground) 30%);
+  --danger-soft-foreground: color-mix(in oklab, var(--danger) 80%, var(--foreground) 30%);
+  --success-soft-foreground: color-mix(in oklab, var(--success) 80%, var(--foreground) 30%);
+  --warning-soft-foreground: color-mix(in oklab, var(--warning) 80%, var(--foreground) 30%);
+  --default-soft: var(--surface-tertiary);
+}

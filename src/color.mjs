@@ -2,7 +2,7 @@
  * Colour values for sites, HeroUI applications and rendered media. COLOR.md is
  * the usage contract; generated CSS is an output of this module, never an input.
  */
-export const PALETTE_IDS = Object.freeze(["orumio-navy", "warm-neutral", "cool-neutral"]);
+export const PALETTE_IDS = Object.freeze(["orumio-navy", "warm-neutral", "cool-neutral", "deep-green"]);
 
 /** Review/print surface, independent of the selected product palette. */
 export const PRINT_SURFACE = Object.freeze({
@@ -118,7 +118,49 @@ const COOL = {
   colorScheme: "light",
 };
 
-const PALETTES = Object.freeze({ "orumio-navy": NAVY, "warm-neutral": WARM, "cool-neutral": COOL });
+// MarginTrace's own surface as it rendered when the founder chose it (2026-10-20): a calm forest
+// primary action, sienna for a fall and moss for a rise, on HeroUI's light neutrals with a warm
+// near-white canvas. The neutrals are HeroUI 3.2.4's light defaults resolved to sRGB. Two changes from
+// what rendered: muted text is #696971 (HeroUI's #71717A measured 4.06:1 on the default fill, as in
+// cool-neutral), and text on solid success and warning is white (HeroUI's near-black on the dark
+// green and gold measured under 3:1). Chips sit on white cards, so soft grounds composite onto the
+// surface at HeroUI's own 15 %.
+const DEEP = {
+  brand: {
+    navy: "#18181B", surface: "#FFFFFF", surfaceRaised: "#FAFAF8", line: "#DEDEE0",
+    ink: "#18181B", inkMuted: "#696971", inkFaint: "#52525B",
+  },
+  accents: { blue: "#2F5D50", violet: "#4338CA", warm: "#8A6D1F" },
+  app: {
+    background: "#FAFAF8", foreground: "#18181B", surface: "#FFFFFF",
+    surfaceSecondary: "#EFEFF0", surfaceTertiary: "#EAEAEB", overlay: "#FFFFFF",
+    muted: "#696971", fieldPlaceholder: "#696971", separator: "#E4E4E7",
+    border: "#DEDEE0", default: "#EBEBEC", scrollbar: "#D4D4D8",
+    fieldBackground: "#FFFFFF", accent: "#2F5D50", accentForeground: "#FFFFFF",
+    focus: "#2F5D50", success: "#2F6B45", successForeground: "#FFFFFF",
+    warning: "#8A6D1F", warningForeground: "#FFFFFF", danger: "#A1452F",
+    dangerForeground: "#FFFFFF", sidebar: "#FAFAF8", active: "#0F766E",
+    activeForeground: "#FFFFFF", attention: "#4F46E5",
+    surfaceShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.04), 0 1px 2px 0 rgba(0, 0, 0, 0.06), 0 0 1px 0 rgba(0, 0, 0, 0.06)",
+    overlayShadow: "0 2px 8px 0 rgba(0, 0, 0, 0.06), 0 -6px 12px 0 rgba(0, 0, 0, 0.03), 0 14px 28px 0 rgba(0, 0, 0, 0.08)",
+    fieldShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.04), 0 1px 2px 0 rgba(0, 0, 0, 0.06), 0 0 1px 0 rgba(0, 0, 0, 0.06)",
+    backdrop: "rgba(0, 0, 0, 0.5)", snow: "#FFFFFF",
+  },
+  site: { mutedStrong: "#52525B", activeStrong: "#115E59", attentionStrong: "#4338CA" },
+  kit: {
+    canvas: "#FAFAF8", surface: "#FFFFFF", surfaceRaised: "#EFEFF0", line: "#DEDEE0",
+    ink: "#18181B", inkMuted: "#696971", inkFaint: "#52525B",
+    link: "#2F5D50", focus: "#2F5D50", accentBlue: "#2F5D50",
+    accentViolet: "#4338CA", accentWarm: "#8A6D1F",
+    shadowCard: "0 1.5rem 3rem rgb(0 0 0 / 0.08)",
+    shadowFrame: "0 2rem 4rem rgb(0 0 0 / 0.12)",
+  },
+  tint: { ground: "surface", surface: 10, soft: 15, softHover: 20 },
+  selected: { color: "foreground", percent: 5 },
+  colorScheme: "light",
+};
+
+const PALETTES = Object.freeze({ "orumio-navy": NAVY, "warm-neutral": WARM, "cool-neutral": COOL, "deep-green": DEEP });
 
 /** Invalid explicit choices fail; omission is only allowed at the API boundary. */
 export function getPalette(id = "orumio-navy") {

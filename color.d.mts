@@ -1,4 +1,4 @@
-export type PaletteId = "orumio-navy" | "warm-neutral" | "cool-neutral";
+export type PaletteId = "orumio-navy" | "warm-neutral" | "cool-neutral" | "deep-green";
 export type Palette = {
   brand: Record<"navy" | "surface" | "surfaceRaised" | "line" | "ink" | "inkMuted" | "inkFaint", string>;
   accents: Record<"blue" | "violet" | "warm", string>;

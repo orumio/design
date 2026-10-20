@@ -5,13 +5,15 @@ import { test } from "node:test";
 import { getPalette, mediaColors, mixOklab, paletteIdFromConfig, PALETTE_IDS } from "../src/color.mjs";
 
 test("palette selection is explicit and invalid IDs fail", () => {
-  assert.deepEqual(PALETTE_IDS, ["orumio-navy", "warm-neutral", "cool-neutral"]);
+  assert.deepEqual(PALETTE_IDS, ["orumio-navy", "warm-neutral", "cool-neutral", "deep-green"]);
   assert.equal(getPalette().colorScheme, "dark");
   assert.equal(getPalette("warm-neutral").colorScheme, "light");
   assert.equal(getPalette("cool-neutral").colorScheme, "light");
   assert.equal(paletteIdFromConfig({ palette: "warm-neutral" }), "warm-neutral");
   assert.equal(paletteIdFromConfig({ palette: "cool-neutral" }), "cool-neutral");
-  assert.throws(() => paletteIdFromConfig({}), /"orumio-navy" \| "warm-neutral" \| "cool-neutral"/);
+  assert.equal(getPalette("deep-green").colorScheme, "light");
+  assert.equal(paletteIdFromConfig({ palette: "deep-green" }), "deep-green");
+  assert.throws(() => paletteIdFromConfig({}), /"orumio-navy" \| "warm-neutral" \| "cool-neutral" \| "deep-green"/);
   for (const value of [null, {}, { palette: "other" }, { palette: "warm-neutral", source: "product" }]) {
     assert.throws(() => paletteIdFromConfig(value));
   }
@@ -79,6 +81,30 @@ test("cool-neutral keeps the frames' colours and reads on every ground HeroUI pu
   assert.equal(app.fieldShadow, "0 0 0 1px #D4D4D8");
   // The frames' soft blue ground is the accent at this tint on the card.
   assert.equal(mixOklab(app.accent, app[tint.ground], tint.soft), "#e8f1fc");
+  const channel = (hex, i) => { const c = parseInt(hex.slice(i, i + 2), 16) / 255; return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4; };
+  const lum = (hex) => 0.2126 * channel(hex, 1) + 0.7152 * channel(hex, 3) + 0.0722 * channel(hex, 5);
+  const ratio = (a, b) => { const [hi, lo] = [lum(a), lum(b)].sort((x, y) => y - x); return (hi + 0.05) / (lo + 0.05); };
+  const softFg = (hue) => mixOklab(hue, app.foreground, 100 * 80 / 110); // CSS normalises 80% + 30%
+  const pairs = [
+    ...[app.background, app.surface, app.surfaceSecondary, app.surfaceTertiary, app.default].flatMap((ground) =>
+      [[app.foreground, ground], [app.muted, ground], [site.mutedStrong, ground]]),
+    [app.fieldPlaceholder, app.fieldBackground],
+    [app.accentForeground, app.accent], [app.successForeground, app.success],
+    [app.warningForeground, app.warning], [app.dangerForeground, app.danger],
+    [app.activeForeground, app.active],
+    ...[app.accent, app.success, app.warning, app.danger, app.active, app.attention].flatMap((hue) =>
+      [[hue, app.background], [hue, app.surface], [softFg(hue), mixOklab(hue, app[tint.ground], tint.soft)]]),
+  ];
+  for (const [fg, bg] of pairs) assert.ok(ratio(fg, bg) >= 4.5, `${fg} on ${bg} is ${ratio(fg, bg).toFixed(2)}:1`);
+});
+
+test("deep-green keeps MarginTrace's colours and reads on every ground HeroUI puts text on", () => {
+  const { app, site, tint } = getPalette("deep-green");
+  // MarginTrace's own brand as it rendered when chosen (2026-10-20): canvas, card, action, status hues.
+  assert.deepEqual([app.background, app.surface, app.accent, app.success, app.warning, app.danger],
+    ["#FAFAF8", "#FFFFFF", "#2F5D50", "#2F6B45", "#8A6D1F", "#A1452F"]);
+  // HeroUI's own soft ground: the hue at 15 % on the white card.
+  assert.deepEqual([tint.ground, tint.soft], ["surface", 15]);
   const channel = (hex, i) => { const c = parseInt(hex.slice(i, i + 2), 16) / 255; return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4; };
   const lum = (hex) => 0.2126 * channel(hex, 1) + 0.7152 * channel(hex, 3) + 0.0722 * channel(hex, 5);
   const ratio = (a, b) => { const [hi, lo] = [lum(a), lum(b)].sort((x, y) => y - x); return (hi + 0.05) / (lo + 0.05); };
